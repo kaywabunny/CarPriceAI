@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { X, Download, Loader2, AlertCircle } from 'lucide-react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Download, Loader2, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -8,48 +8,129 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { getPriceGraph } from '@/lib/api';
-import { track } from '@/lib/analytics';
-import { EVENT_TYPES } from '@/lib/types';
+import { trackEvent } from '@/lib/privateAnalytics';
 
 export const GraphModal = ({ isOpen, onClose, request, predictionId }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
+  
+  // Track if we've already loaded for this request to prevent double-loads
+  const loadedRequestRef = useRef(null);
+  const mountedRef = useRef(true);
 
-  useEffect(() => {
-    if (isOpen && request) {
-      loadGraph();
+  // Cleanup function to revoke blob URLs
+  const cleanupImageUrl = useCallback(() => {
+    if (imageUrl && imageUrl.startsWith('blob:')) {
+      URL.revokeObjectURL(imageUrl);
     }
-    
-    return () => {
-      // Cleanup blob URL when modal closes
-      if (imageUrl && imageUrl.startsWith('blob:')) {
-        URL.revokeObjectURL(imageUrl);
+  }, [imageUrl]);
+
+  // Reset state when modal closes
+  useEffect(() => {
+    if (!isOpen) {
+      cleanupImageUrl();
+      setImageUrl(null);
+      setError(null);
+      setLoading(false);
+      loadedRequestRef.current = null;
+    }
+  }, [isOpen, cleanupImageUrl]);
+
+  // Load graph when modal opens with new request
+  useEffect(() => {
+    mountedRef.current = true;
+
+    const loadGraph = async () => {
+      // Prevent double loading for the same request
+      const requestKey = request ? `${request.make}-${request.model}-${request.year}-${request.mileage_km_num}` : null;
+      
+      if (!isOpen || !request || loadedRequestRef.current === requestKey) {
+        return;
+      }
+
+      // Mark as loading this request
+      loadedRequestRef.current = requestKey;
+      
+      // Clean up previous image
+      cleanupImageUrl();
+      
+      setLoading(true);
+      setError(null);
+      setImageUrl(null);
+
+      try {
+        const url = await getPriceGraph(request);
+        
+        // Only update state if still mounted and modal still open
+        if (mountedRef.current && isOpen) {
+          setImageUrl(url);
+          trackEvent('graph_loaded', { prediction_id: predictionId });
+        } else if (url && url.startsWith('blob:')) {
+          // Clean up if we're no longer showing this
+          URL.revokeObjectURL(url);
+        }
+      } catch (err) {
+        console.error('Failed to load graph:', err);
+        if (mountedRef.current && isOpen) {
+          setError('Failed to load price graph. Please try again.');
+          trackEvent('graph_error', { 
+            prediction_id: predictionId,
+            error: err.message 
+          });
+        }
+      } finally {
+        if (mountedRef.current) {
+          setLoading(false);
+        }
       }
     };
-  }, [isOpen, request]);
 
-  const loadGraph = async () => {
-    setLoading(true);
+    loadGraph();
+
+    return () => {
+      mountedRef.current = false;
+    };
+  }, [isOpen, request, predictionId, cleanupImageUrl]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      cleanupImageUrl();
+    };
+  }, [cleanupImageUrl]);
+
+  const handleRetry = useCallback(() => {
+    // Reset the loaded ref to allow re-loading
+    loadedRequestRef.current = null;
+    // Trigger re-render which will cause the useEffect to run again
     setError(null);
+    setLoading(true);
     
-    try {
-      const url = await getPriceGraph(request);
-      setImageUrl(url);
-      track(EVENT_TYPES.GRAPH_LOADED, { prediction_id: predictionId }, predictionId);
-    } catch (err) {
-      console.error('Failed to load graph:', err);
-      setError('Failed to load price graph. Please try again.');
-      track(EVENT_TYPES.GRAPH_ERROR, { 
-        prediction_id: predictionId,
-        error: err.message 
-      }, predictionId);
-    } finally {
-      setLoading(false);
-    }
-  };
+    // Force reload
+    const loadGraph = async () => {
+      try {
+        cleanupImageUrl();
+        const url = await getPriceGraph(request);
+        if (mountedRef.current) {
+          setImageUrl(url);
+          trackEvent('graph_loaded', { prediction_id: predictionId });
+        }
+      } catch (err) {
+        if (mountedRef.current) {
+          setError('Failed to load price graph. Please try again.');
+        }
+      } finally {
+        if (mountedRef.current) {
+          setLoading(false);
+        }
+      }
+    };
+    
+    loadGraph();
+  }, [request, predictionId, cleanupImageUrl]);
 
-  const handleDownload = async () => {
+  const handleDownload = useCallback(async () => {
     if (!imageUrl) return;
     
     try {
@@ -62,10 +143,16 @@ export const GraphModal = ({ isOpen, onClose, request, predictionId }) => {
     } catch (err) {
       console.error('Failed to download:', err);
     }
-  };
+  }, [imageUrl, request]);
+
+  const handleClose = useCallback((open) => {
+    if (!open) {
+      onClose();
+    }
+  }, [onClose]);
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+    <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent 
         className="max-w-4xl w-[95vw] max-h-[90vh] overflow-hidden"
         data-testid="graph-modal"
@@ -97,11 +184,11 @@ export const GraphModal = ({ isOpen, onClose, request, predictionId }) => {
             </div>
           )}
 
-          {error && (
+          {error && !loading && (
             <div className="flex flex-col items-center gap-3 text-destructive">
               <AlertCircle className="w-8 h-8" />
               <p>{error}</p>
-              <Button variant="outline" size="sm" onClick={loadGraph}>
+              <Button variant="outline" size="sm" onClick={handleRetry}>
                 Try Again
               </Button>
             </div>
