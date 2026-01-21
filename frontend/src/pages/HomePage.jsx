@@ -6,8 +6,7 @@ import { ResultCard } from '@/components/ResultCard';
 import { GraphModal } from '@/components/GraphModal';
 import { DepreciationModal } from '@/components/DepreciationModal';
 import { predictPrice } from '@/lib/api';
-import { track, trackPageView } from '@/lib/analytics';
-import { EVENT_TYPES } from '@/lib/types';
+import { trackPriceCheckSubmit, trackEvent } from '@/lib/privateAnalytics';
 
 export default function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -21,7 +20,7 @@ export default function HomePage() {
   const [showDepreciation, setShowDepreciation] = useState(false);
 
   useEffect(() => {
-    trackPageView('home');
+    trackEvent('page_view', { page: 'home' });
   }, []);
 
   const handleSubmit = async (formData) => {
@@ -29,6 +28,9 @@ export default function HomePage() {
     setError(null);
     setResult(null);
     setRequest(formData);
+
+    // Track the price check submission
+    trackPriceCheckSubmit(formData);
 
     const startTime = Date.now();
 
@@ -39,17 +41,17 @@ export default function HomePage() {
       setResult(response);
       setPredictionId(response.prediction_id);
       
-      track(EVENT_TYPES.PREDICT_SUCCESS, {
+      trackEvent('price_check_success', {
         ...formData,
-        ...response,
+        prediction_id: response.prediction_id,
         latency_ms: latency,
-      }, response.prediction_id);
+      });
 
     } catch (err) {
       console.error('Prediction failed:', err);
       setError(err.message || 'Failed to get price prediction. Please try again.');
       
-      track(EVENT_TYPES.PREDICT_ERROR, {
+      trackEvent('price_check_error', {
         ...formData,
         error: err.message,
       });
