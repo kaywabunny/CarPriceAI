@@ -86,3 +86,31 @@ Frontend → Node.js Backend → ML Service (FastAPI)
 2. Provide ML_BASE_URL for real ML service connection
 3. Set up PostgreSQL and run migrations
 4. Switch `USE_MOCK = false` in api.js to use real backend
+
+---
+## Updates (Jan 2025)
+
+### Bug Fixes
+- **Graph Modal Double-Render Fix**: Added refs to track loaded requests and prevent duplicate graph loads. Modal now properly cleans up on close and shows only one graph per open.
+- **Depreciation Modal**: Same fix applied to prevent double-loading
+
+### UI Updates
+- **Price Band Tooltips Updated**:
+  - Green: "Good Deal (Quick Sale)" - "Below typical market price. Likely to sell faster and attract more buyers."
+  - Yellow: "Market Price (Fair)" - "Near the typical market range. Balanced price for both buyer and seller."
+  - Red: "Higher Price (Slower Sale)" - "Above typical market price. Higher margin possible, but may take longer to sell."
+- **Centralized Config**: Created `/app/frontend/src/lib/priceBandConfig.js` for easy tooltip/label updates
+
+### Private Analytics
+- **Frontend**: Added `/app/frontend/src/lib/privateAnalytics.js` - non-blocking event tracking using sendBeacon
+- **Backend Endpoints**:
+  - `POST /api/analytics/event` - Store events (open)
+  - `GET /api/analytics/summary?key=SECRET` - Event summary (protected)
+  - `GET /api/analytics/export.csv?key=SECRET` - CSV export (protected)
+- **Events Tracked**: page_view, price_check_submit, price_check_success, view_price_graph, view_depreciation, copy_result, graph_loaded, depreciation_loaded
+- **Security**: No PII stored, IP hashed, export endpoints protected by ANALYTICS_EXPORT_KEY
+- **UI**: Analytics dashboard removed from navigation (private analytics only)
+
+### Environment Variables Added
+- `ANALYTICS_EXPORT_KEY` - Secret key for analytics export endpoints
+- `IP_HASH_SALT` - Salt for IP hashing
