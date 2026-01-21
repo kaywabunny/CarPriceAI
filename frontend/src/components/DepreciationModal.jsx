@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { X, Loader2, AlertCircle, TrendingDown } from 'lucide-react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Loader2, AlertCircle, TrendingDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -16,8 +16,6 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { 
-  LineChart, 
-  Line, 
   XAxis, 
   YAxis, 
   CartesianGrid, 
@@ -28,45 +26,112 @@ import {
 } from 'recharts';
 import { getDepreciation } from '@/lib/api';
 import { formatTHB, formatPercent } from '@/lib/utils';
-import { track } from '@/lib/analytics';
-import { EVENT_TYPES } from '@/lib/types';
+import { trackEvent } from '@/lib/privateAnalytics';
 
 export const DepreciationModal = ({ isOpen, onClose, request, predictionId }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
-  const [viewMode, setViewMode] = useState('chart'); // 'chart' or 'table'
+  const [viewMode, setViewMode] = useState('chart');
+  
+  // Track loaded request to prevent double-loading
+  const loadedRequestRef = useRef(null);
+  const mountedRef = useRef(true);
 
+  // Reset state when modal closes
   useEffect(() => {
-    if (isOpen && request) {
-      loadDepreciation();
-    }
-  }, [isOpen, request]);
-
-  const loadDepreciation = async () => {
-    setLoading(true);
-    setError(null);
-    
-    try {
-      const result = await getDepreciation({
-        ...request,
-        horizon_years: 6,
-      });
-      setData(result);
-      track(EVENT_TYPES.DEPRECIATION_LOADED, { prediction_id: predictionId }, predictionId);
-    } catch (err) {
-      console.error('Failed to load depreciation:', err);
-      setError('Failed to load depreciation data. Please try again.');
-      track(EVENT_TYPES.DEPRECIATION_ERROR, { 
-        prediction_id: predictionId,
-        error: err.message 
-      }, predictionId);
-    } finally {
+    if (!isOpen) {
+      setData(null);
+      setError(null);
       setLoading(false);
+      loadedRequestRef.current = null;
     }
-  };
+  }, [isOpen]);
 
-  const CustomTooltip = ({ active, payload, label }) => {
+  // Load depreciation when modal opens with new request
+  useEffect(() => {
+    mountedRef.current = true;
+
+    const loadDepreciation = async () => {
+      const requestKey = request ? `${request.make}-${request.model}-${request.year}-${request.mileage_km_num}` : null;
+      
+      if (!isOpen || !request || loadedRequestRef.current === requestKey) {
+        return;
+      }
+
+      loadedRequestRef.current = requestKey;
+      setLoading(true);
+      setError(null);
+
+      try {
+        const result = await getDepreciation({
+          ...request,
+          horizon_years: 6,
+        });
+        
+        if (mountedRef.current && isOpen) {
+          setData(result);
+          trackEvent('depreciation_loaded', { prediction_id: predictionId });
+        }
+      } catch (err) {
+        console.error('Failed to load depreciation:', err);
+        if (mountedRef.current && isOpen) {
+          setError('Failed to load depreciation data. Please try again.');
+          trackEvent('depreciation_error', { 
+            prediction_id: predictionId,
+            error: err.message 
+          });
+        }
+      } finally {
+        if (mountedRef.current) {
+          setLoading(false);
+        }
+      }
+    };
+
+    loadDepreciation();
+
+    return () => {
+      mountedRef.current = false;
+    };
+  }, [isOpen, request, predictionId]);
+
+  const handleRetry = useCallback(() => {
+    loadedRequestRef.current = null;
+    setError(null);
+    setLoading(true);
+    
+    const loadDepreciation = async () => {
+      try {
+        const result = await getDepreciation({
+          ...request,
+          horizon_years: 6,
+        });
+        if (mountedRef.current) {
+          setData(result);
+          trackEvent('depreciation_loaded', { prediction_id: predictionId });
+        }
+      } catch (err) {
+        if (mountedRef.current) {
+          setError('Failed to load depreciation data. Please try again.');
+        }
+      } finally {
+        if (mountedRef.current) {
+          setLoading(false);
+        }
+      }
+    };
+    
+    loadDepreciation();
+  }, [request, predictionId]);
+
+  const handleClose = useCallback((open) => {
+    if (!open) {
+      onClose();
+    }
+  }, [onClose]);
+
+  const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       const point = payload[0].payload;
       return (
@@ -85,7 +150,7 @@ export const DepreciationModal = ({ isOpen, onClose, request, predictionId }) =>
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+    <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent 
         className="max-w-4xl w-[95vw] max-h-[90vh] overflow-hidden"
         data-testid="depreciation-modal"
@@ -129,11 +194,11 @@ export const DepreciationModal = ({ isOpen, onClose, request, predictionId }) =>
             </div>
           )}
 
-          {error && (
+          {error && !loading && (
             <div className="h-full flex flex-col items-center justify-center gap-3 text-destructive">
               <AlertCircle className="w-8 h-8" />
               <p>{error}</p>
-              <Button variant="outline" size="sm" onClick={loadDepreciation}>
+              <Button variant="outline" size="sm" onClick={handleRetry}>
                 Try Again
               </Button>
             </div>
