@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Car, BarChart3, Menu, X, Settings } from 'lucide-react';
+import { Car, Menu, X, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { AdminPanel } from '@/components/AdminPanel';
-import { trackCtaClick } from '@/lib/analytics';
+import { trackEvent } from '@/lib/privateAnalytics';
 
 export const Layout = ({ children }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ export const Layout = ({ children }) => {
   const isActive = (path) => location.pathname === path;
 
   const handleAdminClick = () => {
-    trackCtaClick('admin_panel_open');
+    trackEvent('admin_panel_open');
     setAdminOpen(true);
   };
 
@@ -37,7 +37,7 @@ export const Layout = ({ children }) => {
               <span className="text-xs text-muted-foreground hidden sm:inline">TH</span>
             </Link>
 
-            {/* Desktop Nav */}
+            {/* Desktop Nav - simplified, no analytics link */}
             <nav className="hidden md:flex items-center gap-1">
               <Link to="/">
                 <Button 
@@ -47,16 +47,6 @@ export const Layout = ({ children }) => {
                 >
                   <Car className="w-4 h-4 mr-2" />
                   Price Check
-                </Button>
-              </Link>
-              <Link to="/analytics">
-                <Button 
-                  variant={isActive('/analytics') ? 'secondary' : 'ghost'} 
-                  size="sm"
-                  data-testid="nav-analytics"
-                >
-                  <BarChart3 className="w-4 h-4 mr-2" />
-                  Analytics
                 </Button>
               </Link>
             </nav>
@@ -79,7 +69,7 @@ export const Layout = ({ children }) => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - simplified, no analytics link */}
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-border/50 bg-background animate-fade-in">
             <nav className="flex flex-col p-4 gap-2">
@@ -90,15 +80,6 @@ export const Layout = ({ children }) => {
                 >
                   <Car className="w-4 h-4 mr-2" />
                   Price Check
-                </Button>
-              </Link>
-              <Link to="/analytics" onClick={() => setMobileMenuOpen(false)}>
-                <Button 
-                  variant={isActive('/analytics') ? 'secondary' : 'ghost'} 
-                  className="w-full justify-start"
-                >
-                  <BarChart3 className="w-4 h-4 mr-2" />
-                  Analytics
                 </Button>
               </Link>
             </nav>
