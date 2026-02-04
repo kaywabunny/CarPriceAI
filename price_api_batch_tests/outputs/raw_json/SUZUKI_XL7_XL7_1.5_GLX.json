@@ -1,0 +1,559 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "SUZUKI",
+        "model": "XL7",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XL7 1.5 GLX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 138000,
+            "green_median": 147000,
+            "green_high": 154000,
+            "yellow": 163000,
+            "red_low": 165000,
+            "red_median": 171000,
+            "red_high": 176000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 130000,
+            "green_median": 138000,
+            "green_high": 146000,
+            "yellow": 153000,
+            "red_low": 156000,
+            "red_median": 160000,
+            "red_high": 165000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 113000,
+            "green_median": 120000,
+            "green_high": 126000,
+            "yellow": 133000,
+            "red_low": 136000,
+            "red_median": 140000,
+            "red_high": 144000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 78000,
+            "green_median": 83000,
+            "green_high": 87000,
+            "yellow": 91000,
+            "red_low": 93000,
+            "red_median": 96000,
+            "red_high": 99000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 78000,
+            "green_median": 83000,
+            "green_high": 87000,
+            "yellow": 91000,
+            "red_low": 93000,
+            "red_median": 96000,
+            "red_high": 99000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2013,
+      "request": {
+        "make": "SUZUKI",
+        "model": "XL7",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XL7 1.5 GLX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 163000,
+            "green_median": 173000,
+            "green_high": 182000,
+            "yellow": 192000,
+            "red_low": 196000,
+            "red_median": 201000,
+            "red_high": 207000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 153000,
+            "green_median": 162000,
+            "green_high": 172000,
+            "yellow": 181000,
+            "red_low": 184000,
+            "red_median": 190000,
+            "red_high": 195000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 134000,
+            "green_median": 142000,
+            "green_high": 150000,
+            "yellow": 157000,
+            "red_low": 161000,
+            "red_median": 165000,
+            "red_high": 170000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 91000,
+            "green_median": 97000,
+            "green_high": 102000,
+            "yellow": 107000,
+            "red_low": 110000,
+            "red_median": 113000,
+            "red_high": 116000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 91000,
+            "green_median": 97000,
+            "green_high": 102000,
+            "yellow": 107000,
+            "red_low": 110000,
+            "red_median": 113000,
+            "red_high": 116000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2015,
+      "request": {
+        "make": "SUZUKI",
+        "model": "XL7",
+        "year": 2015,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XL7 1.5 GLX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 202000,
+            "green_median": 214000,
+            "green_high": 226000,
+            "yellow": 237000,
+            "red_low": 242000,
+            "red_median": 249000,
+            "red_high": 256000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 190000,
+            "green_median": 201000,
+            "green_high": 212000,
+            "yellow": 224000,
+            "red_low": 228000,
+            "red_median": 235000,
+            "red_high": 241000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 166000,
+            "green_median": 175000,
+            "green_high": 185000,
+            "yellow": 195000,
+            "red_low": 199000,
+            "red_median": 205000,
+            "red_high": 211000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 113000,
+            "green_median": 120000,
+            "green_high": 126000,
+            "yellow": 133000,
+            "red_low": 136000,
+            "red_median": 140000,
+            "red_high": 144000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 113000,
+            "green_median": 120000,
+            "green_high": 126000,
+            "yellow": 133000,
+            "red_low": 136000,
+            "red_median": 140000,
+            "red_high": 144000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2018,
+      "request": {
+        "make": "SUZUKI",
+        "model": "XL7",
+        "year": 2018,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XL7 1.5 GLX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 343000,
+            "green_median": 396000,
+            "green_high": 433000,
+            "yellow": 449000,
+            "red_low": 458000,
+            "red_median": 480000,
+            "red_high": 503000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 323000,
+            "green_median": 373000,
+            "green_high": 408000,
+            "yellow": 423000,
+            "red_low": 432000,
+            "red_median": 452000,
+            "red_high": 474000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 282000,
+            "green_median": 325000,
+            "green_high": 356000,
+            "yellow": 369000,
+            "red_low": 376000,
+            "red_median": 394000,
+            "red_high": 413000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 192000,
+            "green_median": 222000,
+            "green_high": 243000,
+            "yellow": 251000,
+            "red_low": 257000,
+            "red_median": 269000,
+            "red_high": 282000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 192000,
+            "green_median": 222000,
+            "green_high": 243000,
+            "yellow": 251000,
+            "red_low": 257000,
+            "red_median": 269000,
+            "red_high": 282000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "SUZUKI",
+        "model": "XL7",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XL7 1.5 GLX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 442000,
+            "green_median": 480000,
+            "green_high": 507000,
+            "yellow": 519000,
+            "red_low": 536000,
+            "red_median": 560000,
+            "red_high": 581000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 416000,
+            "green_median": 452000,
+            "green_high": 478000,
+            "yellow": 489000,
+            "red_low": 504000,
+            "red_median": 528000,
+            "red_high": 547000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 363000,
+            "green_median": 395000,
+            "green_high": 417000,
+            "yellow": 426000,
+            "red_low": 440000,
+            "red_median": 460000,
+            "red_high": 477000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 247000,
+            "green_median": 269000,
+            "green_high": 284000,
+            "yellow": 291000,
+            "red_low": 300000,
+            "red_median": 314000,
+            "red_high": 325000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 247000,
+            "green_median": 269000,
+            "green_high": 284000,
+            "yellow": 291000,
+            "red_low": 300000,
+            "red_median": 314000,
+            "red_high": 325000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "SUZUKI",
+        "model": "XL7",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XL7 1.5 GLX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 542000,
+            "green_median": 603000,
+            "green_high": 645000,
+            "yellow": 664000,
+            "red_low": 689000,
+            "red_median": 717000,
+            "red_high": 743000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 511000,
+            "green_median": 568000,
+            "green_high": 608000,
+            "yellow": 625000,
+            "red_low": 649000,
+            "red_median": 675000,
+            "red_high": 700000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 445000,
+            "green_median": 495000,
+            "green_high": 530000,
+            "yellow": 545000,
+            "red_low": 566000,
+            "red_median": 589000,
+            "red_high": 610000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 304000,
+            "green_median": 338000,
+            "green_high": 361000,
+            "yellow": 372000,
+            "red_low": 386000,
+            "red_median": 401000,
+            "red_high": 416000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 304000,
+            "green_median": 338000,
+            "green_high": 361000,
+            "yellow": 372000,
+            "red_low": 386000,
+            "red_median": 401000,
+            "red_high": 416000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

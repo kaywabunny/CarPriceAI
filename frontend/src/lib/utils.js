@@ -58,12 +58,15 @@ export const formatMileage = (km) => {
 /**
  * Get year options for dropdown
  * @param {number} startYear - Starting year (default 1990)
- * @param {number} endYear - Ending year (default current year + 1)
+ * @param {number} endYear - Ending year (default MAX_SUPPORTED_YEAR = 2025)
  * @returns {number[]} Array of years
  */
-export const getYearOptions = (startYear = 1990, endYear = new Date().getFullYear() + 1) => {
+const MAX_SUPPORTED_YEAR = 2025; // Pricing unavailable for future years beyond 2025
+export const getYearOptions = (startYear = 1990, endYear = MAX_SUPPORTED_YEAR) => {
+  // Ensure endYear never exceeds MAX_SUPPORTED_YEAR
+  const cappedEndYear = Math.min(endYear, MAX_SUPPORTED_YEAR);
   const years = [];
-  for (let year = endYear; year >= startYear; year--) {
+  for (let year = cappedEndYear; year >= startYear; year--) {
     years.push(year);
   }
   return years;
@@ -137,4 +140,63 @@ export const formatRelativeTime = (date) => {
   if (days < 7) return `${days}d ago`;
   
   return formatDate(date);
+};
+
+/**
+ * Get price size class based on value
+ * Returns appropriate font size class to prevent large prices from dominating the card
+ * @param {number} value - Price value
+ * @returns {string} Tailwind className for font size
+ */
+export const getPriceSizeClass = (value) => {
+  if (value === null || value === undefined || isNaN(value)) {
+    return 'text-xl leading-tight';
+  }
+  
+  if (value >= 10_000_000) {
+    // Very large prices (luxury cars): use smaller, compact size
+    return 'text-base leading-tight';
+  }
+  
+  if (value >= 1_000_000) {
+    // Large prices: use medium size
+    return 'text-lg leading-tight';
+  }
+  
+  // Default size for smaller prices
+  return 'text-xl leading-tight';
+};
+
+/**
+ * BMW 320d trim production year rules (conservative).
+ * - G20 (CKD): valid only for year >= 2019.
+ * - F30 trims (LUXURY / SPORT / M SPORT (F30)): valid only for 2012–2018.
+ * - None / Not sure: always valid.
+ * Only enforced for BMW and model in ("320 D", "320d", "320D").
+ * @param {string} brand - Make/brand (e.g. "BMW")
+ * @param {string} model - Model (e.g. "320d")
+ * @param {string} trim - Trim value (e.g. "2.0 M SPORT (G20) (CKD)" or "__NONE__")
+ * @param {string|number} year - Production year
+ * @returns {boolean} true if trim is valid for the given year (or not applicable)
+ */
+export const isTrimValidForYear = (brand, model, trim, year) => {
+  const brandNorm = (brand || '').toString().trim().toUpperCase();
+  const modelNorm = (model || '').toString().trim().toUpperCase().replace(/\s+/g, ' ');
+  const trimNorm = (trim || '').toString().trim().toUpperCase();
+  const yearNum = typeof year === 'number' ? year : parseInt(year, 10);
+
+  if (brandNorm !== 'BMW') return true;
+  const bmw320dModels = ['320 D', '320D'];
+  if (!bmw320dModels.includes(modelNorm)) return true;
+
+  if (!trimNorm || trimNorm === '__NONE__' || trimNorm === 'NONE / NOT SURE' || trimNorm === 'ไม่มี / ไม่แน่ใจ') return true;
+  if (isNaN(yearNum) || yearNum <= 0) return true;
+
+  if (trimNorm.includes('G20') && trimNorm.includes('CKD')) {
+    return yearNum >= 2019;
+  }
+  if (trimNorm.includes('F30')) {
+    return yearNum >= 2012 && yearNum <= 2018;
+  }
+  return true;
 };

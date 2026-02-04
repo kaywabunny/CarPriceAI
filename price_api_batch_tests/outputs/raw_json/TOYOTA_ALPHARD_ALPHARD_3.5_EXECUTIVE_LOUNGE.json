@@ -1,0 +1,559 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 3.5 EXECUTIVE LOUNGE"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 628000,
+            "green_median": 640000,
+            "green_high": 648000,
+            "yellow": 652000,
+            "red_low": 690000,
+            "red_median": 704000,
+            "red_high": 730000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 591000,
+            "green_median": 602000,
+            "green_high": 611000,
+            "yellow": 614000,
+            "red_low": 650000,
+            "red_median": 663000,
+            "red_high": 688000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 533000,
+            "green_median": 543000,
+            "green_high": 551000,
+            "yellow": 554000,
+            "red_low": 586000,
+            "red_median": 598000,
+            "red_high": 620000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 410000,
+            "green_median": 418000,
+            "green_high": 424000,
+            "yellow": 426000,
+            "red_low": 451000,
+            "red_median": 460000,
+            "red_high": 477000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 351000,
+            "green_median": 358000,
+            "green_high": 363000,
+            "yellow": 365000,
+            "red_low": 387000,
+            "red_median": 394000,
+            "red_high": 409000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 3.5 EXECUTIVE LOUNGE"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 824000,
+            "green_median": 861000,
+            "green_high": 886000,
+            "yellow": 897000,
+            "red_low": 915000,
+            "red_median": 942000,
+            "red_high": 969000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 776000,
+            "green_median": 810000,
+            "green_high": 834000,
+            "yellow": 845000,
+            "red_low": 862000,
+            "red_median": 887000,
+            "red_high": 912000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 700000,
+            "green_median": 731000,
+            "green_high": 753000,
+            "yellow": 762000,
+            "red_low": 777000,
+            "red_median": 800000,
+            "red_high": 823000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 538000,
+            "green_median": 562000,
+            "green_high": 579000,
+            "yellow": 586000,
+            "red_low": 598000,
+            "red_median": 615000,
+            "red_high": 633000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 461000,
+            "green_median": 482000,
+            "green_high": 496000,
+            "yellow": 502000,
+            "red_low": 512000,
+            "red_median": 528000,
+            "red_high": 543000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 3.5 EXECUTIVE LOUNGE"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1055000,
+            "green_median": 1105000,
+            "green_high": 1140000,
+            "yellow": 1155000,
+            "red_low": 1170000,
+            "red_median": 1200000,
+            "red_high": 1245000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 995000,
+            "green_median": 1040000,
+            "green_high": 1075000,
+            "yellow": 1090000,
+            "red_low": 1100000,
+            "red_median": 1130000,
+            "red_high": 1175000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 898000,
+            "green_median": 940000,
+            "green_high": 969000,
+            "yellow": 982000,
+            "red_low": 994000,
+            "red_median": 1020000,
+            "red_high": 1060000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 691000,
+            "green_median": 723000,
+            "green_high": 746000,
+            "yellow": 755000,
+            "red_low": 764000,
+            "red_median": 785000,
+            "red_high": 815000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 592000,
+            "green_median": 620000,
+            "green_high": 639000,
+            "yellow": 647000,
+            "red_low": 655000,
+            "red_median": 673000,
+            "red_high": 698000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 3.5 EXECUTIVE LOUNGE"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1495000,
+            "green_median": 1570000,
+            "green_high": 1620000,
+            "yellow": 1645000,
+            "red_low": 1670000,
+            "red_median": 1735000,
+            "red_high": 1825000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1405000,
+            "green_median": 1480000,
+            "green_high": 1525000,
+            "yellow": 1550000,
+            "red_low": 1575000,
+            "red_median": 1635000,
+            "red_high": 1720000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1270000,
+            "green_median": 1335000,
+            "green_high": 1380000,
+            "yellow": 1395000,
+            "red_low": 1420000,
+            "red_median": 1475000,
+            "red_high": 1550000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 976000,
+            "green_median": 1025000,
+            "green_high": 1060000,
+            "yellow": 1075000,
+            "red_low": 1090000,
+            "red_median": 1135000,
+            "red_high": 1195000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 837000,
+            "green_median": 879000,
+            "green_high": 908000,
+            "yellow": 921000,
+            "red_low": 936000,
+            "red_median": 972000,
+            "red_high": 1025000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 3.5 EXECUTIVE LOUNGE"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 2030000,
+            "green_median": 2295000,
+            "green_high": 2485000,
+            "yellow": 2565000,
+            "red_low": 2590000,
+            "red_median": 2655000,
+            "red_high": 2745000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1910000,
+            "green_median": 2160000,
+            "green_high": 2340000,
+            "yellow": 2415000,
+            "red_low": 2440000,
+            "red_median": 2500000,
+            "red_high": 2585000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1700000,
+            "green_median": 1950000,
+            "green_high": 2110000,
+            "yellow": 2175000,
+            "red_low": 2200000,
+            "red_median": 2255000,
+            "red_high": 2330000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1325000,
+            "green_median": 1500000,
+            "green_high": 1620000,
+            "yellow": 1675000,
+            "red_low": 1690000,
+            "red_median": 1735000,
+            "red_high": 1795000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 1135000,
+            "green_median": 1285000,
+            "green_high": 1390000,
+            "yellow": 1435000,
+            "red_low": 1450000,
+            "red_median": 1485000,
+            "red_high": 1540000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 3.5 EXECUTIVE LOUNGE"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 2185000,
+            "green_median": 2445000,
+            "green_high": 2625000,
+            "yellow": 2705000,
+            "red_low": 2740000,
+            "red_median": 2820000,
+            "red_high": 2940000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 2055000,
+            "green_median": 2300000,
+            "green_high": 2470000,
+            "yellow": 2545000,
+            "red_low": 2580000,
+            "red_median": 2655000,
+            "red_high": 2770000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1855000,
+            "green_median": 2075000,
+            "green_high": 2230000,
+            "yellow": 2295000,
+            "red_low": 2325000,
+            "red_median": 2395000,
+            "red_high": 2495000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1425000,
+            "green_median": 1595000,
+            "green_high": 1715000,
+            "yellow": 1765000,
+            "red_low": 1790000,
+            "red_median": 1845000,
+            "red_high": 1920000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 1225000,
+            "green_median": 1370000,
+            "green_high": 1470000,
+            "yellow": 1515000,
+            "red_low": 1535000,
+            "red_median": 1580000,
+            "red_high": 1645000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

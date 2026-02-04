@@ -1,0 +1,569 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA ALTIS",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "COROLLA ALTIS 1.6 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 418000,
+            "green_median": 491000,
+            "green_high": 542000,
+            "yellow": 564000,
+            "red_low": 579000,
+            "red_median": 609000,
+            "red_high": 649000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 394000,
+            "green_median": 462000,
+            "green_high": 510000,
+            "yellow": 531000,
+            "red_low": 545000,
+            "red_median": 574000,
+            "red_high": 611000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 355000,
+            "green_median": 417000,
+            "green_high": 460000,
+            "yellow": 479000,
+            "red_low": 491000,
+            "red_median": 517000,
+            "red_high": 551000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 273000,
+            "green_median": 321000,
+            "green_high": 354000,
+            "yellow": 368000,
+            "red_low": 378000,
+            "red_median": 398000,
+            "red_high": 424000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 234000,
+            "green_median": 275000,
+            "green_high": 304000,
+            "yellow": 316000,
+            "red_low": 324000,
+            "red_median": 341000,
+            "red_high": 363000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA ALTIS",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "COROLLA ALTIS 1.6 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 199000,
+            "green_median": 209000,
+            "green_high": 216000,
+            "yellow": 220000,
+            "red_low": 230000,
+            "red_median": 237000,
+            "red_high": 244000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 188000,
+            "green_median": 197000,
+            "green_high": 204000,
+            "yellow": 207000,
+            "red_low": 217000,
+            "red_median": 223000,
+            "red_high": 229000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 169000,
+            "green_median": 178000,
+            "green_high": 184000,
+            "yellow": 186000,
+            "red_low": 196000,
+            "red_median": 201000,
+            "red_high": 207000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 130000,
+            "green_median": 137000,
+            "green_high": 141000,
+            "yellow": 143000,
+            "red_low": 151000,
+            "red_median": 155000,
+            "red_high": 159000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 112000,
+            "green_median": 117000,
+            "green_high": 121000,
+            "yellow": 123000,
+            "red_low": 129000,
+            "red_median": 133000,
+            "red_high": 136000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA ALTIS",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "COROLLA ALTIS 1.6 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 273000,
+            "green_median": 291000,
+            "green_high": 303000,
+            "yellow": 308000,
+            "red_low": 324000,
+            "red_median": 333000,
+            "red_high": 342000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 257000,
+            "green_median": 274000,
+            "green_high": 285000,
+            "yellow": 290000,
+            "red_low": 305000,
+            "red_median": 313000,
+            "red_high": 322000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 232000,
+            "green_median": 247000,
+            "green_high": 257000,
+            "yellow": 262000,
+            "red_low": 275000,
+            "red_median": 283000,
+            "red_high": 290000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 178000,
+            "green_median": 190000,
+            "green_high": 198000,
+            "yellow": 201000,
+            "red_low": 211000,
+            "red_median": 217000,
+            "red_high": 223000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 153000,
+            "green_median": 163000,
+            "green_high": 170000,
+            "yellow": 173000,
+            "red_low": 181000,
+            "red_median": 186000,
+            "red_high": 192000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA ALTIS",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "COROLLA ALTIS 1.6 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 387000,
+            "green_median": 404000,
+            "green_high": 417000,
+            "yellow": 422000,
+            "red_low": 444000,
+            "red_median": 456000,
+            "red_high": 473000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 364000,
+            "green_median": 381000,
+            "green_high": 392000,
+            "yellow": 397000,
+            "red_low": 418000,
+            "red_median": 429000,
+            "red_high": 445000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 311000,
+            "green_median": 343000,
+            "green_high": 354000,
+            "yellow": 358000,
+            "red_low": 377000,
+            "red_median": 387000,
+            "red_high": 401000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 253000,
+            "green_median": 264000,
+            "green_high": 272000,
+            "yellow": 276000,
+            "red_low": 290000,
+            "red_median": 298000,
+            "red_high": 309000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 216000,
+            "green_median": 226000,
+            "green_high": 233000,
+            "yellow": 236000,
+            "red_low": 249000,
+            "red_median": 255000,
+            "red_high": 265000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA ALTIS",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "COROLLA ALTIS 1.6 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 536000,
+            "green_median": 565000,
+            "green_high": 585000,
+            "yellow": 594000,
+            "red_low": 623000,
+            "red_median": 641000,
+            "red_high": 659000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 504000,
+            "green_median": 532000,
+            "green_high": 551000,
+            "yellow": 559000,
+            "red_low": 587000,
+            "red_median": 604000,
+            "red_high": 620000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 435000,
+            "green_median": 480000,
+            "green_high": 497000,
+            "yellow": 504000,
+            "red_low": 529000,
+            "red_median": 544000,
+            "red_high": 560000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 333000,
+            "green_median": 369000,
+            "green_high": 382000,
+            "yellow": 388000,
+            "red_low": 407000,
+            "red_median": 419000,
+            "red_high": 430000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 300000,
+            "green_median": 316000,
+            "green_high": 327000,
+            "yellow": 332000,
+            "red_low": 349000,
+            "red_median": 359000,
+            "red_high": 369000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA ALTIS",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "COROLLA ALTIS 1.6 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 629000,
+            "green_median": 663000,
+            "green_high": 687000,
+            "yellow": 697000,
+            "red_low": 715000,
+            "red_median": 752000,
+            "red_high": 780000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 592000,
+            "green_median": 624000,
+            "green_high": 646000,
+            "yellow": 656000,
+            "red_low": 673000,
+            "red_median": 708000,
+            "red_high": 735000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 534000,
+            "green_median": 563000,
+            "green_high": 583000,
+            "yellow": 592000,
+            "red_low": 607000,
+            "red_median": 639000,
+            "red_high": 663000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 411000,
+            "green_median": 433000,
+            "green_high": 448000,
+            "yellow": 455000,
+            "red_low": 467000,
+            "red_median": 491000,
+            "red_high": 510000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 352000,
+            "green_median": 371000,
+            "green_high": 384000,
+            "yellow": 390000,
+            "red_low": 400000,
+            "red_median": 421000,
+            "red_high": 437000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

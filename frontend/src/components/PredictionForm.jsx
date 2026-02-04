@@ -12,13 +12,16 @@ import {
 } from '@/components/ui/select';
 import { Card, CardContent } from '@/components/ui/card';
 import { getMakes, getModels, getTrims } from '@/lib/api';
-import { getYearOptions } from '@/lib/utils';
+import { getYearOptions, isTrimValidForYear } from '@/lib/utils';
 import { track } from '@/lib/analytics';
 import { EVENT_TYPES } from '@/lib/types';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { getTranslation } from '@/lib/translations';
 
 const NONE_VALUE = '__NONE__';
 
 export const PredictionForm = ({ onSubmit, isLoading }) => {
+  const { language } = useLanguage();
   const [makes, setMakes] = useState([]);
   const [models, setModels] = useState([]);
   const [trims, setTrims] = useState([]);
@@ -36,6 +39,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
 
   const [errors, setErrors] = useState({});
 
+  const MAX_SUPPORTED_YEAR = 2025; // Pricing unavailable for future years beyond 2025
   const yearOptions = getYearOptions(1990);
 
   // Load makes on mount
@@ -87,6 +91,16 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
     }
   }, [formData.make, formData.model]);
 
+  // Auto-clamp year if somehow > 2025 (e.g., cached state or URL param)
+  useEffect(() => {
+    if (formData.year) {
+      const yearNum = parseInt(formData.year, 10);
+      if (!isNaN(yearNum) && yearNum > MAX_SUPPORTED_YEAR) {
+        setFormData(prev => ({ ...prev, year: MAX_SUPPORTED_YEAR.toString() }));
+      }
+    }
+  }, [formData.year]);
+
   const handleChange = useCallback((field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
     setErrors(prev => ({ ...prev, [field]: '' }));
@@ -96,35 +110,69 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
     const newErrors = {};
     
     if (!formData.make) {
-      newErrors.make = 'Please select a make';
+      newErrors.make = getTranslation('form.error.make', language);
     }
     if (!formData.model && formData.make !== NONE_VALUE) {
-      newErrors.model = 'Please select a model';
+      newErrors.model = getTranslation('form.error.model', language);
     }
     if (!formData.year) {
-      newErrors.year = 'Please select a year';
+      newErrors.year = getTranslation('form.error.year', language);
+    } else {
+      const yearNum = parseInt(formData.year, 10);
+      if (yearNum > MAX_SUPPORTED_YEAR) {
+        newErrors.year = getTranslation('form.error.yearFuture', language) || `Pricing not available for future model years. Maximum supported year is ${MAX_SUPPORTED_YEAR}.`;
+      }
     }
     if (!formData.mileage) {
-      newErrors.mileage = 'Please enter mileage';
-    } else if (isNaN(formData.mileage) || Number(formData.mileage) < 0) {
-      newErrors.mileage = 'Please enter a valid mileage';
+      newErrors.mileage = getTranslation('form.error.mileage', language);
+    } else if (isNaN(formData.mileage) || Number(formData.mileage) < 1000) {
+      newErrors.mileage = getTranslation('form.error.mileageInvalid', language);
+    } else if (Number(formData.mileage) > 450000) {
+      newErrors.mileage = getTranslation('form.error.mileageMax', language);
+    }
+
+    if (
+      formData.make &&
+      formData.model &&
+      formData.trim &&
+      formData.trim !== NONE_VALUE &&
+      formData.year
+    ) {
+      if (!isTrimValidForYear(formData.make, formData.model, formData.trim, formData.year)) {
+        newErrors.trimYear = getTranslation('form.trimNotProduced', language);
+      }
     }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
-  };
+};
+
+  const trimInvalidForYear =
+    Boolean(
+      formData.make &&
+      formData.model &&
+      formData.trim &&
+      formData.trim !== NONE_VALUE &&
+      formData.year &&
+      !isTrimValidForYear(formData.make, formData.model, formData.trim, formData.year)
+    );
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
     if (!validate()) return;
 
+    // Enforce 450k cap on mileage
+    const mileage = Math.min(parseInt(formData.mileage, 10), 450000);
+    // Enforce 2025 cap on year (clamp to 2025 if somehow > 2025)
+    const year = Math.min(parseInt(formData.year, 10), MAX_SUPPORTED_YEAR);
+
     const submitData = {
       make: formData.make === NONE_VALUE ? null : formData.make,
       model: formData.model === NONE_VALUE ? null : formData.model,
       trim: formData.trim === NONE_VALUE || !formData.trim ? null : formData.trim,
-      year: parseInt(formData.year, 10),
-      mileage_km_num: parseInt(formData.mileage, 10),
+      year: year,
+      mileage_km_num: mileage,
     };
 
     track(EVENT_TYPES.PREDICT_SUBMITTED, submitData);
@@ -152,8 +200,8 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
             <Car className="w-5 h-5 text-primary" />
           </div>
           <div>
-            <h2 className="text-lg font-heading font-bold tracking-tight">Find Your Car's Value</h2>
-            <p className="text-sm text-muted-foreground">Enter your vehicle details below</p>
+            <h2 className="text-lg font-heading font-bold tracking-tight">{getTranslation('form.title', language)}</h2>
+            <p className="text-sm text-muted-foreground">{getTranslation('form.subtitle', language)}</p>
           </div>
         </div>
 
@@ -161,7 +209,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
           {/* Make */}
           <div className="space-y-2">
             <Label htmlFor="make" className="text-sm font-medium">
-              Brand / Make <span className="text-destructive">*</span>
+              {getTranslation('form.make', language)} <span className="text-destructive">{getTranslation('form.required', language)}</span>
             </Label>
             <Select
               value={formData.make}
@@ -173,11 +221,11 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
                 data-testid="make-select"
                 className={errors.make ? 'border-destructive' : ''}
               >
-                <SelectValue placeholder={loadingMakes ? 'Loading...' : 'Select brand'} />
+                <SelectValue placeholder={loadingMakes ? getTranslation('form.loading', language) : getTranslation('form.selectBrand', language)} />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value={NONE_VALUE} className="text-muted-foreground">
-                  None / Not sure
+                  {getTranslation('form.none', language)}
                 </SelectItem>
                 {makes.map((make) => (
                   <SelectItem key={make} value={make}>
@@ -192,7 +240,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
           {/* Model */}
           <div className="space-y-2">
             <Label htmlFor="model" className="text-sm font-medium">
-              Model {formData.make !== NONE_VALUE && <span className="text-destructive">*</span>}
+              {getTranslation('form.model', language)} {formData.make !== NONE_VALUE && <span className="text-destructive">{getTranslation('form.required', language)}</span>}
             </Label>
             <Select
               value={formData.model}
@@ -205,15 +253,15 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
                 className={errors.model ? 'border-destructive' : ''}
               >
                 <SelectValue placeholder={
-                  loadingModels ? 'Loading...' : 
-                  !formData.make ? 'Select brand first' : 
-                  formData.make === NONE_VALUE ? 'N/A' :
-                  'Select model'
+                  loadingModels ? getTranslation('form.loading', language) : 
+                  !formData.make ? getTranslation('form.selectBrandFirst', language) : 
+                  formData.make === NONE_VALUE ? getTranslation('form.na', language) :
+                  getTranslation('form.selectModel', language)
                 } />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value={NONE_VALUE} className="text-muted-foreground">
-                  None / Not sure
+                  {getTranslation('form.none', language)}
                 </SelectItem>
                 {models.map((model) => (
                   <SelectItem key={model} value={model}>
@@ -228,7 +276,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
           {/* Trim */}
           <div className="space-y-2">
             <Label htmlFor="trim" className="text-sm font-medium">
-              Trim / Series <span className="text-muted-foreground text-xs">(optional)</span>
+              {getTranslation('form.trim', language)} <span className="text-muted-foreground text-xs">({getTranslation('form.trimOptional', language).replace('Select trim (optional)', '').trim() || 'optional'})</span>
             </Label>
             <Select
               value={formData.trim}
@@ -240,16 +288,16 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
                 data-testid="trim-select"
               >
                 <SelectValue placeholder={
-                  loadingTrims ? 'Loading...' : 
-                  !formData.model ? 'Select model first' : 
-                  formData.model === NONE_VALUE ? 'N/A' :
-                  trims.length === 0 ? 'No trims available' :
-                  'Select trim (optional)'
+                  loadingTrims ? getTranslation('form.loading', language) : 
+                  !formData.model ? getTranslation('form.selectModelFirst', language) : 
+                  formData.model === NONE_VALUE ? getTranslation('form.na', language) :
+                  trims.length === 0 ? getTranslation('form.noTrimsAvailable', language) :
+                  getTranslation('form.selectTrim', language)
                 } />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value={NONE_VALUE} className="text-muted-foreground">
-                  None / Not sure
+                  {getTranslation('form.none', language)}
                 </SelectItem>
                 {trims.map((trim) => (
                   <SelectItem key={trim} value={trim}>
@@ -258,6 +306,11 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
                 ))}
               </SelectContent>
             </Select>
+            {trimInvalidForYear && (
+              <p className="text-xs text-amber-600 dark:text-amber-500 mt-1" role="alert">
+                {getTranslation('form.trimNotProduced', language)}
+              </p>
+            )}
           </div>
 
           {/* Year and Mileage Row */}
@@ -265,7 +318,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
             {/* Year */}
             <div className="space-y-2">
               <Label htmlFor="year" className="text-sm font-medium">
-                Year <span className="text-destructive">*</span>
+                {getTranslation('form.year', language)} <span className="text-destructive">{getTranslation('form.required', language)}</span>
               </Label>
               <Select
                 value={formData.year}
@@ -276,7 +329,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
                   data-testid="year-select"
                   className={errors.year ? 'border-destructive' : ''}
                 >
-                  <SelectValue placeholder="Select year" />
+                  <SelectValue placeholder={getTranslation('form.selectYear', language)} />
                 </SelectTrigger>
                 <SelectContent>
                   {yearOptions.map((year) => (
@@ -292,18 +345,38 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
             {/* Mileage */}
             <div className="space-y-2">
               <Label htmlFor="mileage" className="text-sm font-medium">
-                Mileage (km) <span className="text-destructive">*</span>
+                {getTranslation('form.mileage', language)} <span className="text-destructive">{getTranslation('form.required', language)}</span>
               </Label>
               <div className="relative">
                 <Input
                   id="mileage"
                   data-testid="mileage-input"
                   type="number"
-                  min="0"
+                  min="1000"
+                  max="450000"
                   step="1000"
-                  placeholder="e.g. 50000"
+                  placeholder={getTranslation('form.mileagePlaceholder', language)}
                   value={formData.mileage}
-                  onChange={(e) => handleChange('mileage', e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    // Allow any input - validation will handle errors
+                    handleChange('mileage', value);
+                  }}
+                  onBlur={(e) => {
+                    // Validate on blur to show error immediately when user leaves field
+                    const value = e.target.value;
+                    if (value && (isNaN(value) || Number(value) < 1000 || Number(value) > 450000)) {
+                      const newErrors = { ...errors };
+                      if (!value) {
+                        newErrors.mileage = getTranslation('form.error.mileage', language);
+                      } else if (Number(value) < 1000) {
+                        newErrors.mileage = getTranslation('form.error.mileageInvalid', language);
+                      } else if (Number(value) > 450000) {
+                        newErrors.mileage = getTranslation('form.error.mileageMax', language);
+                      }
+                      setErrors(newErrors);
+                    }
+                  }}
                   className={`pr-12 ${errors.mileage ? 'border-destructive' : ''}`}
                 />
                 <span className="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">
@@ -320,17 +393,17 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
               type="submit"
               data-testid="predict-button"
               className="flex-1 h-11 font-semibold"
-              disabled={isLoading}
+              disabled={isLoading || trimInvalidForYear}
             >
               {isLoading ? (
                 <>
                   <Gauge className="w-4 h-4 mr-2 animate-spin" />
-                  Calculating...
+                  {language === 'th' ? 'กำลังคำนวณ...' : 'Calculating...'}
                 </>
               ) : (
                 <>
                   <Search className="w-4 h-4 mr-2" />
-                  Get Price Estimate
+                  {getTranslation('form.getEstimate', language)}
                 </>
               )}
             </Button>
@@ -340,6 +413,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
               data-testid="reset-button"
               onClick={handleReset}
               disabled={isLoading}
+              title={getTranslation('form.reset', language)}
               className="h-11"
             >
               <RotateCcw className="w-4 h-4" />

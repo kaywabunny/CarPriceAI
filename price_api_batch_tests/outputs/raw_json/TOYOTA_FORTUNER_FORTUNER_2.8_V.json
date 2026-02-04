@@ -1,0 +1,569 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "FORTUNER",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "FORTUNER 2.8 V"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 370000,
+            "green_median": 373000,
+            "green_high": 375000,
+            "yellow": 376000,
+            "red_low": 386000,
+            "red_median": 406000,
+            "red_high": 433000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 348000,
+            "green_median": 351000,
+            "green_high": 353000,
+            "yellow": 354000,
+            "red_low": 363000,
+            "red_median": 383000,
+            "red_high": 407000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 314000,
+            "green_median": 317000,
+            "green_high": 319000,
+            "yellow": 319000,
+            "red_low": 328000,
+            "red_median": 345000,
+            "red_high": 367000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 242000,
+            "green_median": 244000,
+            "green_high": 245000,
+            "yellow": 246000,
+            "red_low": 252000,
+            "red_median": 265000,
+            "red_high": 283000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 207000,
+            "green_median": 209000,
+            "green_high": 210000,
+            "yellow": 211000,
+            "red_low": 216000,
+            "red_median": 228000,
+            "red_high": 242000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "FORTUNER",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "FORTUNER 2.8 V"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 429000,
+            "green_median": 432000,
+            "green_high": 434000,
+            "yellow": 435000,
+            "red_low": 446000,
+            "red_median": 470000,
+            "red_high": 487000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 403000,
+            "green_median": 407000,
+            "green_high": 409000,
+            "yellow": 410000,
+            "red_low": 420000,
+            "red_median": 443000,
+            "red_high": 459000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 364000,
+            "green_median": 367000,
+            "green_high": 369000,
+            "yellow": 370000,
+            "red_low": 379000,
+            "red_median": 399000,
+            "red_high": 414000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 280000,
+            "green_median": 282000,
+            "green_high": 284000,
+            "yellow": 284000,
+            "red_low": 292000,
+            "red_median": 307000,
+            "red_high": 318000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 240000,
+            "green_median": 242000,
+            "green_high": 243000,
+            "yellow": 244000,
+            "red_low": 250000,
+            "red_median": 263000,
+            "red_high": 273000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "FORTUNER",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "FORTUNER 2.8 V"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 534000,
+            "green_median": 594000,
+            "green_high": 637000,
+            "yellow": 655000,
+            "red_low": 672000,
+            "red_median": 707000,
+            "red_high": 734000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 503000,
+            "green_median": 560000,
+            "green_high": 600000,
+            "yellow": 617000,
+            "red_low": 633000,
+            "red_median": 666000,
+            "red_high": 691000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 453000,
+            "green_median": 505000,
+            "green_high": 541000,
+            "yellow": 556000,
+            "red_low": 571000,
+            "red_median": 601000,
+            "red_high": 623000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 349000,
+            "green_median": 388000,
+            "green_high": 416000,
+            "yellow": 428000,
+            "red_low": 439000,
+            "red_median": 462000,
+            "red_high": 479000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 299000,
+            "green_median": 333000,
+            "green_high": 357000,
+            "yellow": 367000,
+            "red_low": 376000,
+            "red_median": 396000,
+            "red_high": 411000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "FORTUNER",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "FORTUNER 2.8 V"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 861000,
+            "green_median": 913000,
+            "green_high": 949000,
+            "yellow": 965000,
+            "red_low": 990000,
+            "red_median": 1040000,
+            "red_high": 1080000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 811000,
+            "green_median": 860000,
+            "green_high": 894000,
+            "yellow": 908000,
+            "red_low": 932000,
+            "red_median": 981000,
+            "red_high": 1015000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 731000,
+            "green_median": 775000,
+            "green_high": 806000,
+            "yellow": 819000,
+            "red_low": 841000,
+            "red_median": 885000,
+            "red_high": 918000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 562000,
+            "green_median": 596000,
+            "green_high": 620000,
+            "yellow": 630000,
+            "red_low": 647000,
+            "red_median": 681000,
+            "red_high": 706000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 482000,
+            "green_median": 511000,
+            "green_high": 532000,
+            "yellow": 540000,
+            "red_low": 554000,
+            "red_median": 583000,
+            "red_high": 605000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "FORTUNER",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "FORTUNER 2.8 V"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1135000,
+            "green_median": 1225000,
+            "green_high": 1285000,
+            "yellow": 1310000,
+            "red_low": 1345000,
+            "red_median": 1415000,
+            "red_high": 1465000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1070000,
+            "green_median": 1150000,
+            "green_high": 1210000,
+            "yellow": 1235000,
+            "red_low": 1265000,
+            "red_median": 1330000,
+            "red_high": 1380000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 891000,
+            "green_median": 1040000,
+            "green_high": 1090000,
+            "yellow": 1115000,
+            "red_low": 1140000,
+            "red_median": 1200000,
+            "red_high": 1245000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 742000,
+            "green_median": 799000,
+            "green_high": 839000,
+            "yellow": 856000,
+            "red_low": 878000,
+            "red_median": 924000,
+            "red_high": 958000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 636000,
+            "green_median": 685000,
+            "green_high": 719000,
+            "yellow": 734000,
+            "red_low": 753000,
+            "red_median": 792000,
+            "red_high": 822000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "FORTUNER",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "FORTUNER 2.8 V"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 3625000,
+            "green_median": 4600000,
+            "green_high": 5285000,
+            "yellow": 5575000,
+            "red_low": 5650000,
+            "red_median": 5815000,
+            "red_high": 6050000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 3415000,
+            "green_median": 4330000,
+            "green_high": 4975000,
+            "yellow": 5250000,
+            "red_low": 5320000,
+            "red_median": 5475000,
+            "red_high": 5700000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 3080000,
+            "green_median": 3905000,
+            "green_high": 4490000,
+            "yellow": 4735000,
+            "red_low": 4795000,
+            "red_median": 4940000,
+            "red_high": 5140000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 2370000,
+            "green_median": 3005000,
+            "green_high": 3450000,
+            "yellow": 3645000,
+            "red_low": 3690000,
+            "red_median": 3800000,
+            "red_high": 3955000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 2030000,
+            "green_median": 2575000,
+            "green_high": 2960000,
+            "yellow": 3125000,
+            "red_low": 3165000,
+            "red_median": 3255000,
+            "red_high": 3390000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

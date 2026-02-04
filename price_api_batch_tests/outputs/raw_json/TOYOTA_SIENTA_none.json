@@ -1,0 +1,563 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "SIENTA",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 180000,
+            "green_median": 190000,
+            "green_high": 201000,
+            "yellow": 211000,
+            "red_low": 216000,
+            "red_median": 223000,
+            "red_high": 229000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 170000,
+            "green_median": 179000,
+            "green_high": 189000,
+            "yellow": 199000,
+            "red_low": 203000,
+            "red_median": 209000,
+            "red_high": 215000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 153000,
+            "green_median": 162000,
+            "green_high": 171000,
+            "yellow": 180000,
+            "red_low": 184000,
+            "red_median": 189000,
+            "red_high": 194000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 117000,
+            "green_median": 124000,
+            "green_high": 131000,
+            "yellow": 138000,
+            "red_low": 141000,
+            "red_median": 145000,
+            "red_high": 149000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 101000,
+            "green_median": 107000,
+            "green_high": 113000,
+            "yellow": 118000,
+            "red_low": 121000,
+            "red_median": 125000,
+            "red_high": 128000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "SIENTA",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 252000,
+            "green_median": 262000,
+            "green_high": 269000,
+            "yellow": 272000,
+            "red_low": 279000,
+            "red_median": 294000,
+            "red_high": 304000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 238000,
+            "green_median": 247000,
+            "green_high": 253000,
+            "yellow": 256000,
+            "red_low": 263000,
+            "red_median": 276000,
+            "red_high": 287000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 214000,
+            "green_median": 223000,
+            "green_high": 228000,
+            "yellow": 231000,
+            "red_low": 237000,
+            "red_median": 249000,
+            "red_high": 259000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 165000,
+            "green_median": 171000,
+            "green_high": 176000,
+            "yellow": 178000,
+            "red_low": 182000,
+            "red_median": 192000,
+            "red_high": 199000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 141000,
+            "green_median": 147000,
+            "green_high": 151000,
+            "yellow": 152000,
+            "red_low": 156000,
+            "red_median": 164000,
+            "red_high": 170000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "SIENTA",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 300000,
+            "green_median": 319000,
+            "green_high": 332000,
+            "yellow": 338000,
+            "red_low": 344000,
+            "red_median": 354000,
+            "red_high": 365000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 283000,
+            "green_median": 300000,
+            "green_high": 313000,
+            "yellow": 318000,
+            "red_low": 324000,
+            "red_median": 334000,
+            "red_high": 343000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 255000,
+            "green_median": 271000,
+            "green_high": 282000,
+            "yellow": 287000,
+            "red_low": 292000,
+            "red_median": 301000,
+            "red_high": 310000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 196000,
+            "green_median": 208000,
+            "green_high": 217000,
+            "yellow": 220000,
+            "red_low": 225000,
+            "red_median": 232000,
+            "red_high": 238000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 168000,
+            "green_median": 179000,
+            "green_high": 186000,
+            "yellow": 189000,
+            "red_low": 193000,
+            "red_median": 198000,
+            "red_high": 204000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "SIENTA",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 372000,
+            "green_median": 378000,
+            "green_high": 383000,
+            "yellow": 385000,
+            "red_low": 392000,
+            "red_median": 404000,
+            "red_high": 415000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 350000,
+            "green_median": 356000,
+            "green_high": 360000,
+            "yellow": 362000,
+            "red_low": 369000,
+            "red_median": 380000,
+            "red_high": 391000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 316000,
+            "green_median": 321000,
+            "green_high": 325000,
+            "yellow": 327000,
+            "red_low": 333000,
+            "red_median": 343000,
+            "red_high": 353000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 243000,
+            "green_median": 247000,
+            "green_high": 250000,
+            "yellow": 251000,
+            "red_low": 256000,
+            "red_median": 264000,
+            "red_high": 271000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 208000,
+            "green_median": 212000,
+            "green_high": 214000,
+            "yellow": 215000,
+            "red_low": 220000,
+            "red_median": 226000,
+            "red_high": 233000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "SIENTA",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 496000,
+            "green_median": 506000,
+            "green_high": 513000,
+            "yellow": 516000,
+            "red_low": 527000,
+            "red_median": 542000,
+            "red_high": 558000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 467000,
+            "green_median": 477000,
+            "green_high": 483000,
+            "yellow": 486000,
+            "red_low": 496000,
+            "red_median": 511000,
+            "red_high": 525000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 398000,
+            "green_median": 430000,
+            "green_high": 436000,
+            "yellow": 439000,
+            "red_low": 447000,
+            "red_median": 461000,
+            "red_high": 474000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 324000,
+            "green_median": 331000,
+            "green_high": 335000,
+            "yellow": 337000,
+            "red_low": 344000,
+            "red_median": 354000,
+            "red_high": 364000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 278000,
+            "green_median": 283000,
+            "green_high": 287000,
+            "yellow": 289000,
+            "red_low": 295000,
+            "red_median": 304000,
+            "red_high": 312000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "SIENTA",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 515000,
+            "green_median": 549000,
+            "green_high": 572000,
+            "yellow": 582000,
+            "red_low": 594000,
+            "red_median": 611000,
+            "red_high": 629000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 485000,
+            "green_median": 517000,
+            "green_high": 539000,
+            "yellow": 548000,
+            "red_low": 559000,
+            "red_median": 576000,
+            "red_high": 592000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 437000,
+            "green_median": 466000,
+            "green_high": 486000,
+            "yellow": 495000,
+            "red_low": 504000,
+            "red_median": 519000,
+            "red_high": 534000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 336000,
+            "green_median": 358000,
+            "green_high": 374000,
+            "yellow": 380000,
+            "red_low": 388000,
+            "red_median": 399000,
+            "red_high": 411000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 288000,
+            "green_median": 307000,
+            "green_high": 320000,
+            "yellow": 326000,
+            "red_low": 333000,
+            "red_median": 342000,
+            "red_high": 352000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "SUZUKI",
+        "model": "ERTIGA",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ERTIGA 1.5 GX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 156000,
+            "green_median": 164000,
+            "green_high": 170000,
+            "yellow": 172000,
+            "red_low": 176000,
+            "red_median": 185000,
+            "red_high": 193000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 147000,
+            "green_median": 154000,
+            "green_high": 160000,
+            "yellow": 162000,
+            "red_low": 165000,
+            "red_median": 174000,
+            "red_high": 181000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 128000,
+            "green_median": 135000,
+            "green_high": 139000,
+            "yellow": 141000,
+            "red_low": 144000,
+            "red_median": 152000,
+            "red_high": 158000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 87000,
+            "green_median": 92000,
+            "green_high": 95000,
+            "yellow": 96000,
+            "red_low": 98000,
+            "red_median": 103000,
+            "red_high": 108000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 87000,
+            "green_median": 92000,
+            "green_high": 95000,
+            "yellow": 96000,
+            "red_low": 98000,
+            "red_median": 103000,
+            "red_high": 108000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2013,
+      "request": {
+        "make": "SUZUKI",
+        "model": "ERTIGA",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ERTIGA 1.5 GX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 191000,
+            "green_median": 201000,
+            "green_high": 208000,
+            "yellow": 211000,
+            "red_low": 215000,
+            "red_median": 221000,
+            "red_high": 228000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 180000,
+            "green_median": 189000,
+            "green_high": 196000,
+            "yellow": 198000,
+            "red_low": 202000,
+            "red_median": 208000,
+            "red_high": 214000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 157000,
+            "green_median": 165000,
+            "green_high": 171000,
+            "yellow": 173000,
+            "red_low": 177000,
+            "red_median": 182000,
+            "red_high": 187000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 107000,
+            "green_median": 112000,
+            "green_high": 116000,
+            "yellow": 118000,
+            "red_low": 120000,
+            "red_median": 124000,
+            "red_high": 127000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 107000,
+            "green_median": 112000,
+            "green_high": 116000,
+            "yellow": 118000,
+            "red_low": 120000,
+            "red_median": 124000,
+            "red_high": 127000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2015,
+      "request": {
+        "make": "SUZUKI",
+        "model": "ERTIGA",
+        "year": 2015,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ERTIGA 1.5 GX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 242000,
+            "green_median": 243000,
+            "green_high": 244000,
+            "yellow": 245000,
+            "red_low": 250000,
+            "red_median": 257000,
+            "red_high": 264000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 228000,
+            "green_median": 229000,
+            "green_high": 230000,
+            "yellow": 231000,
+            "red_low": 235000,
+            "red_median": 242000,
+            "red_high": 249000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 199000,
+            "green_median": 200000,
+            "green_high": 201000,
+            "yellow": 201000,
+            "red_low": 205000,
+            "red_median": 211000,
+            "red_high": 217000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 135000,
+            "green_median": 136000,
+            "green_high": 137000,
+            "yellow": 137000,
+            "red_low": 140000,
+            "red_median": 144000,
+            "red_high": 148000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 135000,
+            "green_median": 136000,
+            "green_high": 137000,
+            "yellow": 137000,
+            "red_low": 140000,
+            "red_median": 144000,
+            "red_high": 148000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2018,
+      "request": {
+        "make": "SUZUKI",
+        "model": "ERTIGA",
+        "year": 2018,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ERTIGA 1.5 GX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 333000,
+            "green_median": 342000,
+            "green_high": 347000,
+            "yellow": 350000,
+            "red_low": 357000,
+            "red_median": 367000,
+            "red_high": 378000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 314000,
+            "green_median": 322000,
+            "green_high": 327000,
+            "yellow": 329000,
+            "red_low": 336000,
+            "red_median": 346000,
+            "red_high": 356000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 274000,
+            "green_median": 280000,
+            "green_high": 285000,
+            "yellow": 287000,
+            "red_low": 293000,
+            "red_median": 302000,
+            "red_high": 310000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 187000,
+            "green_median": 191000,
+            "green_high": 194000,
+            "yellow": 196000,
+            "red_low": 200000,
+            "red_median": 206000,
+            "red_high": 212000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 187000,
+            "green_median": 191000,
+            "green_high": 194000,
+            "yellow": 196000,
+            "red_low": 200000,
+            "red_median": 206000,
+            "red_high": 212000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "SUZUKI",
+        "model": "ERTIGA",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ERTIGA 1.5 GX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 408000,
+            "green_median": 410000,
+            "green_high": 411000,
+            "yellow": 412000,
+            "red_low": 420000,
+            "red_median": 432000,
+            "red_high": 444000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 385000,
+            "green_median": 386000,
+            "green_high": 387000,
+            "yellow": 387000,
+            "red_low": 395000,
+            "red_median": 407000,
+            "red_high": 418000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 335000,
+            "green_median": 337000,
+            "green_high": 338000,
+            "yellow": 338000,
+            "red_low": 345000,
+            "red_median": 355000,
+            "red_high": 365000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 229000,
+            "green_median": 230000,
+            "green_high": 230000,
+            "yellow": 230000,
+            "red_low": 235000,
+            "red_median": 242000,
+            "red_high": 249000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 229000,
+            "green_median": 230000,
+            "green_high": 230000,
+            "yellow": 230000,
+            "red_low": 235000,
+            "red_median": 242000,
+            "red_high": 249000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "SUZUKI",
+        "model": "ERTIGA",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ERTIGA 1.5 GX"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 570000,
+            "green_median": 590000,
+            "green_high": 604000,
+            "yellow": 611000,
+            "red_low": 623000,
+            "red_median": 641000,
+            "red_high": 659000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 537000,
+            "green_median": 556000,
+            "green_high": 569000,
+            "yellow": 575000,
+            "red_low": 586000,
+            "red_median": 604000,
+            "red_high": 621000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 468000,
+            "green_median": 485000,
+            "green_high": 496000,
+            "yellow": 501000,
+            "red_low": 511000,
+            "red_median": 526000,
+            "red_high": 541000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 319000,
+            "green_median": 330000,
+            "green_high": 338000,
+            "yellow": 342000,
+            "red_low": 349000,
+            "red_median": 359000,
+            "red_high": 369000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 319000,
+            "green_median": 330000,
+            "green_high": 338000,
+            "yellow": 342000,
+            "red_low": 349000,
+            "red_median": 359000,
+            "red_high": 369000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

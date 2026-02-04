@@ -4,7 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import HomePage from "@/pages/HomePage";
 import AnalyticsPage from "@/pages/AnalyticsPage";
+import FAQPage from "@/pages/FAQPage";
+import TermsPage from "@/pages/TermsPage";
+import PrivacyPage from "@/pages/PrivacyPage";
 import { getSessionId } from "@/lib/analytics";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 function App() {
   // Initialize session on app load
@@ -22,14 +26,19 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/analytics" element={<AnalyticsPage />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/analytics" element={<AnalyticsPage />} />
+            <Route path="/faq" element={<FAQPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }
 

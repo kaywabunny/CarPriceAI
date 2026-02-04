@@ -1,0 +1,559 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 2.5 HYBRID"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 687000,
+            "green_median": 716000,
+            "green_high": 737000,
+            "yellow": 746000,
+            "red_low": 787000,
+            "red_median": 805000,
+            "red_high": 835000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 646000,
+            "green_median": 674000,
+            "green_high": 694000,
+            "yellow": 702000,
+            "red_low": 741000,
+            "red_median": 758000,
+            "red_high": 786000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 583000,
+            "green_median": 608000,
+            "green_high": 626000,
+            "yellow": 633000,
+            "red_low": 668000,
+            "red_median": 684000,
+            "red_high": 709000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 449000,
+            "green_median": 468000,
+            "green_high": 481000,
+            "yellow": 487000,
+            "red_low": 514000,
+            "red_median": 526000,
+            "red_high": 546000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 384000,
+            "green_median": 401000,
+            "green_high": 413000,
+            "yellow": 418000,
+            "red_low": 441000,
+            "red_median": 451000,
+            "red_high": 468000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 2.5 HYBRID"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 909000,
+            "green_median": 976000,
+            "green_high": 1025000,
+            "yellow": 1045000,
+            "red_low": 1065000,
+            "red_median": 1095000,
+            "red_high": 1125000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 856000,
+            "green_median": 919000,
+            "green_high": 963000,
+            "yellow": 982000,
+            "red_low": 1000000,
+            "red_median": 1030000,
+            "red_high": 1060000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 772000,
+            "green_median": 829000,
+            "green_high": 868000,
+            "yellow": 885000,
+            "red_low": 903000,
+            "red_median": 930000,
+            "red_high": 956000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 594000,
+            "green_median": 637000,
+            "green_high": 668000,
+            "yellow": 681000,
+            "red_low": 695000,
+            "red_median": 715000,
+            "red_high": 736000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 509000,
+            "green_median": 546000,
+            "green_high": 573000,
+            "yellow": 584000,
+            "red_low": 596000,
+            "red_median": 613000,
+            "red_high": 631000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 2.5 HYBRID"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1225000,
+            "green_median": 1270000,
+            "green_high": 1300000,
+            "yellow": 1310000,
+            "red_low": 1340000,
+            "red_median": 1375000,
+            "red_high": 1415000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1155000,
+            "green_median": 1195000,
+            "green_high": 1225000,
+            "yellow": 1235000,
+            "red_low": 1260000,
+            "red_median": 1295000,
+            "red_high": 1335000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1040000,
+            "green_median": 1075000,
+            "green_high": 1105000,
+            "yellow": 1115000,
+            "red_low": 1135000,
+            "red_median": 1170000,
+            "red_high": 1205000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 800000,
+            "green_median": 829000,
+            "green_high": 848000,
+            "yellow": 857000,
+            "red_low": 874000,
+            "red_median": 900000,
+            "red_high": 925000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 686000,
+            "green_median": 710000,
+            "green_high": 727000,
+            "yellow": 734000,
+            "red_low": 749000,
+            "red_median": 771000,
+            "red_high": 793000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 2.5 HYBRID"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1635000,
+            "green_median": 1720000,
+            "green_high": 1780000,
+            "yellow": 1805000,
+            "red_low": 1840000,
+            "red_median": 1895000,
+            "red_high": 1950000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1540000,
+            "green_median": 1620000,
+            "green_high": 1675000,
+            "yellow": 1700000,
+            "red_low": 1735000,
+            "red_median": 1785000,
+            "red_high": 1835000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1385000,
+            "green_median": 1460000,
+            "green_high": 1510000,
+            "yellow": 1535000,
+            "red_low": 1565000,
+            "red_median": 1610000,
+            "red_high": 1655000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1065000,
+            "green_median": 1125000,
+            "green_high": 1165000,
+            "yellow": 1180000,
+            "red_low": 1205000,
+            "red_median": 1240000,
+            "red_high": 1275000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 914000,
+            "green_median": 963000,
+            "green_high": 997000,
+            "yellow": 1010000,
+            "red_low": 1030000,
+            "red_median": 1060000,
+            "red_high": 1090000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 2.5 HYBRID"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 2245000,
+            "green_median": 2495000,
+            "green_high": 2670000,
+            "yellow": 2745000,
+            "red_low": 2800000,
+            "red_median": 2880000,
+            "red_high": 2965000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 2110000,
+            "green_median": 2350000,
+            "green_high": 2515000,
+            "yellow": 2585000,
+            "red_low": 2635000,
+            "red_median": 2715000,
+            "red_high": 2790000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1815000,
+            "green_median": 2120000,
+            "green_high": 2265000,
+            "yellow": 2330000,
+            "red_low": 2375000,
+            "red_median": 2445000,
+            "red_high": 2515000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1465000,
+            "green_median": 1630000,
+            "green_high": 1745000,
+            "yellow": 1795000,
+            "red_low": 1830000,
+            "red_median": 1880000,
+            "red_high": 1935000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 1255000,
+            "green_median": 1395000,
+            "green_high": 1495000,
+            "yellow": 1535000,
+            "red_low": 1565000,
+            "red_median": 1615000,
+            "red_high": 1660000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "ALPHARD",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "ALPHARD 2.5 HYBRID"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 2385000,
+            "green_median": 2630000,
+            "green_high": 2795000,
+            "yellow": 2870000,
+            "red_low": 2905000,
+            "red_median": 2995000,
+            "red_high": 3125000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 2250000,
+            "green_median": 2475000,
+            "green_high": 2635000,
+            "yellow": 2700000,
+            "red_low": 2735000,
+            "red_median": 2820000,
+            "red_high": 2940000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 2025000,
+            "green_median": 2230000,
+            "green_high": 2375000,
+            "yellow": 2435000,
+            "red_low": 2470000,
+            "red_median": 2545000,
+            "red_high": 2655000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1560000,
+            "green_median": 1715000,
+            "green_high": 1825000,
+            "yellow": 1875000,
+            "red_low": 1900000,
+            "red_median": 1955000,
+            "red_high": 2040000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 1335000,
+            "green_median": 1470000,
+            "green_high": 1565000,
+            "yellow": 1605000,
+            "red_low": 1630000,
+            "red_median": 1680000,
+            "red_high": 1750000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

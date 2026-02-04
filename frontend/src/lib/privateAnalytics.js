@@ -8,7 +8,9 @@
 import { v4 as uuidv4 } from 'uuid';
 
 const STORAGE_KEY = 'car_pricing_session_id';
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || '';
+const API_BASE_URL =
+  process.env.REACT_APP_API_BASE_URL ||
+  (process.env.NODE_ENV === 'development' ? 'http://localhost:8000' : '');
 
 /**
  * Get or create a stable session ID stored in localStorage

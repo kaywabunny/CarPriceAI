@@ -1,0 +1,568 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "VIOS",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 145000,
+            "green_median": 153000,
+            "green_high": 158000,
+            "yellow": 161000,
+            "red_low": 169000,
+            "red_median": 173000,
+            "red_high": 178000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 136000,
+            "green_median": 144000,
+            "green_high": 149000,
+            "yellow": 151000,
+            "red_low": 159000,
+            "red_median": 163000,
+            "red_high": 168000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 123000,
+            "green_median": 130000,
+            "green_high": 134000,
+            "yellow": 136000,
+            "red_low": 143000,
+            "red_median": 147000,
+            "red_high": 151000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 94000,
+            "green_median": 100000,
+            "green_high": 103000,
+            "yellow": 105000,
+            "red_low": 110000,
+            "red_median": 113000,
+            "red_high": 116000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 81000,
+            "green_median": 85000,
+            "green_high": 89000,
+            "yellow": 90000,
+            "red_low": 94000,
+            "red_median": 97000,
+            "red_high": 100000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "VIOS",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 204000,
+            "green_median": 204000,
+            "green_high": 204000,
+            "yellow": 205000,
+            "red_low": 211000,
+            "red_median": 221000,
+            "red_high": 229000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 192000,
+            "green_median": 192000,
+            "green_high": 193000,
+            "yellow": 193000,
+            "red_low": 199000,
+            "red_median": 208000,
+            "red_high": 216000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 173000,
+            "green_median": 174000,
+            "green_high": 174000,
+            "yellow": 174000,
+            "red_low": 179000,
+            "red_median": 188000,
+            "red_high": 195000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 133000,
+            "green_median": 134000,
+            "green_high": 134000,
+            "yellow": 134000,
+            "red_low": 138000,
+            "red_median": 144000,
+            "red_high": 150000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 114000,
+            "green_median": 114000,
+            "green_high": 114000,
+            "yellow": 115000,
+            "red_low": 118000,
+            "red_median": 124000,
+            "red_high": 128000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "VIOS",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 222000,
+            "green_median": 233000,
+            "green_high": 241000,
+            "yellow": 244000,
+            "red_low": 255000,
+            "red_median": 264000,
+            "red_high": 273000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 209000,
+            "green_median": 220000,
+            "green_high": 227000,
+            "yellow": 230000,
+            "red_low": 240000,
+            "red_median": 248000,
+            "red_high": 257000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 189000,
+            "green_median": 198000,
+            "green_high": 205000,
+            "yellow": 207000,
+            "red_low": 216000,
+            "red_median": 224000,
+            "red_high": 232000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 145000,
+            "green_median": 152000,
+            "green_high": 157000,
+            "yellow": 160000,
+            "red_low": 166000,
+            "red_median": 172000,
+            "red_high": 179000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 125000,
+            "green_median": 131000,
+            "green_high": 135000,
+            "yellow": 137000,
+            "red_low": 143000,
+            "red_median": 148000,
+            "red_high": 153000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "VIOS",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 310000,
+            "green_median": 317000,
+            "green_high": 321000,
+            "yellow": 323000,
+            "red_low": 339000,
+            "red_median": 349000,
+            "red_high": 362000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 292000,
+            "green_median": 298000,
+            "green_high": 303000,
+            "yellow": 305000,
+            "red_low": 319000,
+            "red_median": 329000,
+            "red_high": 341000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 263000,
+            "green_median": 269000,
+            "green_high": 273000,
+            "yellow": 275000,
+            "red_low": 288000,
+            "red_median": 297000,
+            "red_high": 308000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 202000,
+            "green_median": 207000,
+            "green_high": 210000,
+            "yellow": 211000,
+            "red_low": 221000,
+            "red_median": 228000,
+            "red_high": 237000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 174000,
+            "green_median": 177000,
+            "green_high": 180000,
+            "yellow": 181000,
+            "red_low": 190000,
+            "red_median": 196000,
+            "red_high": 203000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "VIOS",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 409000,
+            "green_median": 414000,
+            "green_high": 417000,
+            "yellow": 419000,
+            "red_low": 435000,
+            "red_median": 452000,
+            "red_high": 469000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 385000,
+            "green_median": 390000,
+            "green_high": 393000,
+            "yellow": 394000,
+            "red_low": 410000,
+            "red_median": 426000,
+            "red_high": 442000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 344000,
+            "green_median": 351000,
+            "green_high": 354000,
+            "yellow": 356000,
+            "red_low": 370000,
+            "red_median": 384000,
+            "red_high": 398000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 267000,
+            "green_median": 270000,
+            "green_high": 273000,
+            "yellow": 274000,
+            "red_low": 284000,
+            "red_median": 295000,
+            "red_high": 306000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 229000,
+            "green_median": 232000,
+            "green_high": 234000,
+            "yellow": 234000,
+            "red_low": 244000,
+            "red_median": 253000,
+            "red_high": 263000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "VIOS",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 439000,
+            "green_median": 440000,
+            "green_high": 440000,
+            "yellow": 440000,
+            "red_low": 458000,
+            "red_median": 475000,
+            "red_high": 493000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 414000,
+            "green_median": 414000,
+            "green_high": 414000,
+            "yellow": 414000,
+            "red_low": 431000,
+            "red_median": 447000,
+            "red_high": 464000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 373000,
+            "green_median": 373000,
+            "green_high": 373000,
+            "yellow": 373000,
+            "red_low": 389000,
+            "red_median": 403000,
+            "red_high": 418000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 287000,
+            "green_median": 287000,
+            "green_high": 287000,
+            "yellow": 287000,
+            "red_low": 299000,
+            "red_median": 310000,
+            "red_high": 322000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 246000,
+            "green_median": 246000,
+            "green_high": 246000,
+            "yellow": 246000,
+            "red_low": 256000,
+            "red_median": 266000,
+            "red_high": 276000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

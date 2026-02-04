@@ -1,0 +1,553 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COMMUTER",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 384000,
+            "green_median": 384000,
+            "green_high": 385000,
+            "yellow": 385000,
+            "red_low": 396000,
+            "red_median": 416000,
+            "red_high": 431000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 361000,
+            "green_median": 362000,
+            "green_high": 362000,
+            "yellow": 363000,
+            "red_low": 372000,
+            "red_median": 392000,
+            "red_high": 406000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 326000,
+            "green_median": 326000,
+            "green_high": 327000,
+            "yellow": 327000,
+            "red_low": 336000,
+            "red_median": 353000,
+            "red_high": 366000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 251000,
+            "green_median": 251000,
+            "green_high": 251000,
+            "yellow": 252000,
+            "red_low": 258000,
+            "red_median": 272000,
+            "red_high": 282000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 215000,
+            "green_median": 215000,
+            "green_high": 216000,
+            "yellow": 216000,
+            "red_low": 221000,
+            "red_median": 233000,
+            "red_high": 242000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COMMUTER",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 472000,
+            "green_median": 474000,
+            "green_high": 475000,
+            "yellow": 475000,
+            "red_low": 481000,
+            "red_median": 493000,
+            "red_high": 510000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 445000,
+            "green_median": 446000,
+            "green_high": 447000,
+            "yellow": 448000,
+            "red_low": 452000,
+            "red_median": 464000,
+            "red_high": 480000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 401000,
+            "green_median": 402000,
+            "green_high": 403000,
+            "yellow": 404000,
+            "red_low": 408000,
+            "red_median": 418000,
+            "red_high": 433000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 308000,
+            "green_median": 309000,
+            "green_high": 310000,
+            "yellow": 310000,
+            "red_low": 314000,
+            "red_median": 322000,
+            "red_high": 333000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 264000,
+            "green_median": 265000,
+            "green_high": 266000,
+            "yellow": 266000,
+            "red_low": 269000,
+            "red_median": 276000,
+            "red_high": 286000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COMMUTER",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 574000,
+            "green_median": 585000,
+            "green_high": 592000,
+            "yellow": 595000,
+            "red_low": 607000,
+            "red_median": 625000,
+            "red_high": 642000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 541000,
+            "green_median": 550000,
+            "green_high": 557000,
+            "yellow": 560000,
+            "red_low": 571000,
+            "red_median": 588000,
+            "red_high": 605000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 488000,
+            "green_median": 496000,
+            "green_high": 503000,
+            "yellow": 505000,
+            "red_low": 515000,
+            "red_median": 530000,
+            "red_high": 546000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 375000,
+            "green_median": 382000,
+            "green_high": 387000,
+            "yellow": 389000,
+            "red_low": 396000,
+            "red_median": 408000,
+            "red_high": 420000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 322000,
+            "green_median": 327000,
+            "green_high": 331000,
+            "yellow": 333000,
+            "red_low": 340000,
+            "red_median": 350000,
+            "red_high": 360000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COMMUTER",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 732000,
+            "green_median": 768000,
+            "green_high": 792000,
+            "yellow": 803000,
+            "red_low": 819000,
+            "red_median": 843000,
+            "red_high": 867000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 690000,
+            "green_median": 723000,
+            "green_high": 746000,
+            "yellow": 756000,
+            "red_low": 771000,
+            "red_median": 794000,
+            "red_high": 816000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 622000,
+            "green_median": 652000,
+            "green_high": 673000,
+            "yellow": 682000,
+            "red_low": 695000,
+            "red_median": 716000,
+            "red_high": 736000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 478000,
+            "green_median": 501000,
+            "green_high": 518000,
+            "yellow": 524000,
+            "red_low": 535000,
+            "red_median": 551000,
+            "red_high": 566000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 410000,
+            "green_median": 430000,
+            "green_high": 444000,
+            "yellow": 450000,
+            "red_low": 459000,
+            "red_median": 472000,
+            "red_high": 486000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COMMUTER",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 933000,
+            "green_median": 935000,
+            "green_high": 937000,
+            "yellow": 938000,
+            "red_low": 957000,
+            "red_median": 985000,
+            "red_high": 1015000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 878000,
+            "green_median": 881000,
+            "green_high": 882000,
+            "yellow": 883000,
+            "red_low": 901000,
+            "red_median": 927000,
+            "red_high": 954000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 792000,
+            "green_median": 794000,
+            "green_high": 796000,
+            "yellow": 796000,
+            "red_low": 812000,
+            "red_median": 836000,
+            "red_high": 860000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 609000,
+            "green_median": 611000,
+            "green_high": 612000,
+            "yellow": 613000,
+            "red_low": 625000,
+            "red_median": 643000,
+            "red_high": 662000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 522000,
+            "green_median": 524000,
+            "green_high": 525000,
+            "yellow": 525000,
+            "red_low": 536000,
+            "red_median": 551000,
+            "red_high": 567000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COMMUTER",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1020000,
+            "green_median": 1070000,
+            "green_high": 1100000,
+            "yellow": 1115000,
+            "red_low": 1140000,
+            "red_median": 1200000,
+            "red_high": 1250000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 960000,
+            "green_median": 1005000,
+            "green_high": 1035000,
+            "yellow": 1050000,
+            "red_low": 1075000,
+            "red_median": 1130000,
+            "red_high": 1175000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 866000,
+            "green_median": 907000,
+            "green_high": 935000,
+            "yellow": 947000,
+            "red_low": 968000,
+            "red_median": 1015000,
+            "red_high": 1060000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 666000,
+            "green_median": 697000,
+            "green_high": 719000,
+            "yellow": 729000,
+            "red_low": 745000,
+            "red_median": 782000,
+            "red_high": 816000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 571000,
+            "green_median": 598000,
+            "green_high": 616000,
+            "yellow": 624000,
+            "red_low": 638000,
+            "red_median": 671000,
+            "red_high": 699000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

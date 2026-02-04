@@ -14,6 +14,10 @@ from typing import List, Optional, Dict, Any
 import uuid
 from datetime import datetime, timezone, timedelta
 
+# Import pricing/depreciation FastAPI app (ml/entry.py)
+from ml.entry import app as pricing_app
+from ml.price_helper import load_artifacts, MODELS_DIR
+
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
@@ -69,6 +73,35 @@ class AnalyticsEventDB(BaseModel):
     user_agent: Optional[str] = None
     ip_hash: Optional[str] = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+# New event models for business insights
+class VehicleInput(BaseModel):
+    make: Optional[str] = None
+    model: Optional[str] = None
+    trim: Optional[str] = None
+    year: Optional[int] = None
+    mileage: Optional[float] = None
+
+class ResultData(BaseModel):
+    market_price: Optional[float] = None
+    green_low: Optional[float] = None
+    green_high: Optional[float] = None
+    red_low: Optional[float] = None
+    red_high: Optional[float] = None
+    confidence: Optional[float] = None
+    sample_size: Optional[int] = None
+    estimate_basis: Optional[str] = None
+
+class BusinessEvent(BaseModel):
+    """Event model for business insights analytics"""
+    ts: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))
+    event: str  # "search_submit", "view_price_graph", "view_depreciation", "copy_result", "page_view"
+    session_id: str
+    page: str = "/"
+    vehicle: Optional[VehicleInput] = None
+    result: Optional[ResultData] = None
+    source: str = "frontend"
+    app_version: Optional[str] = None
 
 # ============================================================
 # Helper Functions
@@ -274,8 +307,186 @@ async def health_check():
         "timestamp": datetime.now(timezone.utc).isoformat()
     }
 
+# ============================================================
+# Business Insights Events Routes (No /api prefix)
+# ============================================================
+
+@app.post("/events")
+async def track_business_event(event: BusinessEvent):
+    """
+    Track business insights events.
+    Stores events in MongoDB for later analysis.
+    Fire-and-forget - does not block UI.
+    """
+    try:
+        # Convert to dict for MongoDB
+        doc = event.model_dump()
+        
+        # Ensure ts is a datetime and convert to ISO string
+        if isinstance(doc.get('ts'), str):
+            doc['ts'] = datetime.fromisoformat(doc['ts'].replace('Z', '+00:00'))
+        elif doc.get('ts') is None:
+            doc['ts'] = datetime.now(timezone.utc)
+        
+        # Convert datetime to ISO string for MongoDB storage
+        doc['ts'] = doc['ts'].isoformat()
+        
+        # Insert into MongoDB
+        await db.events.insert_one(doc)
+        
+        logger.debug(f"Business event tracked: {event.event} from session {event.session_id[:8]}...")
+        
+        return {"success": True}
+    
+    except Exception as e:
+        logger.error(f"Failed to track business event: {e}")
+        # Don't fail the request - analytics should be fire-and-forget
+        return {"success": False, "error": "Internal error"}
+
+@app.get("/events/summary")
+async def get_events_summary(days: int = Query(7, ge=1, le=365)):
+    """
+    Get summary of events for business insights.
+    Returns totals by event type, top make/model by count, etc.
+    """
+    try:
+        cutoff_date = datetime.now(timezone.utc) - timedelta(days=days)
+        # Convert to ISO string for comparison (ts is stored as ISO string)
+        cutoff_date_str = cutoff_date.isoformat()
+        
+        # Total events by type
+        event_counts_pipeline = [
+            {"$match": {"ts": {"$gte": cutoff_date_str}}},
+            {"$group": {"_id": "$event", "count": {"$sum": 1}}},
+            {"$sort": {"count": -1}}
+        ]
+        event_counts_cursor = db.events.aggregate(event_counts_pipeline)
+        event_counts = {doc["_id"]: doc["count"] async for doc in event_counts_cursor}
+        
+        # Top make/model by total count
+        top_make_model_pipeline = [
+            {"$match": {"ts": {"$gte": cutoff_date_str}, "vehicle": {"$exists": True, "$ne": None}}},
+            {"$group": {
+                "_id": {"make": "$vehicle.make", "model": "$vehicle.model"},
+                "count": {"$sum": 1}
+            }},
+            {"$sort": {"count": -1}},
+            {"$limit": 20}
+        ]
+        top_make_model_cursor = db.events.aggregate(top_make_model_pipeline)
+        top_make_model = [
+            {
+                "make": doc["_id"]["make"],
+                "model": doc["_id"]["model"],
+                "count": doc["count"]
+            }
+            async for doc in top_make_model_cursor
+        ]
+        
+        # Top make/model by search_submit count
+        top_searches_pipeline = [
+            {"$match": {
+                "ts": {"$gte": cutoff_date_str},
+                "event": "search_submit",
+                "vehicle": {"$exists": True, "$ne": None}
+            }},
+            {"$group": {
+                "_id": {"make": "$vehicle.make", "model": "$vehicle.model"},
+                "count": {"$sum": 1}
+            }},
+            {"$sort": {"count": -1}},
+            {"$limit": 20}
+        ]
+        top_searches_cursor = db.events.aggregate(top_searches_pipeline)
+        top_searches = [
+            {
+                "make": doc["_id"]["make"],
+                "model": doc["_id"]["model"],
+                "count": doc["count"]
+            }
+            async for doc in top_searches_cursor
+        ]
+        
+        return {
+            "period_days": days,
+            "cutoff_date": cutoff_date.isoformat(),
+            "event_counts": event_counts,
+            "top_make_model": top_make_model,
+            "top_searches": top_searches,
+            "generated_at": datetime.now(timezone.utc).isoformat()
+        }
+    
+    except Exception as e:
+        logger.error(f"Failed to get events summary: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get events summary")
+
+@app.get("/events/top_models")
+async def get_top_models(
+    days: int = Query(30, ge=1, le=365),
+    limit: int = Query(20, ge=1, le=100),
+    event: Optional[str] = Query(None, description="Filter by event type (e.g., 'search_submit')")
+):
+    """
+    Get top models by event count.
+    Useful for business insights on what users are searching for.
+    """
+    try:
+        cutoff_date = datetime.now(timezone.utc) - timedelta(days=days)
+        # Convert to ISO string for comparison (ts is stored as ISO string)
+        cutoff_date_str = cutoff_date.isoformat()
+        
+        match_filter = {
+            "ts": {"$gte": cutoff_date_str},
+            "vehicle": {"$exists": True, "$ne": None}
+        }
+        
+        if event:
+            match_filter["event"] = event
+        
+        pipeline = [
+            {"$match": match_filter},
+            {"$group": {
+                "_id": {"make": "$vehicle.make", "model": "$vehicle.model"},
+                "count": {"$sum": 1}
+            }},
+            {"$sort": {"count": -1}},
+            {"$limit": limit}
+        ]
+        
+        cursor = db.events.aggregate(pipeline)
+        results = [
+            {
+                "make": doc["_id"]["make"],
+                "model": doc["_id"]["model"],
+                "count": doc["count"]
+            }
+            async for doc in cursor
+        ]
+        
+        return {
+            "period_days": days,
+            "event_filter": event,
+            "limit": limit,
+            "results": results,
+            "generated_at": datetime.now(timezone.utc).isoformat()
+        }
+    
+    except Exception as e:
+        logger.error(f"Failed to get top models: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get top models")
+
 # Include the router in the main app
 app.include_router(api_router)
+
+# Include all routes from the pricing app (ml.entry:app)
+# FastAPI apps expose their routes via .router
+# This brings in:
+# - POST /price
+# - POST /price_graph  
+# - POST /depreciation
+# - GET /health/price_model
+# - POST /admin/reload_price_model
+app.include_router(pricing_app.router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -284,6 +495,27 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.on_event("startup")
+async def startup_event():
+    """Load ML models on server startup and create MongoDB indexes"""
+    try:
+        logger.info("Loading ML price models...")
+        load_artifacts(MODELS_DIR)
+        logger.info("ML models loaded successfully")
+    except Exception as e:
+        logger.error(f"Failed to load ML models: {e}")
+        # Don't crash - allow server to start, but /price will return 503
+    
+    # Create indexes for events collection
+    try:
+        events_collection = db.events
+        await events_collection.create_index([("ts", -1)])
+        await events_collection.create_index([("event", 1), ("ts", -1)])
+        await events_collection.create_index([("vehicle.make", 1), ("vehicle.model", 1), ("ts", -1)])
+        logger.info("MongoDB indexes created for events collection")
+    except Exception as e:
+        logger.warning(f"Failed to create indexes (may already exist): {e}")
 
 @app.on_event("shutdown")
 async def shutdown_db_client():

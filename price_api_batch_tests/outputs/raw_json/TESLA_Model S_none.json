@@ -1,0 +1,474 @@
+{
+  "results": [
+    {
+      "year": 2013,
+      "request": {
+        "make": "TESLA",
+        "model": "Model S",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 402000,
+            "green_median": 425000,
+            "green_high": 449000,
+            "yellow": 472000,
+            "red_low": 482000,
+            "red_median": 496000,
+            "red_high": 510000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 378000,
+            "green_median": 400000,
+            "green_high": 423000,
+            "yellow": 445000,
+            "red_low": 454000,
+            "red_median": 467000,
+            "red_high": 480000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 341000,
+            "green_median": 361000,
+            "green_high": 381000,
+            "yellow": 401000,
+            "red_low": 409000,
+            "red_median": 421000,
+            "red_high": 433000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 262000,
+            "green_median": 278000,
+            "green_high": 293000,
+            "yellow": 309000,
+            "red_low": 315000,
+            "red_median": 324000,
+            "red_high": 333000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 225000,
+            "green_median": 238000,
+            "green_high": 251000,
+            "yellow": 265000,
+            "red_low": 270000,
+            "red_median": 278000,
+            "red_high": 286000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TESLA",
+        "model": "Model S",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 642000,
+            "green_median": 680000,
+            "green_high": 718000,
+            "yellow": 756000,
+            "red_low": 771000,
+            "red_median": 793000,
+            "red_high": 816000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 605000,
+            "green_median": 640000,
+            "green_high": 676000,
+            "yellow": 711000,
+            "red_low": 726000,
+            "red_median": 747000,
+            "red_high": 768000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 545000,
+            "green_median": 577000,
+            "green_high": 610000,
+            "yellow": 642000,
+            "red_low": 654000,
+            "red_median": 674000,
+            "red_high": 693000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 420000,
+            "green_median": 444000,
+            "green_high": 469000,
+            "yellow": 494000,
+            "red_low": 503000,
+            "red_median": 518000,
+            "red_high": 533000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 360000,
+            "green_median": 381000,
+            "green_high": 402000,
+            "yellow": 423000,
+            "red_low": 432000,
+            "red_median": 444000,
+            "red_high": 457000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TESLA",
+        "model": "Model S",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 839000,
+            "green_median": 888000,
+            "green_high": 938000,
+            "yellow": 986000,
+            "red_low": 1010000,
+            "red_median": 1035000,
+            "red_high": 1065000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 789000,
+            "green_median": 835000,
+            "green_high": 882000,
+            "yellow": 928000,
+            "red_low": 946000,
+            "red_median": 974000,
+            "red_high": 1005000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 712000,
+            "green_median": 754000,
+            "green_high": 795000,
+            "yellow": 837000,
+            "red_low": 854000,
+            "red_median": 879000,
+            "red_high": 905000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 547000,
+            "green_median": 579000,
+            "green_high": 612000,
+            "yellow": 644000,
+            "red_low": 657000,
+            "red_median": 676000,
+            "red_high": 695000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 469000,
+            "green_median": 496000,
+            "green_high": 523000,
+            "yellow": 551000,
+            "red_low": 563000,
+            "red_median": 579000,
+            "red_high": 595000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TESLA",
+        "model": "Model S",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 817000,
+            "green_median": 865000,
+            "green_high": 913000,
+            "yellow": 961000,
+            "red_low": 980000,
+            "red_median": 1010000,
+            "red_high": 1040000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 769000,
+            "green_median": 814000,
+            "green_high": 859000,
+            "yellow": 905000,
+            "red_low": 923000,
+            "red_median": 950000,
+            "red_high": 977000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 694000,
+            "green_median": 734000,
+            "green_high": 775000,
+            "yellow": 816000,
+            "red_low": 832000,
+            "red_median": 857000,
+            "red_high": 881000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 533000,
+            "green_median": 565000,
+            "green_high": 596000,
+            "yellow": 628000,
+            "red_low": 640000,
+            "red_median": 659000,
+            "red_high": 678000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 457000,
+            "green_median": 484000,
+            "green_high": 511000,
+            "yellow": 538000,
+            "red_low": 549000,
+            "red_median": 565000,
+            "red_high": 581000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TESLA",
+        "model": "Model S",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1025000,
+            "green_median": 1085000,
+            "green_high": 1145000,
+            "yellow": 1205000,
+            "red_low": 1225000,
+            "red_median": 1265000,
+            "red_high": 1300000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 963000,
+            "green_median": 1020000,
+            "green_high": 1075000,
+            "yellow": 1135000,
+            "red_low": 1155000,
+            "red_median": 1190000,
+            "red_high": 1225000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 869000,
+            "green_median": 920000,
+            "green_high": 971000,
+            "yellow": 1020000,
+            "red_low": 1040000,
+            "red_median": 1075000,
+            "red_high": 1105000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 668000,
+            "green_median": 707000,
+            "green_high": 747000,
+            "yellow": 786000,
+            "red_low": 802000,
+            "red_median": 825000,
+            "red_high": 849000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 573000,
+            "green_median": 606000,
+            "green_high": 640000,
+            "yellow": 674000,
+            "red_low": 687000,
+            "red_median": 707000,
+            "red_high": 728000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

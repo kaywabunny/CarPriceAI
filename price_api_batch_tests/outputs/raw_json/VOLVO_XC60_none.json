@@ -1,0 +1,558 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "VOLVO",
+        "model": "XC60",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 234000,
+            "green_median": 266000,
+            "green_high": 289000,
+            "yellow": 299000,
+            "red_low": 305000,
+            "red_median": 314000,
+            "red_high": 323000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 220000,
+            "green_median": 251000,
+            "green_high": 272000,
+            "yellow": 281000,
+            "red_low": 287000,
+            "red_median": 295000,
+            "red_high": 304000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 199000,
+            "green_median": 226000,
+            "green_high": 245000,
+            "yellow": 254000,
+            "red_low": 259000,
+            "red_median": 266000,
+            "red_high": 274000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 153000,
+            "green_median": 174000,
+            "green_high": 189000,
+            "yellow": 195000,
+            "red_low": 199000,
+            "red_median": 205000,
+            "red_high": 211000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 131000,
+            "green_median": 149000,
+            "green_high": 162000,
+            "yellow": 167000,
+            "red_low": 171000,
+            "red_median": 176000,
+            "red_high": 181000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "VOLVO",
+        "model": "XC60",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 332000,
+            "green_median": 333000,
+            "green_high": 334000,
+            "yellow": 334000,
+            "red_low": 341000,
+            "red_median": 351000,
+            "red_high": 361000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 313000,
+            "green_median": 314000,
+            "green_high": 314000,
+            "yellow": 315000,
+            "red_low": 321000,
+            "red_median": 330000,
+            "red_high": 340000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 282000,
+            "green_median": 283000,
+            "green_high": 284000,
+            "yellow": 284000,
+            "red_low": 290000,
+            "red_median": 298000,
+            "red_high": 307000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 217000,
+            "green_median": 218000,
+            "green_high": 218000,
+            "yellow": 218000,
+            "red_low": 223000,
+            "red_median": 229000,
+            "red_high": 236000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 186000,
+            "green_median": 187000,
+            "green_high": 187000,
+            "yellow": 187000,
+            "red_low": 191000,
+            "red_median": 197000,
+            "red_high": 202000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "VOLVO",
+        "model": "XC60",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 443000,
+            "green_median": 451000,
+            "green_high": 456000,
+            "yellow": 459000,
+            "red_low": 468000,
+            "red_median": 482000,
+            "red_high": 495000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 417000,
+            "green_median": 424000,
+            "green_high": 430000,
+            "yellow": 432000,
+            "red_low": 441000,
+            "red_median": 453000,
+            "red_high": 466000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 376000,
+            "green_median": 383000,
+            "green_high": 387000,
+            "yellow": 390000,
+            "red_low": 397000,
+            "red_median": 409000,
+            "red_high": 421000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 289000,
+            "green_median": 294000,
+            "green_high": 298000,
+            "yellow": 300000,
+            "red_low": 306000,
+            "red_median": 315000,
+            "red_high": 324000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 248000,
+            "green_median": 252000,
+            "green_high": 255000,
+            "yellow": 257000,
+            "red_low": 262000,
+            "red_median": 270000,
+            "red_high": 277000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "VOLVO",
+        "model": "XC60",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 797000,
+            "green_median": 844000,
+            "green_high": 876000,
+            "yellow": 890000,
+            "red_low": 908000,
+            "red_median": 935000,
+            "red_high": 961000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 751000,
+            "green_median": 795000,
+            "green_high": 825000,
+            "yellow": 838000,
+            "red_low": 855000,
+            "red_median": 880000,
+            "red_high": 905000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 677000,
+            "green_median": 717000,
+            "green_high": 744000,
+            "yellow": 756000,
+            "red_low": 771000,
+            "red_median": 794000,
+            "red_high": 816000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 521000,
+            "green_median": 551000,
+            "green_high": 572000,
+            "yellow": 582000,
+            "red_low": 593000,
+            "red_median": 611000,
+            "red_high": 628000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 447000,
+            "green_median": 472000,
+            "green_high": 491000,
+            "yellow": 498000,
+            "red_low": 508000,
+            "red_median": 523000,
+            "red_high": 538000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "VOLVO",
+        "model": "XC60",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1345000,
+            "green_median": 1495000,
+            "green_high": 1600000,
+            "yellow": 1645000,
+            "red_low": 1680000,
+            "red_median": 1730000,
+            "red_high": 1780000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1270000,
+            "green_median": 1410000,
+            "green_high": 1510000,
+            "yellow": 1550000,
+            "red_low": 1580000,
+            "red_median": 1625000,
+            "red_high": 1675000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1010000,
+            "green_median": 1210000,
+            "green_high": 1350000,
+            "yellow": 1400000,
+            "red_low": 1425000,
+            "red_median": 1470000,
+            "red_high": 1510000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 860000,
+            "green_median": 977000,
+            "green_high": 1045000,
+            "yellow": 1075000,
+            "red_low": 1095000,
+            "red_median": 1130000,
+            "red_high": 1160000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 754000,
+            "green_median": 838000,
+            "green_high": 897000,
+            "yellow": 922000,
+            "red_low": 940000,
+            "red_median": 968000,
+            "red_high": 995000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "VOLVO",
+        "model": "XC60",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1500000,
+            "green_median": 1665000,
+            "green_high": 1780000,
+            "yellow": 1830000,
+            "red_low": 1870000,
+            "red_median": 1925000,
+            "red_high": 1980000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1410000,
+            "green_median": 1570000,
+            "green_high": 1680000,
+            "yellow": 1725000,
+            "red_low": 1760000,
+            "red_median": 1810000,
+            "red_high": 1865000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1270000,
+            "green_median": 1415000,
+            "green_high": 1515000,
+            "yellow": 1555000,
+            "red_low": 1585000,
+            "red_median": 1635000,
+            "red_high": 1680000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 979000,
+            "green_median": 1090000,
+            "green_high": 1165000,
+            "yellow": 1195000,
+            "red_low": 1220000,
+            "red_median": 1255000,
+            "red_high": 1295000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 839000,
+            "green_median": 932000,
+            "green_high": 998000,
+            "yellow": 1025000,
+            "red_low": 1045000,
+            "red_median": 1075000,
+            "red_high": 1110000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

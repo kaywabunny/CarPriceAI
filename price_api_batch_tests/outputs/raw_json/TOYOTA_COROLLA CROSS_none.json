@@ -1,0 +1,563 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA CROSS",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 245000,
+            "green_median": 259000,
+            "green_high": 274000,
+            "yellow": 289000,
+            "red_low": 295000,
+            "red_median": 303000,
+            "red_high": 312000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 231000,
+            "green_median": 244000,
+            "green_high": 258000,
+            "yellow": 271000,
+            "red_low": 277000,
+            "red_median": 285000,
+            "red_high": 294000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 208000,
+            "green_median": 220000,
+            "green_high": 232000,
+            "yellow": 245000,
+            "red_low": 249000,
+            "red_median": 257000,
+            "red_high": 264000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 160000,
+            "green_median": 170000,
+            "green_high": 179000,
+            "yellow": 189000,
+            "red_low": 192000,
+            "red_median": 198000,
+            "red_high": 204000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 137000,
+            "green_median": 145000,
+            "green_high": 153000,
+            "yellow": 162000,
+            "red_low": 165000,
+            "red_median": 170000,
+            "red_high": 174000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA CROSS",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 354000,
+            "green_median": 375000,
+            "green_high": 396000,
+            "yellow": 417000,
+            "red_low": 425000,
+            "red_median": 438000,
+            "red_high": 450000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 334000,
+            "green_median": 353000,
+            "green_high": 373000,
+            "yellow": 392000,
+            "red_low": 400000,
+            "red_median": 412000,
+            "red_high": 424000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 301000,
+            "green_median": 319000,
+            "green_high": 336000,
+            "yellow": 354000,
+            "red_low": 361000,
+            "red_median": 372000,
+            "red_high": 382000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 231000,
+            "green_median": 245000,
+            "green_high": 259000,
+            "yellow": 272000,
+            "red_low": 278000,
+            "red_median": 286000,
+            "red_high": 294000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 198000,
+            "green_median": 210000,
+            "green_high": 222000,
+            "yellow": 233000,
+            "red_low": 238000,
+            "red_median": 245000,
+            "red_high": 252000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA CROSS",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 420000,
+            "green_median": 485000,
+            "green_high": 531000,
+            "yellow": 551000,
+            "red_low": 562000,
+            "red_median": 578000,
+            "red_high": 595000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 395000,
+            "green_median": 457000,
+            "green_high": 500000,
+            "yellow": 519000,
+            "red_low": 529000,
+            "red_median": 545000,
+            "red_high": 560000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 356000,
+            "green_median": 412000,
+            "green_high": 451000,
+            "yellow": 468000,
+            "red_low": 477000,
+            "red_median": 491000,
+            "red_high": 505000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 274000,
+            "green_median": 317000,
+            "green_high": 347000,
+            "yellow": 360000,
+            "red_low": 367000,
+            "red_median": 378000,
+            "red_high": 389000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 235000,
+            "green_median": 272000,
+            "green_high": 297000,
+            "yellow": 308000,
+            "red_low": 315000,
+            "red_median": 324000,
+            "red_high": 333000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA CROSS",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 596000,
+            "green_median": 630000,
+            "green_high": 654000,
+            "yellow": 664000,
+            "red_low": 676000,
+            "red_median": 706000,
+            "red_high": 743000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 562000,
+            "green_median": 593000,
+            "green_high": 615000,
+            "yellow": 625000,
+            "red_low": 637000,
+            "red_median": 665000,
+            "red_high": 700000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 506000,
+            "green_median": 535000,
+            "green_high": 555000,
+            "yellow": 564000,
+            "red_low": 574000,
+            "red_median": 600000,
+            "red_high": 631000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 390000,
+            "green_median": 412000,
+            "green_high": 427000,
+            "yellow": 434000,
+            "red_low": 442000,
+            "red_median": 461000,
+            "red_high": 486000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 334000,
+            "green_median": 353000,
+            "green_high": 366000,
+            "yellow": 372000,
+            "red_low": 379000,
+            "red_median": 395000,
+            "red_high": 416000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA CROSS",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 755000,
+            "green_median": 796000,
+            "green_high": 824000,
+            "yellow": 837000,
+            "red_low": 859000,
+            "red_median": 904000,
+            "red_high": 937000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 711000,
+            "green_median": 749000,
+            "green_high": 776000,
+            "yellow": 788000,
+            "red_low": 808000,
+            "red_median": 851000,
+            "red_high": 882000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 596000,
+            "green_median": 676000,
+            "green_high": 700000,
+            "yellow": 711000,
+            "red_low": 729000,
+            "red_median": 767000,
+            "red_high": 796000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 493000,
+            "green_median": 520000,
+            "green_high": 539000,
+            "yellow": 547000,
+            "red_low": 561000,
+            "red_median": 590000,
+            "red_high": 612000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 423000,
+            "green_median": 446000,
+            "green_high": 462000,
+            "yellow": 469000,
+            "red_low": 481000,
+            "red_median": 506000,
+            "red_high": 525000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "COROLLA CROSS",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 2670000,
+            "green_median": 2885000,
+            "green_high": 3035000,
+            "yellow": 3100000,
+            "red_low": 3180000,
+            "red_median": 3350000,
+            "red_high": 3470000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 2515000,
+            "green_median": 2715000,
+            "green_high": 2860000,
+            "yellow": 2920000,
+            "red_low": 2995000,
+            "red_median": 3155000,
+            "red_high": 3270000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 2145000,
+            "green_median": 2450000,
+            "green_high": 2580000,
+            "yellow": 2635000,
+            "red_low": 2700000,
+            "red_median": 2845000,
+            "red_high": 2950000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1085000,
+            "green_median": 1555000,
+            "green_high": 1885000,
+            "yellow": 2025000,
+            "red_low": 2065000,
+            "red_median": 2125000,
+            "red_high": 2185000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 1145000,
+            "green_median": 1615000,
+            "green_high": 1700000,
+            "yellow": 1735000,
+            "red_low": 1780000,
+            "red_median": 1875000,
+            "red_high": 1945000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}
