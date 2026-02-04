@@ -1,0 +1,563 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "YARIS",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 140000,
+            "green_median": 162000,
+            "green_high": 177000,
+            "yellow": 183000,
+            "red_low": 188000,
+            "red_median": 198000,
+            "red_high": 210000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 132000,
+            "green_median": 152000,
+            "green_high": 166000,
+            "yellow": 172000,
+            "red_low": 177000,
+            "red_median": 186000,
+            "red_high": 198000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 119000,
+            "green_median": 137000,
+            "green_high": 150000,
+            "yellow": 155000,
+            "red_low": 159000,
+            "red_median": 168000,
+            "red_high": 179000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 91000,
+            "green_median": 106000,
+            "green_high": 115000,
+            "yellow": 120000,
+            "red_low": 123000,
+            "red_median": 129000,
+            "red_high": 137000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 78000,
+            "green_median": 90000,
+            "green_high": 99000,
+            "yellow": 102000,
+            "red_low": 105000,
+            "red_median": 111000,
+            "red_high": 118000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "YARIS",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 184000,
+            "green_median": 188000,
+            "green_high": 191000,
+            "yellow": 193000,
+            "red_low": 198000,
+            "red_median": 208000,
+            "red_high": 216000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 173000,
+            "green_median": 177000,
+            "green_high": 180000,
+            "yellow": 181000,
+            "red_low": 186000,
+            "red_median": 196000,
+            "red_high": 203000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 156000,
+            "green_median": 160000,
+            "green_high": 162000,
+            "yellow": 164000,
+            "red_low": 168000,
+            "red_median": 177000,
+            "red_high": 183000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 120000,
+            "green_median": 123000,
+            "green_high": 125000,
+            "yellow": 126000,
+            "red_low": 129000,
+            "red_median": 136000,
+            "red_high": 141000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 103000,
+            "green_median": 105000,
+            "green_high": 107000,
+            "yellow": 108000,
+            "red_low": 111000,
+            "red_median": 116000,
+            "red_high": 121000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "YARIS",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 216000,
+            "green_median": 229000,
+            "green_high": 238000,
+            "yellow": 242000,
+            "red_low": 249000,
+            "red_median": 262000,
+            "red_high": 272000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 203000,
+            "green_median": 216000,
+            "green_high": 224000,
+            "yellow": 228000,
+            "red_low": 234000,
+            "red_median": 247000,
+            "red_high": 256000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 183000,
+            "green_median": 195000,
+            "green_high": 202000,
+            "yellow": 206000,
+            "red_low": 211000,
+            "red_median": 222000,
+            "red_high": 231000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 141000,
+            "green_median": 150000,
+            "green_high": 156000,
+            "yellow": 158000,
+            "red_low": 162000,
+            "red_median": 171000,
+            "red_high": 177000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 121000,
+            "green_median": 128000,
+            "green_high": 133000,
+            "yellow": 136000,
+            "red_low": 139000,
+            "red_median": 147000,
+            "red_high": 152000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "YARIS",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 288000,
+            "green_median": 306000,
+            "green_high": 319000,
+            "yellow": 324000,
+            "red_low": 333000,
+            "red_median": 350000,
+            "red_high": 363000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 271000,
+            "green_median": 288000,
+            "green_high": 300000,
+            "yellow": 305000,
+            "red_low": 313000,
+            "red_median": 330000,
+            "red_high": 342000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 245000,
+            "green_median": 260000,
+            "green_high": 271000,
+            "yellow": 275000,
+            "red_low": 283000,
+            "red_median": 297000,
+            "red_high": 308000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 188000,
+            "green_median": 200000,
+            "green_high": 208000,
+            "yellow": 212000,
+            "red_low": 217000,
+            "red_median": 229000,
+            "red_high": 237000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 161000,
+            "green_median": 171000,
+            "green_high": 179000,
+            "yellow": 182000,
+            "red_low": 186000,
+            "red_median": 196000,
+            "red_high": 203000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "YARIS",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 379000,
+            "green_median": 397000,
+            "green_high": 409000,
+            "yellow": 414000,
+            "red_low": 425000,
+            "red_median": 447000,
+            "red_high": 464000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 357000,
+            "green_median": 373000,
+            "green_high": 385000,
+            "yellow": 390000,
+            "red_low": 400000,
+            "red_median": 421000,
+            "red_high": 437000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 313000,
+            "green_median": 337000,
+            "green_high": 347000,
+            "yellow": 352000,
+            "red_low": 361000,
+            "red_median": 380000,
+            "red_high": 394000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 248000,
+            "green_median": 259000,
+            "green_high": 267000,
+            "yellow": 271000,
+            "red_low": 278000,
+            "red_median": 292000,
+            "red_high": 303000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 212000,
+            "green_median": 222000,
+            "green_high": 229000,
+            "yellow": 232000,
+            "red_low": 238000,
+            "red_median": 250000,
+            "red_high": 260000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "YARIS",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 386000,
+            "green_median": 392000,
+            "green_high": 396000,
+            "yellow": 398000,
+            "red_low": 408000,
+            "red_median": 430000,
+            "red_high": 446000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 363000,
+            "green_median": 369000,
+            "green_high": 373000,
+            "yellow": 375000,
+            "red_low": 384000,
+            "red_median": 405000,
+            "red_high": 420000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 328000,
+            "green_median": 333000,
+            "green_high": 336000,
+            "yellow": 338000,
+            "red_low": 347000,
+            "red_median": 365000,
+            "red_high": 379000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 252000,
+            "green_median": 256000,
+            "green_high": 259000,
+            "yellow": 260000,
+            "red_low": 267000,
+            "red_median": 281000,
+            "red_high": 291000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 216000,
+            "green_median": 219000,
+            "green_high": 222000,
+            "yellow": 223000,
+            "red_low": 229000,
+            "red_median": 241000,
+            "red_high": 250000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

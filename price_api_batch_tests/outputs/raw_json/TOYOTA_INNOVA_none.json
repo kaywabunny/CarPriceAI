@@ -1,0 +1,563 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "INNOVA",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 292000,
+            "green_median": 478000,
+            "green_high": 608000,
+            "yellow": 664000,
+            "red_low": 681000,
+            "red_median": 717000,
+            "red_high": 744000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 275000,
+            "green_median": 450000,
+            "green_high": 573000,
+            "yellow": 625000,
+            "red_low": 642000,
+            "red_median": 675000,
+            "red_high": 700000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 248000,
+            "green_median": 406000,
+            "green_high": 517000,
+            "yellow": 564000,
+            "red_low": 579000,
+            "red_median": 609000,
+            "red_high": 632000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 191000,
+            "green_median": 312000,
+            "green_high": 397000,
+            "yellow": 434000,
+            "red_low": 445000,
+            "red_median": 469000,
+            "red_high": 486000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 164000,
+            "green_median": 268000,
+            "green_high": 341000,
+            "yellow": 372000,
+            "red_low": 382000,
+            "red_median": 402000,
+            "red_high": 416000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "INNOVA",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 213000,
+            "green_median": 224000,
+            "green_high": 232000,
+            "yellow": 235000,
+            "red_low": 241000,
+            "red_median": 254000,
+            "red_high": 263000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 201000,
+            "green_median": 211000,
+            "green_high": 218000,
+            "yellow": 221000,
+            "red_low": 227000,
+            "red_median": 239000,
+            "red_high": 248000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 181000,
+            "green_median": 190000,
+            "green_high": 197000,
+            "yellow": 200000,
+            "red_low": 205000,
+            "red_median": 216000,
+            "red_high": 224000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 139000,
+            "green_median": 147000,
+            "green_high": 151000,
+            "yellow": 154000,
+            "red_low": 158000,
+            "red_median": 166000,
+            "red_high": 172000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 120000,
+            "green_median": 126000,
+            "green_high": 130000,
+            "yellow": 132000,
+            "red_low": 135000,
+            "red_median": 142000,
+            "red_high": 147000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "INNOVA",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 263000,
+            "green_median": 287000,
+            "green_high": 303000,
+            "yellow": 310000,
+            "red_low": 314000,
+            "red_median": 323000,
+            "red_high": 337000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 248000,
+            "green_median": 270000,
+            "green_high": 285000,
+            "yellow": 292000,
+            "red_low": 296000,
+            "red_median": 304000,
+            "red_high": 317000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 223000,
+            "green_median": 243000,
+            "green_high": 257000,
+            "yellow": 263000,
+            "red_low": 267000,
+            "red_median": 275000,
+            "red_high": 286000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 172000,
+            "green_median": 187000,
+            "green_high": 198000,
+            "yellow": 203000,
+            "red_low": 205000,
+            "red_median": 211000,
+            "red_high": 220000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 147000,
+            "green_median": 160000,
+            "green_high": 170000,
+            "yellow": 174000,
+            "red_low": 176000,
+            "red_median": 181000,
+            "red_high": 189000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "INNOVA",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 447000,
+            "green_median": 455000,
+            "green_high": 460000,
+            "yellow": 463000,
+            "red_low": 470000,
+            "red_median": 485000,
+            "red_high": 508000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 421000,
+            "green_median": 428000,
+            "green_high": 434000,
+            "yellow": 436000,
+            "red_low": 442000,
+            "red_median": 457000,
+            "red_high": 478000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 379000,
+            "green_median": 386000,
+            "green_high": 391000,
+            "yellow": 393000,
+            "red_low": 399000,
+            "red_median": 412000,
+            "red_high": 431000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 292000,
+            "green_median": 297000,
+            "green_high": 301000,
+            "yellow": 302000,
+            "red_low": 307000,
+            "red_median": 317000,
+            "red_high": 332000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 250000,
+            "green_median": 255000,
+            "green_high": 258000,
+            "yellow": 259000,
+            "red_low": 263000,
+            "red_median": 272000,
+            "red_high": 284000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "INNOVA",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 645000,
+            "green_median": 677000,
+            "green_high": 699000,
+            "yellow": 708000,
+            "red_low": 743000,
+            "red_median": 765000,
+            "red_high": 793000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 607000,
+            "green_median": 637000,
+            "green_high": 658000,
+            "yellow": 667000,
+            "red_low": 700000,
+            "red_median": 720000,
+            "red_high": 747000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 547000,
+            "green_median": 575000,
+            "green_high": 593000,
+            "yellow": 602000,
+            "red_low": 631000,
+            "red_median": 650000,
+            "red_high": 674000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 419000,
+            "green_median": 442000,
+            "green_high": 456000,
+            "yellow": 463000,
+            "red_low": 486000,
+            "red_median": 500000,
+            "red_high": 518000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 361000,
+            "green_median": 379000,
+            "green_high": 391000,
+            "yellow": 397000,
+            "red_low": 416000,
+            "red_median": 428000,
+            "red_high": 444000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "INNOVA",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1225000,
+            "green_median": 2565000,
+            "green_high": 3505000,
+            "yellow": 3905000,
+            "red_low": 4005000,
+            "red_median": 4220000,
+            "red_high": 4375000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1155000,
+            "green_median": 2415000,
+            "green_high": 3300000,
+            "yellow": 3675000,
+            "red_low": 3775000,
+            "red_median": 3970000,
+            "red_high": 4120000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1040000,
+            "green_median": 2180000,
+            "green_high": 2975000,
+            "yellow": 3315000,
+            "red_low": 3385000,
+            "red_median": 3485000,
+            "red_high": 3580000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 801000,
+            "green_median": 1675000,
+            "green_high": 2290000,
+            "yellow": 2550000,
+            "red_low": 2600000,
+            "red_median": 2680000,
+            "red_high": 2755000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 687000,
+            "green_median": 1435000,
+            "green_high": 1960000,
+            "yellow": 2185000,
+            "red_low": 2230000,
+            "red_median": 2295000,
+            "red_high": 2360000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

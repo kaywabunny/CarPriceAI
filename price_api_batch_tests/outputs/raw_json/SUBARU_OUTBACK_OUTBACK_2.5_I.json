@@ -1,0 +1,919 @@
+{
+  "results": [
+    {
+      "year": 2008,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2008,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 270000,
+            "green_median": 286000,
+            "green_high": 302000,
+            "yellow": 318000,
+            "red_low": 324000,
+            "red_median": 333000,
+            "red_high": 343000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 254000,
+            "green_median": 269000,
+            "green_high": 284000,
+            "yellow": 299000,
+            "red_low": 305000,
+            "red_median": 314000,
+            "red_high": 323000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 229000,
+            "green_median": 243000,
+            "green_high": 256000,
+            "yellow": 270000,
+            "red_low": 275000,
+            "red_median": 283000,
+            "red_high": 291000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 176000,
+            "green_median": 187000,
+            "green_high": 197000,
+            "yellow": 207000,
+            "red_low": 212000,
+            "red_median": 218000,
+            "red_high": 224000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 151000,
+            "green_median": 160000,
+            "green_high": 169000,
+            "yellow": 178000,
+            "red_low": 181000,
+            "red_median": 187000,
+            "red_high": 192000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2010,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 318000,
+            "green_median": 337000,
+            "green_high": 355000,
+            "yellow": 374000,
+            "red_low": 382000,
+            "red_median": 393000,
+            "red_high": 404000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 299000,
+            "green_median": 317000,
+            "green_high": 335000,
+            "yellow": 352000,
+            "red_low": 359000,
+            "red_median": 370000,
+            "red_high": 380000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 270000,
+            "green_median": 286000,
+            "green_high": 302000,
+            "yellow": 318000,
+            "red_low": 324000,
+            "red_median": 334000,
+            "red_high": 343000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 208000,
+            "green_median": 220000,
+            "green_high": 232000,
+            "yellow": 244000,
+            "red_low": 249000,
+            "red_median": 257000,
+            "red_high": 264000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 178000,
+            "green_median": 188000,
+            "green_high": 199000,
+            "yellow": 209000,
+            "red_low": 214000,
+            "red_median": 220000,
+            "red_high": 226000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2013,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 367000,
+            "green_median": 399000,
+            "green_high": 422000,
+            "yellow": 432000,
+            "red_low": 451000,
+            "red_median": 466000,
+            "red_high": 483000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 346000,
+            "green_median": 376000,
+            "green_high": 397000,
+            "yellow": 406000,
+            "red_low": 424000,
+            "red_median": 439000,
+            "red_high": 455000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 312000,
+            "green_median": 339000,
+            "green_high": 358000,
+            "yellow": 367000,
+            "red_low": 383000,
+            "red_median": 396000,
+            "red_high": 411000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 240000,
+            "green_median": 261000,
+            "green_high": 276000,
+            "yellow": 282000,
+            "red_low": 294000,
+            "red_median": 304000,
+            "red_high": 316000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 206000,
+            "green_median": 224000,
+            "green_high": 236000,
+            "yellow": 242000,
+            "red_low": 252000,
+            "red_median": 261000,
+            "red_high": 271000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 447000,
+            "green_median": 471000,
+            "green_high": 489000,
+            "yellow": 496000,
+            "red_low": 505000,
+            "red_median": 525000,
+            "red_high": 554000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 421000,
+            "green_median": 444000,
+            "green_high": 460000,
+            "yellow": 467000,
+            "red_low": 475000,
+            "red_median": 494000,
+            "red_high": 522000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 379000,
+            "green_median": 400000,
+            "green_high": 415000,
+            "yellow": 421000,
+            "red_low": 429000,
+            "red_median": 446000,
+            "red_high": 471000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 292000,
+            "green_median": 308000,
+            "green_high": 319000,
+            "yellow": 324000,
+            "red_low": 330000,
+            "red_median": 343000,
+            "red_high": 362000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 250000,
+            "green_median": 264000,
+            "green_high": 274000,
+            "yellow": 278000,
+            "red_low": 283000,
+            "red_median": 294000,
+            "red_high": 310000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2015,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2015,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 523000,
+            "green_median": 541000,
+            "green_high": 555000,
+            "yellow": 560000,
+            "red_low": 565000,
+            "red_median": 577000,
+            "red_high": 594000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 492000,
+            "green_median": 510000,
+            "green_high": 522000,
+            "yellow": 528000,
+            "red_low": 532000,
+            "red_median": 543000,
+            "red_high": 559000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 444000,
+            "green_median": 460000,
+            "green_high": 471000,
+            "yellow": 476000,
+            "red_low": 480000,
+            "red_median": 490000,
+            "red_high": 504000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 341000,
+            "green_median": 354000,
+            "green_high": 362000,
+            "yellow": 366000,
+            "red_low": 369000,
+            "red_median": 377000,
+            "red_high": 388000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 293000,
+            "green_median": 303000,
+            "green_high": 311000,
+            "yellow": 314000,
+            "red_low": 317000,
+            "red_median": 323000,
+            "red_high": 332000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 566000,
+            "green_median": 588000,
+            "green_high": 603000,
+            "yellow": 609000,
+            "red_low": 612000,
+            "red_median": 620000,
+            "red_high": 630000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 533000,
+            "green_median": 553000,
+            "green_high": 567000,
+            "yellow": 573000,
+            "red_low": 576000,
+            "red_median": 583000,
+            "red_high": 593000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 481000,
+            "green_median": 499000,
+            "green_high": 512000,
+            "yellow": 517000,
+            "red_low": 520000,
+            "red_median": 526000,
+            "red_high": 535000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 370000,
+            "green_median": 384000,
+            "green_high": 394000,
+            "yellow": 398000,
+            "red_low": 400000,
+            "red_median": 405000,
+            "red_high": 412000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 317000,
+            "green_median": 329000,
+            "green_high": 337000,
+            "yellow": 341000,
+            "red_low": 343000,
+            "red_median": 347000,
+            "red_high": 353000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2018,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2018,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 672000,
+            "green_median": 702000,
+            "green_high": 723000,
+            "yellow": 732000,
+            "red_low": 737000,
+            "red_median": 749000,
+            "red_high": 766000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 633000,
+            "green_median": 661000,
+            "green_high": 681000,
+            "yellow": 689000,
+            "red_low": 694000,
+            "red_median": 705000,
+            "red_high": 721000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 571000,
+            "green_median": 596000,
+            "green_high": 614000,
+            "yellow": 622000,
+            "red_low": 626000,
+            "red_median": 636000,
+            "red_high": 651000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 439000,
+            "green_median": 459000,
+            "green_high": 472000,
+            "yellow": 478000,
+            "red_low": 482000,
+            "red_median": 489000,
+            "red_high": 501000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 377000,
+            "green_median": 393000,
+            "green_high": 405000,
+            "yellow": 410000,
+            "red_low": 413000,
+            "red_median": 419000,
+            "red_high": 429000,
+            "estimate_basis": "based_on_comparable_listings",
+            "confidence": 0.5,
+            "sample_size": 5,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 853000,
+            "green_median": 938000,
+            "green_high": 998000,
+            "yellow": 1025000,
+            "red_low": 1040000,
+            "red_median": 1075000,
+            "red_high": 1125000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 803000,
+            "green_median": 883000,
+            "green_high": 939000,
+            "yellow": 964000,
+            "red_low": 978000,
+            "red_median": 1010000,
+            "red_high": 1060000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 725000,
+            "green_median": 797000,
+            "green_high": 847000,
+            "yellow": 869000,
+            "red_low": 882000,
+            "red_median": 912000,
+            "red_high": 954000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 557000,
+            "green_median": 613000,
+            "green_high": 652000,
+            "yellow": 668000,
+            "red_low": 678000,
+            "red_median": 701000,
+            "red_high": 734000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 478000,
+            "green_median": 525000,
+            "green_high": 559000,
+            "yellow": 573000,
+            "red_low": 581000,
+            "red_median": 601000,
+            "red_high": 629000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1025000,
+            "green_median": 1080000,
+            "green_high": 1115000,
+            "yellow": 1130000,
+            "red_low": 1135000,
+            "red_median": 1145000,
+            "red_high": 1160000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 965000,
+            "green_median": 1015000,
+            "green_high": 1050000,
+            "yellow": 1065000,
+            "red_low": 1070000,
+            "red_median": 1080000,
+            "red_high": 1090000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 871000,
+            "green_median": 916000,
+            "green_high": 948000,
+            "yellow": 962000,
+            "red_low": 965000,
+            "red_median": 973000,
+            "red_high": 984000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 670000,
+            "green_median": 705000,
+            "green_high": 729000,
+            "yellow": 740000,
+            "red_low": 742000,
+            "red_median": 748000,
+            "red_high": 757000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 574000,
+            "green_median": 604000,
+            "green_high": 625000,
+            "yellow": 634000,
+            "red_low": 636000,
+            "red_median": 641000,
+            "red_high": 649000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 4,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "SUBARU",
+        "model": "OUTBACK",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "OUTBACK 2.5 I"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1120000,
+            "green_median": 1195000,
+            "green_high": 1250000,
+            "yellow": 1270000,
+            "red_low": 1285000,
+            "red_median": 1320000,
+            "red_high": 1365000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1055000,
+            "green_median": 1125000,
+            "green_high": 1175000,
+            "yellow": 1200000,
+            "red_low": 1210000,
+            "red_median": 1245000,
+            "red_high": 1285000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 952000,
+            "green_median": 1015000,
+            "green_high": 1060000,
+            "yellow": 1080000,
+            "red_low": 1095000,
+            "red_median": 1120000,
+            "red_high": 1160000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 733000,
+            "green_median": 782000,
+            "green_high": 816000,
+            "yellow": 831000,
+            "red_low": 841000,
+            "red_median": 862000,
+            "red_high": 893000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 628000,
+            "green_median": 670000,
+            "green_high": 700000,
+            "yellow": 712000,
+            "red_low": 720000,
+            "red_median": 739000,
+            "red_high": 765000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

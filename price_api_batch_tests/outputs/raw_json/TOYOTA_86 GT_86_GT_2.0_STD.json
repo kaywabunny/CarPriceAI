@@ -1,0 +1,474 @@
+{
+  "results": [
+    {
+      "year": 2013,
+      "request": {
+        "make": "TOYOTA",
+        "model": "86 GT",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "86 GT 2.0 STD"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 798000,
+            "green_median": 811000,
+            "green_high": 820000,
+            "yellow": 824000,
+            "red_low": 841000,
+            "red_median": 866000,
+            "red_high": 890000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 752000,
+            "green_median": 764000,
+            "green_high": 773000,
+            "yellow": 776000,
+            "red_low": 792000,
+            "red_median": 815000,
+            "red_high": 838000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 678000,
+            "green_median": 689000,
+            "green_high": 697000,
+            "yellow": 700000,
+            "red_low": 714000,
+            "red_median": 735000,
+            "red_high": 756000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 521000,
+            "green_median": 530000,
+            "green_high": 536000,
+            "yellow": 539000,
+            "red_low": 549000,
+            "red_median": 565000,
+            "red_high": 582000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 447000,
+            "green_median": 454000,
+            "green_high": 459000,
+            "yellow": 462000,
+            "red_low": 471000,
+            "red_median": 485000,
+            "red_high": 499000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "86 GT",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "86 GT 2.0 STD"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1040000,
+            "green_median": 1045000,
+            "green_high": 1050000,
+            "yellow": 1055000,
+            "red_low": 1075000,
+            "red_median": 1105000,
+            "red_high": 1140000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 979000,
+            "green_median": 986000,
+            "green_high": 991000,
+            "yellow": 993000,
+            "red_low": 1015000,
+            "red_median": 1045000,
+            "red_high": 1070000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 883000,
+            "green_median": 889000,
+            "green_high": 894000,
+            "yellow": 896000,
+            "red_low": 913000,
+            "red_median": 940000,
+            "red_high": 967000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 679000,
+            "green_median": 684000,
+            "green_high": 687000,
+            "yellow": 689000,
+            "red_low": 703000,
+            "red_median": 723000,
+            "red_high": 744000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 582000,
+            "green_median": 586000,
+            "green_high": 589000,
+            "yellow": 590000,
+            "red_low": 602000,
+            "red_median": 620000,
+            "red_high": 638000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "86 GT",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "86 GT 2.0 STD"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1290000,
+            "green_median": 1350000,
+            "green_high": 1395000,
+            "yellow": 1415000,
+            "red_low": 1440000,
+            "red_median": 1485000,
+            "red_high": 1525000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1245000,
+            "green_median": 1305000,
+            "green_high": 1345000,
+            "yellow": 1365000,
+            "red_low": 1390000,
+            "red_median": 1435000,
+            "red_high": 1475000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1125000,
+            "green_median": 1175000,
+            "green_high": 1215000,
+            "yellow": 1230000,
+            "red_low": 1255000,
+            "red_median": 1290000,
+            "red_high": 1330000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 864000,
+            "green_median": 905000,
+            "green_high": 934000,
+            "yellow": 947000,
+            "red_low": 966000,
+            "red_median": 994000,
+            "red_high": 1020000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 740000,
+            "green_median": 776000,
+            "green_high": 801000,
+            "yellow": 811000,
+            "red_low": 828000,
+            "red_median": 852000,
+            "red_high": 876000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "86 GT",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "86 GT 2.0 STD"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1585000,
+            "green_median": 1680000,
+            "green_high": 1770000,
+            "yellow": 1865000,
+            "red_low": 1900000,
+            "red_median": 1960000,
+            "red_high": 2015000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1495000,
+            "green_median": 1580000,
+            "green_high": 1670000,
+            "yellow": 1755000,
+            "red_low": 1790000,
+            "red_median": 1845000,
+            "red_high": 1895000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1345000,
+            "green_median": 1425000,
+            "green_high": 1505000,
+            "yellow": 1585000,
+            "red_low": 1615000,
+            "red_median": 1665000,
+            "red_high": 1710000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1035000,
+            "green_median": 1095000,
+            "green_high": 1155000,
+            "yellow": 1220000,
+            "red_low": 1245000,
+            "red_median": 1280000,
+            "red_high": 1315000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 888000,
+            "green_median": 940000,
+            "green_high": 992000,
+            "yellow": 1045000,
+            "red_low": 1065000,
+            "red_median": 1095000,
+            "red_high": 1130000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "86 GT",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "86 GT 2.0 STD"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1805000,
+            "green_median": 1910000,
+            "green_high": 2020000,
+            "yellow": 2125000,
+            "red_low": 2165000,
+            "red_median": 2230000,
+            "red_high": 2295000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1700000,
+            "green_median": 1800000,
+            "green_high": 1900000,
+            "yellow": 2000000,
+            "red_low": 2040000,
+            "red_median": 2100000,
+            "red_high": 2160000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1535000,
+            "green_median": 1625000,
+            "green_high": 1715000,
+            "yellow": 1805000,
+            "red_low": 1840000,
+            "red_median": 1895000,
+            "red_high": 1950000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 1180000,
+            "green_median": 1250000,
+            "green_high": 1320000,
+            "yellow": 1390000,
+            "red_low": 1415000,
+            "red_median": 1455000,
+            "red_high": 1500000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 1010000,
+            "green_median": 1070000,
+            "green_high": 1130000,
+            "yellow": 1190000,
+            "red_low": 1215000,
+            "red_median": 1250000,
+            "red_high": 1285000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "LAND CRUISER",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 675000,
+            "green_median": 892000,
+            "green_high": 1045000,
+            "yellow": 1110000,
+            "red_low": 1140000,
+            "red_median": 1200000,
+            "red_high": 1240000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 635000,
+            "green_median": 840000,
+            "green_high": 983000,
+            "yellow": 1045000,
+            "red_low": 1070000,
+            "red_median": 1130000,
+            "red_high": 1170000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 573000,
+            "green_median": 758000,
+            "green_high": 887000,
+            "yellow": 942000,
+            "red_low": 966000,
+            "red_median": 1015000,
+            "red_high": 1055000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 441000,
+            "green_median": 583000,
+            "green_high": 682000,
+            "yellow": 725000,
+            "red_low": 743000,
+            "red_median": 783000,
+            "red_high": 812000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 378000,
+            "green_median": 499000,
+            "green_high": 585000,
+            "yellow": 621000,
+            "red_low": 637000,
+            "red_median": 671000,
+            "red_high": 696000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "LAND CRUISER",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 553000,
+            "green_median": 831000,
+            "green_high": 1025000,
+            "yellow": 1110000,
+            "red_low": 1140000,
+            "red_median": 1200000,
+            "red_high": 1240000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 521000,
+            "green_median": 782000,
+            "green_high": 966000,
+            "yellow": 1045000,
+            "red_low": 1070000,
+            "red_median": 1130000,
+            "red_high": 1170000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 469000,
+            "green_median": 706000,
+            "green_high": 871000,
+            "yellow": 942000,
+            "red_low": 966000,
+            "red_median": 1015000,
+            "red_high": 1055000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 361000,
+            "green_median": 543000,
+            "green_high": 670000,
+            "yellow": 725000,
+            "red_low": 743000,
+            "red_median": 783000,
+            "red_high": 812000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 310000,
+            "green_median": 465000,
+            "green_high": 574000,
+            "yellow": 621000,
+            "red_low": 637000,
+            "red_median": 671000,
+            "red_high": 696000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "LAND CRUISER",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 713000,
+            "green_median": 911000,
+            "green_high": 1050000,
+            "yellow": 1110000,
+            "red_low": 1140000,
+            "red_median": 1200000,
+            "red_high": 1240000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 672000,
+            "green_median": 858000,
+            "green_high": 988000,
+            "yellow": 1045000,
+            "red_low": 1070000,
+            "red_median": 1130000,
+            "red_high": 1170000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 606000,
+            "green_median": 774000,
+            "green_high": 892000,
+            "yellow": 942000,
+            "red_low": 966000,
+            "red_median": 1015000,
+            "red_high": 1055000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 466000,
+            "green_median": 595000,
+            "green_high": 686000,
+            "yellow": 725000,
+            "red_low": 743000,
+            "red_median": 783000,
+            "red_high": 812000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 399000,
+            "green_median": 510000,
+            "green_high": 588000,
+            "yellow": 621000,
+            "red_low": 637000,
+            "red_median": 671000,
+            "red_high": 696000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "LAND CRUISER",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 676000,
+            "green_median": 715000,
+            "green_high": 755000,
+            "yellow": 795000,
+            "red_low": 811000,
+            "red_median": 835000,
+            "red_high": 858000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 637000,
+            "green_median": 674000,
+            "green_high": 712000,
+            "yellow": 750000,
+            "red_low": 764000,
+            "red_median": 786000,
+            "red_high": 809000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 574000,
+            "green_median": 608000,
+            "green_high": 642000,
+            "yellow": 675000,
+            "red_low": 689000,
+            "red_median": 709000,
+            "red_high": 730000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 442000,
+            "green_median": 468000,
+            "green_high": 493000,
+            "yellow": 520000,
+            "red_low": 530000,
+            "red_median": 546000,
+            "red_high": 562000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 379000,
+            "green_median": 400000,
+            "green_high": 423000,
+            "yellow": 446000,
+            "red_low": 455000,
+            "red_median": 467000,
+            "red_high": 481000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "LAND CRUISER",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 769000,
+            "green_median": 814000,
+            "green_high": 859000,
+            "yellow": 904000,
+            "red_low": 922000,
+            "red_median": 950000,
+            "red_high": 977000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 724000,
+            "green_median": 766000,
+            "green_high": 809000,
+            "yellow": 852000,
+            "red_low": 869000,
+            "red_median": 894000,
+            "red_high": 920000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 653000,
+            "green_median": 691000,
+            "green_high": 730000,
+            "yellow": 768000,
+            "red_low": 783000,
+            "red_median": 806000,
+            "red_high": 829000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 502000,
+            "green_median": 532000,
+            "green_high": 561000,
+            "yellow": 591000,
+            "red_low": 603000,
+            "red_median": 620000,
+            "red_high": 638000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 430000,
+            "green_median": 456000,
+            "green_high": 481000,
+            "yellow": 506000,
+            "red_low": 517000,
+            "red_median": 532000,
+            "red_high": 547000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "LAND CRUISER",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 911000,
+            "green_median": 964000,
+            "green_high": 1020000,
+            "yellow": 1070000,
+            "red_low": 1095000,
+            "red_median": 1125000,
+            "red_high": 1155000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 857000,
+            "green_median": 908000,
+            "green_high": 958000,
+            "yellow": 1010000,
+            "red_low": 1030000,
+            "red_median": 1060000,
+            "red_high": 1090000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 773000,
+            "green_median": 819000,
+            "green_high": 864000,
+            "yellow": 910000,
+            "red_low": 928000,
+            "red_median": 955000,
+            "red_high": 983000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 595000,
+            "green_median": 630000,
+            "green_high": 665000,
+            "yellow": 700000,
+            "red_low": 714000,
+            "red_median": 735000,
+            "red_high": 756000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 510000,
+            "green_median": 540000,
+            "green_high": 570000,
+            "yellow": 600000,
+            "red_low": 612000,
+            "red_median": 630000,
+            "red_high": 648000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

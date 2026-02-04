@@ -1,0 +1,554 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "AVANZA",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "AVANZA 1.5 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 178000,
+            "green_median": 179000,
+            "green_high": 180000,
+            "yellow": 180000,
+            "red_low": 189000,
+            "red_median": 194000,
+            "red_high": 200000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 167000,
+            "green_median": 168000,
+            "green_high": 169000,
+            "yellow": 170000,
+            "red_low": 178000,
+            "red_median": 183000,
+            "red_high": 188000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 151000,
+            "green_median": 152000,
+            "green_high": 153000,
+            "yellow": 153000,
+            "red_low": 161000,
+            "red_median": 165000,
+            "red_high": 170000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 116000,
+            "green_median": 117000,
+            "green_high": 117000,
+            "yellow": 118000,
+            "red_low": 124000,
+            "red_median": 127000,
+            "red_high": 131000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 99000,
+            "green_median": 100000,
+            "green_high": 101000,
+            "yellow": 101000,
+            "red_low": 106000,
+            "red_median": 109000,
+            "red_high": 112000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "AVANZA",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "AVANZA 1.5 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 166000,
+            "green_median": 169000,
+            "green_high": 171000,
+            "yellow": 172000,
+            "red_low": 174000,
+            "red_median": 179000,
+            "red_high": 187000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 157000,
+            "green_median": 159000,
+            "green_high": 161000,
+            "yellow": 162000,
+            "red_low": 164000,
+            "red_median": 169000,
+            "red_high": 176000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 141000,
+            "green_median": 144000,
+            "green_high": 145000,
+            "yellow": 146000,
+            "red_low": 148000,
+            "red_median": 152000,
+            "red_high": 159000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 109000,
+            "green_median": 110000,
+            "green_high": 112000,
+            "yellow": 112000,
+            "red_low": 114000,
+            "red_median": 117000,
+            "red_high": 122000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 93000,
+            "green_median": 95000,
+            "green_high": 96000,
+            "yellow": 96000,
+            "red_low": 97000,
+            "red_median": 100000,
+            "red_high": 105000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "AVANZA",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "AVANZA 1.5 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 197000,
+            "green_median": 203000,
+            "green_high": 208000,
+            "yellow": 210000,
+            "red_low": 214000,
+            "red_median": 220000,
+            "red_high": 226000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 185000,
+            "green_median": 191000,
+            "green_high": 196000,
+            "yellow": 197000,
+            "red_low": 201000,
+            "red_median": 207000,
+            "red_high": 213000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 167000,
+            "green_median": 172000,
+            "green_high": 176000,
+            "yellow": 178000,
+            "red_low": 182000,
+            "red_median": 187000,
+            "red_high": 192000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 128000,
+            "green_median": 133000,
+            "green_high": 136000,
+            "yellow": 137000,
+            "red_low": 140000,
+            "red_median": 144000,
+            "red_high": 148000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 110000,
+            "green_median": 114000,
+            "green_high": 116000,
+            "yellow": 117000,
+            "red_low": 120000,
+            "red_median": 123000,
+            "red_high": 127000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "AVANZA",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "AVANZA 1.5 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 275000,
+            "green_median": 289000,
+            "green_high": 299000,
+            "yellow": 303000,
+            "red_low": 310000,
+            "red_median": 319000,
+            "red_high": 328000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 259000,
+            "green_median": 272000,
+            "green_high": 282000,
+            "yellow": 286000,
+            "red_low": 291000,
+            "red_median": 300000,
+            "red_high": 309000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 233000,
+            "green_median": 246000,
+            "green_high": 254000,
+            "yellow": 258000,
+            "red_low": 263000,
+            "red_median": 271000,
+            "red_high": 278000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 180000,
+            "green_median": 189000,
+            "green_high": 195000,
+            "yellow": 198000,
+            "red_low": 202000,
+            "red_median": 208000,
+            "red_high": 214000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 154000,
+            "green_median": 162000,
+            "green_high": 168000,
+            "yellow": 170000,
+            "red_low": 173000,
+            "red_median": 178000,
+            "red_high": 184000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "AVANZA",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "AVANZA 1.5 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 360000,
+            "green_median": 370000,
+            "green_high": 377000,
+            "yellow": 380000,
+            "red_low": 388000,
+            "red_median": 399000,
+            "red_high": 411000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 339000,
+            "green_median": 349000,
+            "green_high": 355000,
+            "yellow": 358000,
+            "red_low": 365000,
+            "red_median": 376000,
+            "red_high": 387000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 306000,
+            "green_median": 314000,
+            "green_high": 321000,
+            "yellow": 323000,
+            "red_low": 330000,
+            "red_median": 339000,
+            "red_high": 349000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 235000,
+            "green_median": 242000,
+            "green_high": 247000,
+            "yellow": 249000,
+            "red_low": 254000,
+            "red_median": 261000,
+            "red_high": 268000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 202000,
+            "green_median": 207000,
+            "green_high": 211000,
+            "yellow": 213000,
+            "red_low": 217000,
+            "red_median": 224000,
+            "red_high": 230000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "AVANZA",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "AVANZA 1.5 G"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 397000,
+            "green_median": 403000,
+            "green_high": 407000,
+            "yellow": 409000,
+            "red_low": 417000,
+            "red_median": 429000,
+            "red_high": 441000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 374000,
+            "green_median": 380000,
+            "green_high": 383000,
+            "yellow": 385000,
+            "red_low": 393000,
+            "red_median": 404000,
+            "red_high": 416000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 338000,
+            "green_median": 342000,
+            "green_high": 346000,
+            "yellow": 347000,
+            "red_low": 354000,
+            "red_median": 364000,
+            "red_high": 375000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 260000,
+            "green_median": 263000,
+            "green_high": 266000,
+            "yellow": 267000,
+            "red_low": 272000,
+            "red_median": 280000,
+            "red_high": 288000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 223000,
+            "green_median": 226000,
+            "green_high": 228000,
+            "yellow": 229000,
+            "red_low": 233000,
+            "red_median": 240000,
+            "red_high": 247000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

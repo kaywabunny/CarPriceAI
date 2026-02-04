@@ -1,0 +1,568 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "CAMRY",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 366000,
+            "green_median": 416000,
+            "green_high": 451000,
+            "yellow": 466000,
+            "red_low": 478000,
+            "red_median": 503000,
+            "red_high": 522000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 344000,
+            "green_median": 392000,
+            "green_high": 425000,
+            "yellow": 439000,
+            "red_low": 450000,
+            "red_median": 474000,
+            "red_high": 492000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 311000,
+            "green_median": 353000,
+            "green_high": 383000,
+            "yellow": 396000,
+            "red_low": 406000,
+            "red_median": 427000,
+            "red_high": 443000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 239000,
+            "green_median": 272000,
+            "green_high": 295000,
+            "yellow": 304000,
+            "red_low": 312000,
+            "red_median": 329000,
+            "red_high": 341000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 205000,
+            "green_median": 233000,
+            "green_high": 253000,
+            "yellow": 261000,
+            "red_low": 268000,
+            "red_median": 282000,
+            "red_high": 292000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "CAMRY",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 326000,
+            "green_median": 335000,
+            "green_high": 342000,
+            "yellow": 345000,
+            "red_low": 352000,
+            "red_median": 362000,
+            "red_high": 372000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 307000,
+            "green_median": 316000,
+            "green_high": 322000,
+            "yellow": 325000,
+            "red_low": 331000,
+            "red_median": 341000,
+            "red_high": 351000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 277000,
+            "green_median": 285000,
+            "green_high": 290000,
+            "yellow": 293000,
+            "red_low": 299000,
+            "red_median": 307000,
+            "red_high": 316000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 213000,
+            "green_median": 219000,
+            "green_high": 223000,
+            "yellow": 225000,
+            "red_low": 230000,
+            "red_median": 237000,
+            "red_high": 243000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 182000,
+            "green_median": 188000,
+            "green_high": 191000,
+            "yellow": 193000,
+            "red_low": 197000,
+            "red_median": 203000,
+            "red_high": 209000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "CAMRY",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 411000,
+            "green_median": 415000,
+            "green_high": 417000,
+            "yellow": 418000,
+            "red_low": 424000,
+            "red_median": 438000,
+            "red_high": 458000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 387000,
+            "green_median": 390000,
+            "green_high": 393000,
+            "yellow": 394000,
+            "red_low": 399000,
+            "red_median": 413000,
+            "red_high": 431000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 349000,
+            "green_median": 352000,
+            "green_high": 354000,
+            "yellow": 355000,
+            "red_low": 360000,
+            "red_median": 372000,
+            "red_high": 389000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 269000,
+            "green_median": 271000,
+            "green_high": 272000,
+            "yellow": 273000,
+            "red_low": 277000,
+            "red_median": 286000,
+            "red_high": 299000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 230000,
+            "green_median": 232000,
+            "green_high": 234000,
+            "yellow": 234000,
+            "red_low": 238000,
+            "red_median": 245000,
+            "red_high": 256000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "CAMRY",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 600000,
+            "green_median": 619000,
+            "green_high": 632000,
+            "yellow": 638000,
+            "red_low": 652000,
+            "red_median": 684000,
+            "red_high": 715000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 565000,
+            "green_median": 583000,
+            "green_high": 595000,
+            "yellow": 601000,
+            "red_low": 614000,
+            "red_median": 644000,
+            "red_high": 673000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 510000,
+            "green_median": 526000,
+            "green_high": 537000,
+            "yellow": 542000,
+            "red_low": 553000,
+            "red_median": 581000,
+            "red_high": 607000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 392000,
+            "green_median": 405000,
+            "green_high": 413000,
+            "yellow": 417000,
+            "red_low": 426000,
+            "red_median": 447000,
+            "red_high": 467000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 336000,
+            "green_median": 347000,
+            "green_high": 354000,
+            "yellow": 357000,
+            "red_low": 365000,
+            "red_median": 383000,
+            "red_high": 400000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "CAMRY",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 843000,
+            "green_median": 856000,
+            "green_high": 866000,
+            "yellow": 870000,
+            "red_low": 883000,
+            "red_median": 913000,
+            "red_high": 956000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 794000,
+            "green_median": 806000,
+            "green_high": 815000,
+            "yellow": 819000,
+            "red_low": 831000,
+            "red_median": 859000,
+            "red_high": 900000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 703000,
+            "green_median": 727000,
+            "green_high": 735000,
+            "yellow": 739000,
+            "red_low": 750000,
+            "red_median": 775000,
+            "red_high": 812000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 551000,
+            "green_median": 559000,
+            "green_high": 566000,
+            "yellow": 568000,
+            "red_low": 577000,
+            "red_median": 596000,
+            "red_high": 624000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 472000,
+            "green_median": 480000,
+            "green_high": 485000,
+            "yellow": 487000,
+            "red_low": 494000,
+            "red_median": 511000,
+            "red_high": 535000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "CAMRY",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 958000,
+            "green_median": 1010000,
+            "green_high": 1050000,
+            "yellow": 1065000,
+            "red_low": 1090000,
+            "red_median": 1150000,
+            "red_high": 1195000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 902000,
+            "green_median": 953000,
+            "green_high": 989000,
+            "yellow": 1005000,
+            "red_low": 1030000,
+            "red_median": 1085000,
+            "red_high": 1125000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 814000,
+            "green_median": 860000,
+            "green_high": 892000,
+            "yellow": 906000,
+            "red_low": 928000,
+            "red_median": 978000,
+            "red_high": 1015000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 626000,
+            "green_median": 661000,
+            "green_high": 686000,
+            "yellow": 697000,
+            "red_low": 714000,
+            "red_median": 752000,
+            "red_high": 781000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 536000,
+            "green_median": 567000,
+            "green_high": 588000,
+            "yellow": 597000,
+            "red_low": 612000,
+            "red_median": 645000,
+            "red_high": 669000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

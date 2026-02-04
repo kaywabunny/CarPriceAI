@@ -1,0 +1,558 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "SUZUKI",
+        "model": "CELERIO",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 84000,
+            "green_median": 98000,
+            "green_high": 108000,
+            "yellow": 112000,
+            "red_low": 115000,
+            "red_median": 118000,
+            "red_high": 121000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 79000,
+            "green_median": 92000,
+            "green_high": 102000,
+            "yellow": 106000,
+            "red_low": 108000,
+            "red_median": 111000,
+            "red_high": 114000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 69000,
+            "green_median": 81000,
+            "green_high": 89000,
+            "yellow": 92000,
+            "red_low": 94000,
+            "red_median": 97000,
+            "red_high": 100000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 47000,
+            "green_median": 55000,
+            "green_high": 61000,
+            "yellow": 63000,
+            "red_low": 64000,
+            "red_median": 66000,
+            "red_high": 68000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 47000,
+            "green_median": 55000,
+            "green_high": 61000,
+            "yellow": 63000,
+            "red_low": 64000,
+            "red_median": 66000,
+            "red_high": 68000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2013,
+      "request": {
+        "make": "SUZUKI",
+        "model": "CELERIO",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 105000,
+            "green_median": 115000,
+            "green_high": 123000,
+            "yellow": 126000,
+            "red_low": 128000,
+            "red_median": 132000,
+            "red_high": 136000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 98000,
+            "green_median": 108000,
+            "green_high": 115000,
+            "yellow": 118000,
+            "red_low": 121000,
+            "red_median": 124000,
+            "red_high": 128000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 86000,
+            "green_median": 95000,
+            "green_high": 101000,
+            "yellow": 103000,
+            "red_low": 105000,
+            "red_median": 108000,
+            "red_high": 112000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 59000,
+            "green_median": 64000,
+            "green_high": 69000,
+            "yellow": 70000,
+            "red_low": 72000,
+            "red_median": 74000,
+            "red_high": 76000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 59000,
+            "green_median": 64000,
+            "green_high": 69000,
+            "yellow": 70000,
+            "red_low": 72000,
+            "red_median": 74000,
+            "red_high": 76000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2015,
+      "request": {
+        "make": "SUZUKI",
+        "model": "CELERIO",
+        "year": 2015,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 138000,
+            "green_median": 145000,
+            "green_high": 150000,
+            "yellow": 152000,
+            "red_low": 155000,
+            "red_median": 159000,
+            "red_high": 164000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 130000,
+            "green_median": 137000,
+            "green_high": 141000,
+            "yellow": 143000,
+            "red_low": 146000,
+            "red_median": 150000,
+            "red_high": 154000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 113000,
+            "green_median": 119000,
+            "green_high": 123000,
+            "yellow": 125000,
+            "red_low": 127000,
+            "red_median": 131000,
+            "red_high": 135000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 77000,
+            "green_median": 81000,
+            "green_high": 84000,
+            "yellow": 85000,
+            "red_low": 87000,
+            "red_median": 89000,
+            "red_high": 92000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 77000,
+            "green_median": 81000,
+            "green_high": 84000,
+            "yellow": 85000,
+            "red_low": 87000,
+            "red_median": 89000,
+            "red_high": 92000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2018,
+      "request": {
+        "make": "SUZUKI",
+        "model": "CELERIO",
+        "year": 2018,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 175000,
+            "green_median": 192000,
+            "green_high": 205000,
+            "yellow": 210000,
+            "red_low": 215000,
+            "red_median": 221000,
+            "red_high": 227000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 164000,
+            "green_median": 181000,
+            "green_high": 193000,
+            "yellow": 198000,
+            "red_low": 202000,
+            "red_median": 208000,
+            "red_high": 214000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 143000,
+            "green_median": 158000,
+            "green_high": 168000,
+            "yellow": 173000,
+            "red_low": 176000,
+            "red_median": 181000,
+            "red_high": 187000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 98000,
+            "green_median": 108000,
+            "green_high": 115000,
+            "yellow": 118000,
+            "red_low": 120000,
+            "red_median": 124000,
+            "red_high": 127000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 98000,
+            "green_median": 108000,
+            "green_high": 115000,
+            "yellow": 118000,
+            "red_low": 120000,
+            "red_median": 124000,
+            "red_high": 127000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "SUZUKI",
+        "model": "CELERIO",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 213000,
+            "green_median": 222000,
+            "green_high": 227000,
+            "yellow": 230000,
+            "red_low": 234000,
+            "red_median": 241000,
+            "red_high": 248000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 201000,
+            "green_median": 209000,
+            "green_high": 214000,
+            "yellow": 216000,
+            "red_low": 221000,
+            "red_median": 227000,
+            "red_high": 234000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 175000,
+            "green_median": 182000,
+            "green_high": 187000,
+            "yellow": 189000,
+            "red_low": 192000,
+            "red_median": 198000,
+            "red_high": 204000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 119000,
+            "green_median": 124000,
+            "green_high": 127000,
+            "yellow": 129000,
+            "red_low": 131000,
+            "red_median": 135000,
+            "red_high": 139000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 119000,
+            "green_median": 124000,
+            "green_high": 127000,
+            "yellow": 129000,
+            "red_low": 131000,
+            "red_median": 135000,
+            "red_high": 139000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "SUZUKI",
+        "model": "CELERIO",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 260000,
+            "green_median": 285000,
+            "green_high": 303000,
+            "yellow": 311000,
+            "red_low": 317000,
+            "red_median": 326000,
+            "red_high": 335000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 244000,
+            "green_median": 268000,
+            "green_high": 285000,
+            "yellow": 292000,
+            "red_low": 298000,
+            "red_median": 307000,
+            "red_high": 316000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 213000,
+            "green_median": 234000,
+            "green_high": 249000,
+            "yellow": 255000,
+            "red_low": 260000,
+            "red_median": 268000,
+            "red_high": 275000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 145000,
+            "green_median": 160000,
+            "green_high": 170000,
+            "yellow": 174000,
+            "red_low": 177000,
+            "red_median": 183000,
+            "red_high": 188000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 145000,
+            "green_median": 160000,
+            "green_high": 170000,
+            "yellow": 174000,
+            "red_low": 177000,
+            "red_median": 183000,
+            "red_high": 188000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

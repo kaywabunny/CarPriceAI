@@ -1,0 +1,563 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "TOYOTA",
+        "model": "HILUX REVO",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 214000,
+            "green_median": 227000,
+            "green_high": 239000,
+            "yellow": 251000,
+            "red_low": 257000,
+            "red_median": 264000,
+            "red_high": 271000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 200000,
+            "green_median": 212000,
+            "green_high": 224000,
+            "yellow": 236000,
+            "red_low": 241000,
+            "red_median": 248000,
+            "red_high": 255000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 182000,
+            "green_median": 192000,
+            "green_high": 203000,
+            "yellow": 213000,
+            "red_low": 218000,
+            "red_median": 225000,
+            "red_high": 230000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 139000,
+            "green_median": 147000,
+            "green_high": 155000,
+            "yellow": 164000,
+            "red_low": 167000,
+            "red_median": 171000,
+            "red_high": 176000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 120000,
+            "green_median": 127000,
+            "green_high": 134000,
+            "yellow": 141000,
+            "red_low": 144000,
+            "red_median": 148000,
+            "red_high": 152000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "TOYOTA",
+        "model": "HILUX REVO",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 284000,
+            "green_median": 291000,
+            "green_high": 295000,
+            "yellow": 297000,
+            "red_low": 301000,
+            "red_median": 310000,
+            "red_high": 323000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 267000,
+            "green_median": 274000,
+            "green_high": 278000,
+            "yellow": 280000,
+            "red_low": 284000,
+            "red_median": 292000,
+            "red_high": 304000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 241000,
+            "green_median": 247000,
+            "green_high": 251000,
+            "yellow": 253000,
+            "red_low": 256000,
+            "red_median": 263000,
+            "red_high": 274000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 185000,
+            "green_median": 190000,
+            "green_high": 193000,
+            "yellow": 194000,
+            "red_low": 197000,
+            "red_median": 203000,
+            "red_high": 211000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 159000,
+            "green_median": 163000,
+            "green_high": 165000,
+            "yellow": 167000,
+            "red_low": 169000,
+            "red_median": 174000,
+            "red_high": 181000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "TOYOTA",
+        "model": "HILUX REVO",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 316000,
+            "green_median": 320000,
+            "green_high": 322000,
+            "yellow": 323000,
+            "red_low": 333000,
+            "red_median": 349000,
+            "red_high": 362000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 297000,
+            "green_median": 301000,
+            "green_high": 303000,
+            "yellow": 305000,
+            "red_low": 314000,
+            "red_median": 329000,
+            "red_high": 341000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 268000,
+            "green_median": 271000,
+            "green_high": 274000,
+            "yellow": 275000,
+            "red_low": 283000,
+            "red_median": 297000,
+            "red_high": 308000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 206000,
+            "green_median": 209000,
+            "green_high": 211000,
+            "yellow": 211000,
+            "red_low": 218000,
+            "red_median": 228000,
+            "red_high": 237000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 177000,
+            "green_median": 179000,
+            "green_high": 180000,
+            "yellow": 181000,
+            "red_low": 187000,
+            "red_median": 196000,
+            "red_high": 203000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "TOYOTA",
+        "model": "HILUX REVO",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 395000,
+            "green_median": 406000,
+            "green_high": 414000,
+            "yellow": 418000,
+            "red_low": 429000,
+            "red_median": 451000,
+            "red_high": 468000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 372000,
+            "green_median": 383000,
+            "green_high": 390000,
+            "yellow": 393000,
+            "red_low": 404000,
+            "red_median": 425000,
+            "red_high": 441000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 335000,
+            "green_median": 345000,
+            "green_high": 352000,
+            "yellow": 355000,
+            "red_low": 365000,
+            "red_median": 383000,
+            "red_high": 397000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 258000,
+            "green_median": 265000,
+            "green_high": 271000,
+            "yellow": 273000,
+            "red_low": 280000,
+            "red_median": 295000,
+            "red_high": 306000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 221000,
+            "green_median": 228000,
+            "green_high": 232000,
+            "yellow": 234000,
+            "red_low": 240000,
+            "red_median": 253000,
+            "red_high": 262000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TOYOTA",
+        "model": "HILUX REVO",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 554000,
+            "green_median": 585000,
+            "green_high": 607000,
+            "yellow": 616000,
+            "red_low": 628000,
+            "red_median": 647000,
+            "red_high": 665000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 522000,
+            "green_median": 551000,
+            "green_high": 571000,
+            "yellow": 580000,
+            "red_low": 592000,
+            "red_median": 609000,
+            "red_high": 626000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 414000,
+            "green_median": 479000,
+            "green_high": 515000,
+            "yellow": 523000,
+            "red_low": 534000,
+            "red_median": 549000,
+            "red_high": 565000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 362000,
+            "green_median": 382000,
+            "green_high": 396000,
+            "yellow": 402000,
+            "red_low": 410000,
+            "red_median": 423000,
+            "red_high": 435000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 310000,
+            "green_median": 328000,
+            "green_high": 340000,
+            "yellow": 345000,
+            "red_low": 352000,
+            "red_median": 362000,
+            "red_high": 373000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TOYOTA",
+        "model": "HILUX REVO",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 600000,
+            "green_median": 603000,
+            "green_high": 605000,
+            "yellow": 606000,
+            "red_low": 625000,
+            "red_median": 655000,
+            "red_high": 679000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 565000,
+            "green_median": 568000,
+            "green_high": 570000,
+            "yellow": 571000,
+            "red_low": 588000,
+            "red_median": 616000,
+            "red_high": 639000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 510000,
+            "green_median": 512000,
+            "green_high": 514000,
+            "yellow": 515000,
+            "red_low": 531000,
+            "red_median": 556000,
+            "red_high": 576000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 392000,
+            "green_median": 394000,
+            "green_high": 395000,
+            "yellow": 396000,
+            "red_low": 408000,
+            "red_median": 428000,
+            "red_high": 443000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 336000,
+            "green_median": 338000,
+            "green_high": 339000,
+            "yellow": 339000,
+            "red_low": 350000,
+            "red_median": 367000,
+            "red_high": 380000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

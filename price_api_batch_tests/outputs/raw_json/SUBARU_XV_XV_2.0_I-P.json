@@ -1,0 +1,564 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "SUBARU",
+        "model": "XV",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XV 2.0 I-P"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 167000,
+            "green_median": 176000,
+            "green_high": 186000,
+            "yellow": 196000,
+            "red_low": 200000,
+            "red_median": 206000,
+            "red_high": 212000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 157000,
+            "green_median": 166000,
+            "green_high": 176000,
+            "yellow": 185000,
+            "red_low": 189000,
+            "red_median": 195000,
+            "red_high": 200000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 142000,
+            "green_median": 150000,
+            "green_high": 158000,
+            "yellow": 167000,
+            "red_low": 170000,
+            "red_median": 175000,
+            "red_high": 179000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 109000,
+            "green_median": 116000,
+            "green_high": 122000,
+            "yellow": 129000,
+            "red_low": 131000,
+            "red_median": 135000,
+            "red_high": 138000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 94000,
+            "green_median": 99000,
+            "green_high": 105000,
+            "yellow": 110000,
+            "red_low": 112000,
+            "red_median": 115000,
+            "red_high": 118000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2013,
+      "request": {
+        "make": "SUBARU",
+        "model": "XV",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XV 2.0 I-P"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 215000,
+            "green_median": 217000,
+            "green_high": 218000,
+            "yellow": 219000,
+            "red_low": 221000,
+            "red_median": 227000,
+            "red_high": 235000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 203000,
+            "green_median": 204000,
+            "green_high": 206000,
+            "yellow": 206000,
+            "red_low": 208000,
+            "red_median": 214000,
+            "red_high": 221000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 183000,
+            "green_median": 184000,
+            "green_high": 185000,
+            "yellow": 186000,
+            "red_low": 188000,
+            "red_median": 193000,
+            "red_high": 200000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 141000,
+            "green_median": 142000,
+            "green_high": 143000,
+            "yellow": 143000,
+            "red_low": 145000,
+            "red_median": 148000,
+            "red_high": 154000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 121000,
+            "green_median": 122000,
+            "green_high": 122000,
+            "yellow": 123000,
+            "red_low": 124000,
+            "red_median": 127000,
+            "red_high": 132000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2015,
+      "request": {
+        "make": "SUBARU",
+        "model": "XV",
+        "year": 2015,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XV 2.0 I-P"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 257000,
+            "green_median": 258000,
+            "green_high": 258000,
+            "yellow": 258000,
+            "red_low": 264000,
+            "red_median": 271000,
+            "red_high": 279000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 242000,
+            "green_median": 243000,
+            "green_high": 243000,
+            "yellow": 243000,
+            "red_low": 248000,
+            "red_median": 255000,
+            "red_high": 263000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 218000,
+            "green_median": 219000,
+            "green_high": 219000,
+            "yellow": 219000,
+            "red_low": 224000,
+            "red_median": 230000,
+            "red_high": 237000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 168000,
+            "green_median": 168000,
+            "green_high": 169000,
+            "yellow": 169000,
+            "red_low": 172000,
+            "red_median": 177000,
+            "red_high": 182000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 144000,
+            "green_median": 144000,
+            "green_high": 145000,
+            "yellow": 145000,
+            "red_low": 148000,
+            "red_median": 152000,
+            "red_high": 156000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2018,
+      "request": {
+        "make": "SUBARU",
+        "model": "XV",
+        "year": 2018,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XV 2.0 I-P"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 327000,
+            "green_median": 340000,
+            "green_high": 348000,
+            "yellow": 352000,
+            "red_low": 359000,
+            "red_median": 369000,
+            "red_high": 380000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 308000,
+            "green_median": 320000,
+            "green_high": 328000,
+            "yellow": 331000,
+            "red_low": 338000,
+            "red_median": 348000,
+            "red_high": 358000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 278000,
+            "green_median": 288000,
+            "green_high": 296000,
+            "yellow": 299000,
+            "red_low": 305000,
+            "red_median": 314000,
+            "red_high": 323000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 214000,
+            "green_median": 222000,
+            "green_high": 227000,
+            "yellow": 230000,
+            "red_low": 234000,
+            "red_median": 241000,
+            "red_high": 248000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 183000,
+            "green_median": 190000,
+            "green_high": 195000,
+            "yellow": 197000,
+            "red_low": 201000,
+            "red_median": 207000,
+            "red_high": 213000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "SUBARU",
+        "model": "XV",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XV 2.0 I-P"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 441000,
+            "green_median": 463000,
+            "green_high": 479000,
+            "yellow": 485000,
+            "red_low": 495000,
+            "red_median": 510000,
+            "red_high": 524000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 415000,
+            "green_median": 436000,
+            "green_high": 451000,
+            "yellow": 457000,
+            "red_low": 466000,
+            "red_median": 480000,
+            "red_high": 493000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 372000,
+            "green_median": 393000,
+            "green_high": 407000,
+            "yellow": 412000,
+            "red_low": 420000,
+            "red_median": 433000,
+            "red_high": 445000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 288000,
+            "green_median": 303000,
+            "green_high": 313000,
+            "yellow": 317000,
+            "red_low": 323000,
+            "red_median": 333000,
+            "red_high": 342000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 247000,
+            "green_median": 259000,
+            "green_high": 268000,
+            "yellow": 272000,
+            "red_low": 277000,
+            "red_median": 285000,
+            "red_high": 293000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "SUBARU",
+        "model": "XV",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000",
+        "submodel": "XV 2.0 I-P"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 684000,
+            "green_median": 706000,
+            "green_high": 722000,
+            "yellow": 729000,
+            "red_low": 743000,
+            "red_median": 765000,
+            "red_high": 787000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 644000,
+            "green_median": 665000,
+            "green_high": 680000,
+            "yellow": 686000,
+            "red_low": 700000,
+            "red_median": 720000,
+            "red_high": 741000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 581000,
+            "green_median": 600000,
+            "green_high": 613000,
+            "yellow": 619000,
+            "red_low": 631000,
+            "red_median": 650000,
+            "red_high": 668000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 447000,
+            "green_median": 461000,
+            "green_high": 472000,
+            "yellow": 476000,
+            "red_low": 485000,
+            "red_median": 500000,
+            "red_high": 514000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 383000,
+            "green_median": 395000,
+            "green_high": 404000,
+            "yellow": 408000,
+            "red_low": 416000,
+            "red_median": 428000,
+            "red_high": 441000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

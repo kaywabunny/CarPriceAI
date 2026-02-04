@@ -1,0 +1,568 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "SUZUKI",
+        "model": "SWIFT",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 147000,
+            "green_median": 149000,
+            "green_high": 151000,
+            "yellow": 151000,
+            "red_low": 155000,
+            "red_median": 159000,
+            "red_high": 164000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 138000,
+            "green_median": 140000,
+            "green_high": 142000,
+            "yellow": 143000,
+            "red_low": 145000,
+            "red_median": 150000,
+            "red_high": 154000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 120000,
+            "green_median": 122000,
+            "green_high": 124000,
+            "yellow": 124000,
+            "red_low": 127000,
+            "red_median": 131000,
+            "red_high": 134000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 82000,
+            "green_median": 83000,
+            "green_high": 84000,
+            "yellow": 85000,
+            "red_low": 87000,
+            "red_median": 89000,
+            "red_high": 92000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 82000,
+            "green_median": 83000,
+            "green_high": 84000,
+            "yellow": 85000,
+            "red_low": 87000,
+            "red_median": 89000,
+            "red_high": 92000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2013,
+      "request": {
+        "make": "SUZUKI",
+        "model": "SWIFT",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 164000,
+            "green_median": 169000,
+            "green_high": 172000,
+            "yellow": 174000,
+            "red_low": 177000,
+            "red_median": 182000,
+            "red_high": 187000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 155000,
+            "green_median": 159000,
+            "green_high": 162000,
+            "yellow": 163000,
+            "red_low": 167000,
+            "red_median": 172000,
+            "red_high": 176000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 135000,
+            "green_median": 139000,
+            "green_high": 141000,
+            "yellow": 143000,
+            "red_low": 145000,
+            "red_median": 150000,
+            "red_high": 154000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 92000,
+            "green_median": 95000,
+            "green_high": 96000,
+            "yellow": 97000,
+            "red_low": 99000,
+            "red_median": 102000,
+            "red_high": 105000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 92000,
+            "green_median": 95000,
+            "green_high": 96000,
+            "yellow": 97000,
+            "red_low": 99000,
+            "red_median": 102000,
+            "red_high": 105000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2015,
+      "request": {
+        "make": "SUZUKI",
+        "model": "SWIFT",
+        "year": 2015,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 204000,
+            "green_median": 208000,
+            "green_high": 211000,
+            "yellow": 212000,
+            "red_low": 217000,
+            "red_median": 223000,
+            "red_high": 229000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 192000,
+            "green_median": 196000,
+            "green_high": 199000,
+            "yellow": 200000,
+            "red_low": 204000,
+            "red_median": 210000,
+            "red_high": 216000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 167000,
+            "green_median": 171000,
+            "green_high": 173000,
+            "yellow": 174000,
+            "red_low": 178000,
+            "red_median": 183000,
+            "red_high": 188000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 114000,
+            "green_median": 117000,
+            "green_high": 118000,
+            "yellow": 119000,
+            "red_low": 121000,
+            "red_median": 125000,
+            "red_high": 128000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 114000,
+            "green_median": 117000,
+            "green_high": 118000,
+            "yellow": 119000,
+            "red_low": 121000,
+            "red_median": 125000,
+            "red_high": 128000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2018,
+      "request": {
+        "make": "SUZUKI",
+        "model": "SWIFT",
+        "year": 2018,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 248000,
+            "green_median": 256000,
+            "green_high": 262000,
+            "yellow": 264000,
+            "red_low": 270000,
+            "red_median": 278000,
+            "red_high": 285000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 234000,
+            "green_median": 241000,
+            "green_high": 247000,
+            "yellow": 249000,
+            "red_low": 254000,
+            "red_median": 261000,
+            "red_high": 269000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 204000,
+            "green_median": 210000,
+            "green_high": 215000,
+            "yellow": 217000,
+            "red_low": 221000,
+            "red_median": 228000,
+            "red_high": 234000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 139000,
+            "green_median": 143000,
+            "green_high": 147000,
+            "yellow": 148000,
+            "red_low": 151000,
+            "red_median": 155000,
+            "red_high": 160000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 139000,
+            "green_median": 143000,
+            "green_high": 147000,
+            "yellow": 148000,
+            "red_low": 151000,
+            "red_median": 155000,
+            "red_high": 160000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "SUZUKI",
+        "model": "SWIFT",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 309000,
+            "green_median": 310000,
+            "green_high": 310000,
+            "yellow": 311000,
+            "red_low": 315000,
+            "red_median": 324000,
+            "red_high": 336000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 291000,
+            "green_median": 292000,
+            "green_high": 292000,
+            "yellow": 293000,
+            "red_low": 296000,
+            "red_median": 305000,
+            "red_high": 317000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 254000,
+            "green_median": 255000,
+            "green_high": 255000,
+            "yellow": 255000,
+            "red_low": 258000,
+            "red_median": 266000,
+            "red_high": 276000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 173000,
+            "green_median": 174000,
+            "green_high": 174000,
+            "yellow": 174000,
+            "red_low": 176000,
+            "red_median": 181000,
+            "red_high": 188000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 173000,
+            "green_median": 174000,
+            "green_high": 174000,
+            "yellow": 174000,
+            "red_low": 176000,
+            "red_median": 181000,
+            "red_high": 188000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.3,
+            "sample_size": 1,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "SUZUKI",
+        "model": "SWIFT",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 433000,
+            "green_median": 452000,
+            "green_high": 465000,
+            "yellow": 470000,
+            "red_low": 480000,
+            "red_median": 494000,
+            "red_high": 508000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 408000,
+            "green_median": 425000,
+            "green_high": 437000,
+            "yellow": 443000,
+            "red_low": 452000,
+            "red_median": 465000,
+            "red_high": 478000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 356000,
+            "green_median": 371000,
+            "green_high": 382000,
+            "yellow": 386000,
+            "red_low": 394000,
+            "red_median": 405000,
+            "red_high": 417000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 242000,
+            "green_median": 253000,
+            "green_high": 260000,
+            "yellow": 263000,
+            "red_low": 269000,
+            "red_median": 276000,
+            "red_high": 284000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 242000,
+            "green_median": 253000,
+            "green_high": 260000,
+            "yellow": 263000,
+            "red_low": 269000,
+            "red_median": 276000,
+            "red_high": 284000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

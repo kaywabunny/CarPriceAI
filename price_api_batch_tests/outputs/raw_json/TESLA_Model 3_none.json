@@ -1,0 +1,380 @@
+{
+  "results": [
+    {
+      "year": 2019,
+      "request": {
+        "make": "TESLA",
+        "model": "Model 3",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 792000,
+            "green_median": 1005000,
+            "green_high": 1155000,
+            "yellow": 1220000,
+            "red_low": 1240000,
+            "red_median": 1280000,
+            "red_high": 1315000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 745000,
+            "green_median": 946000,
+            "green_high": 1085000,
+            "yellow": 1145000,
+            "red_low": 1170000,
+            "red_median": 1205000,
+            "red_high": 1240000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 672000,
+            "green_median": 853000,
+            "green_high": 980000,
+            "yellow": 1035000,
+            "red_low": 1055000,
+            "red_median": 1085000,
+            "red_high": 1115000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 517000,
+            "green_median": 656000,
+            "green_high": 754000,
+            "yellow": 796000,
+            "red_low": 812000,
+            "red_median": 835000,
+            "red_high": 859000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 443000,
+            "green_median": 563000,
+            "green_high": 646000,
+            "yellow": 682000,
+            "red_low": 696000,
+            "red_median": 716000,
+            "red_high": 737000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "TESLA",
+        "model": "Model 3",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 784000,
+            "green_median": 995000,
+            "green_high": 1145000,
+            "yellow": 1205000,
+            "red_low": 1230000,
+            "red_median": 1265000,
+            "red_high": 1305000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 738000,
+            "green_median": 937000,
+            "green_high": 1075000,
+            "yellow": 1135000,
+            "red_low": 1160000,
+            "red_median": 1195000,
+            "red_high": 1225000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 666000,
+            "green_median": 845000,
+            "green_high": 971000,
+            "yellow": 1025000,
+            "red_low": 1045000,
+            "red_median": 1075000,
+            "red_high": 1105000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 512000,
+            "green_median": 650000,
+            "green_high": 747000,
+            "yellow": 788000,
+            "red_low": 804000,
+            "red_median": 827000,
+            "red_high": 851000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 439000,
+            "green_median": 557000,
+            "green_high": 640000,
+            "yellow": 675000,
+            "red_low": 689000,
+            "red_median": 709000,
+            "red_high": 730000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "TESLA",
+        "model": "Model 3",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 750000,
+            "green_median": 916000,
+            "green_high": 1030000,
+            "yellow": 1080000,
+            "red_low": 1105000,
+            "red_median": 1135000,
+            "red_high": 1170000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 707000,
+            "green_median": 863000,
+            "green_high": 972000,
+            "yellow": 1020000,
+            "red_low": 1040000,
+            "red_median": 1070000,
+            "red_high": 1100000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 637000,
+            "green_median": 778000,
+            "green_high": 877000,
+            "yellow": 919000,
+            "red_low": 937000,
+            "red_median": 965000,
+            "red_high": 992000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 490000,
+            "green_median": 599000,
+            "green_high": 674000,
+            "yellow": 707000,
+            "red_low": 721000,
+            "red_median": 742000,
+            "red_high": 763000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 420000,
+            "green_median": 513000,
+            "green_high": 578000,
+            "yellow": 606000,
+            "red_low": 618000,
+            "red_median": 636000,
+            "red_high": 654000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "TESLA",
+        "model": "Model 3",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 861000,
+            "green_median": 1090000,
+            "green_high": 1255000,
+            "yellow": 1325000,
+            "red_low": 1350000,
+            "red_median": 1390000,
+            "red_high": 1430000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 810000,
+            "green_median": 1030000,
+            "green_high": 1180000,
+            "yellow": 1245000,
+            "red_low": 1270000,
+            "red_median": 1310000,
+            "red_high": 1345000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 731000,
+            "green_median": 928000,
+            "green_high": 1065000,
+            "yellow": 1125000,
+            "red_low": 1145000,
+            "red_median": 1180000,
+            "red_high": 1215000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 562000,
+            "green_median": 714000,
+            "green_high": 820000,
+            "yellow": 865000,
+            "red_low": 882000,
+            "red_median": 908000,
+            "red_high": 934000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 482000,
+            "green_median": 612000,
+            "green_high": 703000,
+            "yellow": 741000,
+            "red_low": 756000,
+            "red_median": 779000,
+            "red_high": 801000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

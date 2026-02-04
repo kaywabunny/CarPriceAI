@@ -1,0 +1,470 @@
+@import '@fontsource/chivo/700.css';
+@import '@fontsource/chivo/900.css';
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --chart-1: 142 76% 36%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 350 89% 60%;
+    --chart-4: 221 83% 53%;
+    --chart-5: 262 83% 58%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --chart-1: 142 70% 45%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 350 89% 60%;
+    --chart-4: 221 83% 53%;
+    --chart-5: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/30;
+  }
+}
+
+@layer components {
+  /* Price display with mono font */
+  .price-display {
+    @apply font-mono tabular-nums;
+  }
+
+  /* Status badge variants */
+  .status-good {
+    @apply bg-status-good/10 text-status-good border-status-good/20;
+  }
+
+  .status-fair {
+    @apply bg-status-fair/10 text-status-fair border-status-fair/20;
+  }
+
+  .status-high {
+    @apply bg-status-high/10 text-status-high border-status-high/20;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-transform duration-200;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1 shadow-lg;
+  }
+
+  /* Glass morphism */
+  .glass {
+    @apply bg-background/80 backdrop-blur-xl border border-border/50;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-electric bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  /* Tracking utilities for headings */
+  .tracking-tighter {
+    letter-spacing: -0.05em;
+  }
+
+  /* Animation delays */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Debug wrapper fix */
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+    border-left-width: inherit;
+    border-right-width: inherit;
+    border-top-width: inherit;
+    border-bottom-width: inherit;
+    border-left-style: inherit;
+    border-right-style: inherit;
+    border-top-style: inherit;
+    border-bottom-style: inherit;
+    border-left-color: inherit;
+    border-right-color: inherit;
+    border-top-color: inherit;
+    border-bottom-color: inherit;
+  }
+}
+
+/* ========== Price Report only: layout (no color overrides on screen) ========== */
+/* All selectors scoped under .price-report so normal UI is untouched. */
+.price-report .reportDivider {
+  border: none;
+  border-top: 1px solid #E5E7EB;
+  margin: 12px 0;
+}
+.price-report .reportHeaderTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.price-report .reportHeaderIcon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  transform: translateY(1px);
+}
+.price-report .reportHeaderTitle {
+  margin: 0;
+  line-height: 1.2;
+}
+/* Band card structure only on screen (no pastel/color overrides — dark UI) */
+.price-report .bandCard {
+  border-radius: 12px;
+}
+.price-report .report-card {
+  padding: 0.75rem;
+}
+.price-report [data-chart-slot] img,
+.price-report [data-depreciation-chart] {
+  max-width: 100%;
+}
+/* Page 2: chart slot full width + margins */
+.price-report .reportChartSlot {
+  width: 100%;
+}
+.price-report .reportChartTitle {
+  margin-bottom: 0.75rem;
+}
+/* Page 2: Data & reliability mini-table */
+.price-report .reportReliabilityTable {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.price-report .reportReliabilityRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.price-report .reportReliabilityLabel {
+  font-weight: 600;
+  min-width: 6rem;
+  flex-shrink: 0;
+}
+.price-report .report-block,
+.price-report .report-card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* PDF-only: forced black text + clean cards (used by offscreen wrapper for html2canvas) */
+.price-report-pdf,
+.price-report-pdf * {
+  color: #000 !important;
+}
+.price-report-pdf .reportHeaderTitle { color: #000 !important; }
+.price-report-pdf .reportHeaderMeta { color: #000 !important; }
+.price-report-pdf .bandCard--green {
+  background: #EAF7EF !important;
+  border: 1px solid #BFE6CD !important;
+  box-shadow: none !important;
+}
+.price-report-pdf .bandCard--yellow {
+  background: #FFF6E6 !important;
+  border: 1px solid #F6D7A8 !important;
+  box-shadow: none !important;
+}
+.price-report-pdf .bandCard--red {
+  background: #FDECEC !important;
+  border: 1px solid #F5B8B8 !important;
+  box-shadow: none !important;
+}
+.price-report-pdf .reportBandTitle { color: #000 !important; }
+.price-report-pdf .reportPriceValue { color: #000 !important; font-weight: 700; }
+.price-report-pdf .reportPriceRange,
+.price-report-pdf .priceRange { color: #111827 !important; opacity: 0.85; }
+/* Optional: re-apply green/yellow/red for band labels in PDF (remove to make all black) */
+.price-report-pdf .text-status-good,
+.price-report-pdf .text-status-good * { color: #0F7A3B !important; }
+.price-report-pdf .text-status-fair,
+.price-report-pdf .text-status-fair * { color: #B45309 !important; }
+.price-report-pdf .text-status-high,
+.price-report-pdf .text-status-high * { color: #B91C1C !important; }
+
+/* PDF (html2canvas): prevent band card title clipping — overflow + room for ascenders */
+.price-report-pdf .bandCard,
+.price-report-pdf .bandCardInner,
+.price-report-pdf .reportBandTitle,
+.price-report-pdf .reportBandTitle * {
+  overflow: visible !important;
+}
+.price-report-pdf .reportBandTitle {
+  padding-top: 6px !important;
+  line-height: 1.35 !important;
+  margin-top: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  -webkit-line-clamp: unset !important;
+  display: block !important;
+}
+.price-report-pdf h1,
+.price-report-pdf h2,
+.price-report-pdf h3,
+.price-report-pdf h4 {
+  line-height: 1.35 !important;
+}
+.price-report-pdf .bandCard,
+.price-report-pdf .bandCardInner {
+  transform: none !important;
+}
+
+/* Price Report: print — 3-page layout + black text */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  body.printing-price-report .print-only-report,
+  body.printing-price-report .print-only-report * {
+    visibility: visible !important;
+  }
+  .price-report .noPrint {
+    display: none !important;
+  }
+  body.printing-price-report .print-only-report {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    background: #fff !important;
+    color: #000 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  body.printing-price-report .print-only-report .price-report-body,
+  body.printing-price-report .print-only-report .price-report-body > div {
+    max-height: none !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+  /* PDF: Thai-safe font + line-height + no clipping */
+  body.printing-price-report .print-only-report .price-report {
+    font-family: "Noto Sans Thai", "Noto Sans", Arial, sans-serif !important;
+  }
+  body.printing-price-report .print-only-report .price-report p,
+  body.printing-price-report .print-only-report .price-report li,
+  body.printing-price-report .print-only-report .price-report span,
+  body.printing-price-report .print-only-report .price-report div {
+    line-height: 1.6 !important;
+  }
+  body.printing-price-report .print-only-report .price-report * {
+    overflow: visible !important;
+  }
+  /* PDF: prevent band card title clipping (EN + TH) */
+  body.printing-price-report .print-only-report .price-report .bandCard,
+  body.printing-price-report .print-only-report .price-report .bandCardInner,
+  body.printing-price-report .print-only-report .price-report .reportBandTitle,
+  body.printing-price-report .print-only-report .price-report .reportBandTitle * {
+    overflow: visible !important;
+  }
+  body.printing-price-report .print-only-report .price-report .reportBandTitle {
+    padding-top: 6px !important;
+    line-height: 1.35 !important;
+    margin-top: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    -webkit-line-clamp: unset !important;
+    display: block !important;
+  }
+  body.printing-price-report .print-only-report .price-report h1,
+  body.printing-price-report .print-only-report .price-report h2,
+  body.printing-price-report .print-only-report .price-report h3,
+  body.printing-price-report .print-only-report .price-report h4 {
+    line-height: 1.35 !important;
+  }
+  body.printing-price-report .print-only-report .price-report .bandCard,
+  body.printing-price-report .print-only-report .price-report .bandCardInner {
+    transform: none !important;
+  }
+  /* PDF: center content inside price band cards */
+  body.printing-price-report .print-only-report .price-report .bandCardInner {
+    display: grid !important;
+    grid-template-rows: auto auto 24px auto !important;
+    row-gap: 8px !important;
+    height: 100% !important;
+    align-content: center !important;
+  }
+  body.printing-price-report .print-only-report .price-report .bandSubtext--placeholder {
+    visibility: hidden !important;
+  }
+  body.printing-price-report .print-only-report .price-report .reportPriceValue,
+  body.printing-price-report .print-only-report .price-report .priceValue {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+  }
+  body.printing-price-report .print-only-report .price-report .reportPriceRange,
+  body.printing-price-report .print-only-report .price-report .priceRange {
+    margin-top: 4px !important;
+  }
+  body.printing-price-report .print-only-report .price-report .reportHeaderTitle,
+  body.printing-price-report .print-only-report .price-report .reportHeaderMeta {
+    color: #000 !important;
+  }
+  body.printing-price-report .print-only-report .price-report,
+  body.printing-price-report .print-only-report .price-report * {
+    color: #000 !important;
+  }
+  body.printing-price-report .print-only-report .price-report .text-status-good,
+  body.printing-price-report .print-only-report .price-report .text-status-good * {
+    color: #0F7A3B !important;
+  }
+  body.printing-price-report .print-only-report .price-report .text-status-fair,
+  body.printing-price-report .print-only-report .price-report .text-status-fair * {
+    color: #B45309 !important;
+  }
+  body.printing-price-report .print-only-report .price-report .text-status-high,
+  body.printing-price-report .print-only-report .price-report .text-status-high * {
+    color: #B91C1C !important;
+  }
+  body.printing-price-report .print-only-report .price-report .bandCard--green {
+    background: #EAF7EF !important;
+    border: 1px solid #BFE6CD !important;
+    box-shadow: none !important;
+  }
+  body.printing-price-report .print-only-report .price-report .bandCard--yellow {
+    background: #FFF6E6 !important;
+    border: 1px solid #F6D7A8 !important;
+    box-shadow: none !important;
+  }
+  body.printing-price-report .print-only-report .price-report .bandCard--red {
+    background: #FDECEC !important;
+    border: 1px solid #F5B8B8 !important;
+    box-shadow: none !important;
+  }
+  body.printing-price-report .print-only-report .price-report .reportBandTitle { color: #000 !important; }
+  body.printing-price-report .print-only-report .price-report .reportPriceValue { color: #000 !important; font-weight: 700; }
+  body.printing-price-report .print-only-report .price-report .reportPriceRange,
+  body.printing-price-report .print-only-report .price-report .priceRange { color: #111827 !important; opacity: 0.85; }
+  body.printing-price-report .print-only-report .price-report .reportPage {
+    page-break-after: always;
+    break-after: page;
+  }
+  body.printing-price-report .print-only-report .price-report .reportPage--3,
+  body.printing-price-report .print-only-report .price-report .reportPage:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+  body.printing-price-report .print-only-report .print\:hidden {
+    display: none !important;
+  }
+  body.printing-price-report .print-only-report .price-report-page1-header {
+    display: block !important;
+  }
+}

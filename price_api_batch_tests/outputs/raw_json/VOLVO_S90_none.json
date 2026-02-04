@@ -1,0 +1,553 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "VOLVO",
+        "model": "S90",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 280000,
+            "green_median": 296000,
+            "green_high": 313000,
+            "yellow": 330000,
+            "red_low": 336000,
+            "red_median": 346000,
+            "red_high": 356000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 263000,
+            "green_median": 279000,
+            "green_high": 295000,
+            "yellow": 310000,
+            "red_low": 316000,
+            "red_median": 326000,
+            "red_high": 335000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 238000,
+            "green_median": 252000,
+            "green_high": 266000,
+            "yellow": 280000,
+            "red_low": 286000,
+            "red_median": 294000,
+            "red_high": 302000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 183000,
+            "green_median": 194000,
+            "green_high": 205000,
+            "yellow": 215000,
+            "red_low": 219000,
+            "red_median": 226000,
+            "red_high": 233000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 157000,
+            "green_median": 167000,
+            "green_high": 176000,
+            "yellow": 185000,
+            "red_low": 189000,
+            "red_median": 195000,
+            "red_high": 200000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2014,
+      "request": {
+        "make": "VOLVO",
+        "model": "S90",
+        "year": 2014,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 369000,
+            "green_median": 469000,
+            "green_high": 538000,
+            "yellow": 568000,
+            "red_low": 576000,
+            "red_median": 595000,
+            "red_high": 622000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 348000,
+            "green_median": 441000,
+            "green_high": 507000,
+            "yellow": 535000,
+            "red_low": 543000,
+            "red_median": 560000,
+            "red_high": 586000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 314000,
+            "green_median": 398000,
+            "green_high": 457000,
+            "yellow": 483000,
+            "red_low": 489000,
+            "red_median": 505000,
+            "red_high": 528000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 241000,
+            "green_median": 306000,
+            "green_high": 352000,
+            "yellow": 371000,
+            "red_low": 376000,
+            "red_median": 389000,
+            "red_high": 406000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 207000,
+            "green_median": 263000,
+            "green_high": 301000,
+            "yellow": 318000,
+            "red_low": 323000,
+            "red_median": 333000,
+            "red_high": 348000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2016,
+      "request": {
+        "make": "VOLVO",
+        "model": "S90",
+        "year": 2016,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 494000,
+            "green_median": 625000,
+            "green_high": 717000,
+            "yellow": 757000,
+            "red_low": 772000,
+            "red_median": 794000,
+            "red_high": 817000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 465000,
+            "green_median": 589000,
+            "green_high": 675000,
+            "yellow": 712000,
+            "red_low": 727000,
+            "red_median": 748000,
+            "red_high": 769000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 2,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 419000,
+            "green_median": 531000,
+            "green_high": 609000,
+            "yellow": 643000,
+            "red_low": 655000,
+            "red_median": 675000,
+            "red_high": 694000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 323000,
+            "green_median": 408000,
+            "green_high": 469000,
+            "yellow": 494000,
+            "red_low": 504000,
+            "red_median": 519000,
+            "red_high": 534000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 277000,
+            "green_median": 350000,
+            "green_high": 402000,
+            "yellow": 424000,
+            "red_low": 432000,
+            "red_median": 445000,
+            "red_high": 458000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2019,
+      "request": {
+        "make": "VOLVO",
+        "model": "S90",
+        "year": 2019,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 848000,
+            "green_median": 901000,
+            "green_high": 938000,
+            "yellow": 953000,
+            "red_low": 973000,
+            "red_median": 1000000,
+            "red_high": 1030000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 799000,
+            "green_median": 848000,
+            "green_high": 883000,
+            "yellow": 898000,
+            "red_low": 916000,
+            "red_median": 943000,
+            "red_high": 970000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 720000,
+            "green_median": 765000,
+            "green_high": 796000,
+            "yellow": 810000,
+            "red_low": 826000,
+            "red_median": 850000,
+            "red_high": 874000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 554000,
+            "green_median": 589000,
+            "green_high": 613000,
+            "yellow": 623000,
+            "red_low": 635000,
+            "red_median": 654000,
+            "red_high": 673000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 475000,
+            "green_median": 504000,
+            "green_high": 525000,
+            "yellow": 534000,
+            "red_low": 545000,
+            "red_median": 561000,
+            "red_high": 577000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2022,
+      "request": {
+        "make": "VOLVO",
+        "model": "S90",
+        "year": 2022,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1220000,
+            "green_median": 1335000,
+            "green_high": 1415000,
+            "yellow": 1450000,
+            "red_low": 1480000,
+            "red_median": 1525000,
+            "red_high": 1565000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1150000,
+            "green_median": 1260000,
+            "green_high": 1335000,
+            "yellow": 1365000,
+            "red_low": 1395000,
+            "red_median": 1435000,
+            "red_high": 1475000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 972000,
+            "green_median": 1135000,
+            "green_high": 1205000,
+            "yellow": 1230000,
+            "red_low": 1255000,
+            "red_median": 1295000,
+            "red_high": 1330000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 798000,
+            "green_median": 873000,
+            "green_high": 925000,
+            "yellow": 948000,
+            "red_low": 967000,
+            "red_median": 995000,
+            "red_high": 1025000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 684000,
+            "green_median": 748000,
+            "green_high": 793000,
+            "yellow": 812000,
+            "red_low": 829000,
+            "red_median": 853000,
+            "red_high": 877000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "VOLVO",
+        "model": "S90",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1320000,
+            "green_median": 1480000,
+            "green_high": 1590000,
+            "yellow": 1640000,
+            "red_low": 1700000,
+            "red_median": 1770000,
+            "red_high": 1835000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1245000,
+            "green_median": 1395000,
+            "green_high": 1500000,
+            "yellow": 1545000,
+            "red_low": 1600000,
+            "red_median": 1665000,
+            "red_high": 1730000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 1125000,
+            "green_median": 1255000,
+            "green_high": 1350000,
+            "yellow": 1390000,
+            "red_low": 1445000,
+            "red_median": 1505000,
+            "red_high": 1560000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 864000,
+            "green_median": 967000,
+            "green_high": 1040000,
+            "yellow": 1070000,
+            "red_low": 1110000,
+            "red_median": 1155000,
+            "red_high": 1200000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 740000,
+            "green_median": 829000,
+            "green_high": 891000,
+            "yellow": 918000,
+            "red_low": 952000,
+            "red_median": 991000,
+            "red_high": 1030000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.45,
+            "sample_size": 3,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}

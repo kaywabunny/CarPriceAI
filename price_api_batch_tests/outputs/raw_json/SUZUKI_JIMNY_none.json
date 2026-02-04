@@ -1,0 +1,563 @@
+{
+  "results": [
+    {
+      "year": 2010,
+      "request": {
+        "make": "SUZUKI",
+        "model": "JIMNY",
+        "year": 2010,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 265000,
+            "green_median": 280000,
+            "green_high": 296000,
+            "yellow": 311000,
+            "red_low": 317000,
+            "red_median": 327000,
+            "red_high": 336000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 249000,
+            "green_median": 264000,
+            "green_high": 279000,
+            "yellow": 293000,
+            "red_low": 299000,
+            "red_median": 307000,
+            "red_high": 316000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 218000,
+            "green_median": 231000,
+            "green_high": 243000,
+            "yellow": 256000,
+            "red_low": 261000,
+            "red_median": 269000,
+            "red_high": 276000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 148000,
+            "green_median": 157000,
+            "green_high": 165000,
+            "yellow": 174000,
+            "red_low": 177000,
+            "red_median": 183000,
+            "red_high": 188000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 148000,
+            "green_median": 157000,
+            "green_high": 165000,
+            "yellow": 174000,
+            "red_low": 177000,
+            "red_median": 183000,
+            "red_high": 188000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2013,
+      "request": {
+        "make": "SUZUKI",
+        "model": "JIMNY",
+        "year": 2013,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 307000,
+            "green_median": 325000,
+            "green_high": 343000,
+            "yellow": 361000,
+            "red_low": 368000,
+            "red_median": 379000,
+            "red_high": 390000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 289000,
+            "green_median": 306000,
+            "green_high": 323000,
+            "yellow": 340000,
+            "red_low": 347000,
+            "red_median": 357000,
+            "red_high": 367000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": false,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 252000,
+            "green_median": 267000,
+            "green_high": 282000,
+            "yellow": 296000,
+            "red_low": 302000,
+            "red_median": 311000,
+            "red_high": 320000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 172000,
+            "green_median": 182000,
+            "green_high": 192000,
+            "yellow": 202000,
+            "red_low": 206000,
+            "red_median": 212000,
+            "red_high": 218000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 172000,
+            "green_median": 182000,
+            "green_high": 192000,
+            "yellow": 202000,
+            "red_low": 206000,
+            "red_median": 212000,
+            "red_high": 218000,
+            "estimate_basis": "fallback_no_comparables",
+            "confidence": 0.2,
+            "sample_size": 0,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2015,
+      "request": {
+        "make": "SUZUKI",
+        "model": "JIMNY",
+        "year": 2015,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 437000,
+            "green_median": 468000,
+            "green_high": 491000,
+            "yellow": 500000,
+            "red_low": 523000,
+            "red_median": 540000,
+            "red_high": 560000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 411000,
+            "green_median": 441000,
+            "green_high": 462000,
+            "yellow": 471000,
+            "red_low": 492000,
+            "red_median": 509000,
+            "red_high": 527000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 359000,
+            "green_median": 385000,
+            "green_high": 403000,
+            "yellow": 411000,
+            "red_low": 429000,
+            "red_median": 444000,
+            "red_high": 460000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 245000,
+            "green_median": 262000,
+            "green_high": 275000,
+            "yellow": 280000,
+            "red_low": 293000,
+            "red_median": 302000,
+            "red_high": 314000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 245000,
+            "green_median": 262000,
+            "green_high": 275000,
+            "yellow": 280000,
+            "red_low": 293000,
+            "red_median": 302000,
+            "red_high": 314000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.2,
+            "sample_size": 1,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "extremely_limited_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2018,
+      "request": {
+        "make": "SUZUKI",
+        "model": "JIMNY",
+        "year": 2018,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 709000,
+            "green_median": 746000,
+            "green_high": 772000,
+            "yellow": 783000,
+            "red_low": 798000,
+            "red_median": 822000,
+            "red_high": 845000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 668000,
+            "green_median": 702000,
+            "green_high": 727000,
+            "yellow": 737000,
+            "red_low": 752000,
+            "red_median": 774000,
+            "red_high": 796000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 583000,
+            "green_median": 613000,
+            "green_high": 634000,
+            "yellow": 643000,
+            "red_low": 656000,
+            "red_median": 675000,
+            "red_high": 694000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 397000,
+            "green_median": 418000,
+            "green_high": 432000,
+            "yellow": 438000,
+            "red_low": 447000,
+            "red_median": 460000,
+            "red_high": 473000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 397000,
+            "green_median": 418000,
+            "green_high": 432000,
+            "yellow": 438000,
+            "red_low": 447000,
+            "red_median": 460000,
+            "red_high": 473000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2020,
+      "request": {
+        "make": "SUZUKI",
+        "model": "JIMNY",
+        "year": 2020,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 960000,
+            "green_median": 993000,
+            "green_high": 1015000,
+            "yellow": 1025000,
+            "red_low": 1045000,
+            "red_median": 1080000,
+            "red_high": 1110000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 904000,
+            "green_median": 935000,
+            "green_high": 957000,
+            "yellow": 966000,
+            "red_low": 986000,
+            "red_median": 1015000,
+            "red_high": 1045000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 789000,
+            "green_median": 816000,
+            "green_high": 835000,
+            "yellow": 843000,
+            "red_low": 860000,
+            "red_median": 885000,
+            "red_high": 910000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 538000,
+            "green_median": 556000,
+            "green_high": 569000,
+            "yellow": 575000,
+            "red_low": 586000,
+            "red_median": 603000,
+            "red_high": 621000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 538000,
+            "green_median": 556000,
+            "green_high": 569000,
+            "yellow": 575000,
+            "red_low": 586000,
+            "red_median": 603000,
+            "red_high": 621000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 3,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": true,
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    },
+    {
+      "year": 2024,
+      "request": {
+        "make": "SUZUKI",
+        "model": "JIMNY",
+        "year": 2024,
+        "mileage_km_num": "20000,80000,160000,300000,450000"
+      },
+      "response": {
+        "results": [
+          {
+            "green_low": 1140000,
+            "green_median": 1200000,
+            "green_high": 1240000,
+            "yellow": 1255000,
+            "red_low": 1300000,
+            "red_median": 1360000,
+            "red_high": 1410000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 20000.0
+          },
+          {
+            "green_low": 1075000,
+            "green_median": 1130000,
+            "green_high": 1170000,
+            "yellow": 1185000,
+            "red_low": 1225000,
+            "red_median": 1280000,
+            "red_high": 1325000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 80000.0
+          },
+          {
+            "green_low": 938000,
+            "green_median": 985000,
+            "green_high": 1020000,
+            "yellow": 1035000,
+            "red_low": 1070000,
+            "red_median": 1115000,
+            "red_high": 1155000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 160000.0
+          },
+          {
+            "green_low": 639000,
+            "green_median": 672000,
+            "green_high": 694000,
+            "yellow": 704000,
+            "red_low": 729000,
+            "red_median": 760000,
+            "red_high": 789000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 300000.0
+          },
+          {
+            "green_low": 639000,
+            "green_median": 672000,
+            "green_high": 694000,
+            "yellow": 704000,
+            "red_low": 729000,
+            "red_median": 760000,
+            "red_high": 789000,
+            "estimate_basis": "market_trends",
+            "confidence": 0.35,
+            "sample_size": 2,
+            "bandwidth_clamped": true,
+            "bandwidth_expanded_sparse": false,
+            "ui_notice": "limited_market_data",
+            "mileage_km_num": 450000.0
+          }
+        ],
+        "count": 5
+      }
+    }
+  ]
+}
