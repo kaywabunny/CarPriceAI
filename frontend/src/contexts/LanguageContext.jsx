@@ -2,13 +2,24 @@ import { createContext, useContext, useState, useEffect } from 'react';
 
 const LanguageContext = createContext();
 
+const safeGetStorage = (key, fallback) => {
+  try {
+    if (typeof localStorage !== 'undefined') return localStorage.getItem(key) || fallback;
+  } catch (_) { /* e.g. SecurityError in private/iframe */ }
+  return fallback;
+};
+
+const safeSetStorage = (key, value) => {
+  try {
+    if (typeof localStorage !== 'undefined') localStorage.setItem(key, value);
+  } catch (_) { /* ignore */ }
+};
+
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(() => {
-    return localStorage.getItem('language') || 'en';
-  });
+  const [language, setLanguage] = useState(() => safeGetStorage('language', 'en'));
 
   useEffect(() => {
-    localStorage.setItem('language', language);
+    safeSetStorage('language', language);
   }, [language]);
 
   const toggleLanguage = () => {

@@ -13,16 +13,19 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 function App() {
   // Initialize session on app load
   useEffect(() => {
-    getSessionId();
-    
-    // Apply initial theme
-    const savedTheme = localStorage.getItem('theme') || 'system';
-    if (savedTheme === 'system') {
-      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.classList.toggle('dark', systemDark);
-    } else {
-      document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-    }
+    try {
+      getSessionId();
+    } catch (_) { /* ignore */ }
+    // Apply initial theme (safe when localStorage unavailable)
+    try {
+      const savedTheme = (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) || 'system';
+      if (savedTheme === 'system') {
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.toggle('dark', systemDark);
+      } else {
+        document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+      }
+    } catch (_) { /* ignore */ }
   }, []);
 
   return (

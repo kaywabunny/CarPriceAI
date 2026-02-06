@@ -748,6 +748,17 @@ def _apply_luxury_high_mileage_penalty(
     return (green_low, green_median, green_high, yellow, red_low, red_median, red_high)
 
 
+# --- OLD-CAR PRICING EDGE CASES (age 15–20+): analysis ---
+# Where age>=10 rules live: _apply_age_based_clamp (red_median/red_high vs yellow), old-car safeguard
+# (red_high vs green_median*1.35), year-distance depreciation (total_penalty cap 0.40). Why 15–20+ still
+# too high/wide: (1) year-distance cap stops at 40% so 15–20y get same as 10y; (2) sample_size None
+# skips sparse-data clamps so unknown-N gets no tightening; (3) no extra spread-tightening for old+sparse.
+# Depreciation caps: total_penalty = min(year_gap*0.04, 0.40) — does not increase past 10 years.
+# sample_size=None: _apply_low_sample_size_clamp and _apply_no_comparables_tightening treat None as
+# "sufficient data" and skip; _ensure_min_bandwidth_sparse skips. So unknown sample never triggers
+# sparse logic. Treating None as 0 fixes that without changing behavior when sample_size is known.
+
+
 def _apply_low_sample_size_clamp(
     sample_size: int | None,
     yellow: float,
@@ -758,12 +769,14 @@ def _apply_low_sample_size_clamp(
     """
     Clamp red bands for low sample sizes to reduce unrealistic volatility.
     
-    If sample_size <= 3:
+    If sample_size <= 3 (or None, treated as 0):
     - red_high = min(red_high, yellow * 1.12)
     - red_median = min(red_median, yellow * 1.08)
     - Ensure ordering within red band
     """
-    if sample_size is None or sample_size > 3:
+    # Fix A: treat unknown sample size as extremely limited so sparse-data logic triggers
+    effective_ss = 0 if sample_size is None else sample_size
+    if effective_ss > 3:
         # Sample size is sufficient, no clamping needed
         return (red_low, red_median, red_high)
     
@@ -840,10 +853,10 @@ def _apply_no_comparables_tightening(
     Tighten band spread when there are 0 comparable listings.
     
     This makes fallback estimates conservative and not overly optimistic.
-    Only triggers when sample_size is explicitly 0 (not null/None).
+    Only triggers when sample_size is 0 or unknown (None treated as 0 for conservative estimate).
     """
-    # Only apply if sample_size is explicitly 0 (not null/None)
-    if sample_size is None or sample_size != 0:
+    # Fix A: treat None as 0 so zero-comparables tightening and UI notices apply when unknown
+    if sample_size is not None and sample_size != 0:
         return (green_low, green_median, green_high, red_low, red_median, red_high)
     
     # If yellow is missing/0, fail open (keep current behavior)
@@ -893,7 +906,9 @@ def _ensure_min_bandwidth_sparse(
     Preserve ordering (red_low >= yellow * 1.02 if possible).
     Returns (red_low, red_median, red_high, bandwidth_expanded).
     """
-    if sample_size is None or sample_size >= 4:
+    # Fix A: treat unknown sample size as 0 so sparse logic can apply
+    effective_ss = 0 if sample_size is None else sample_size
+    if effective_ss >= 4:
         return (red_low, red_median, red_high, False)
     if yellow is None or yellow <= 0:
         return (red_low, red_median, red_high, False)
@@ -1769,7 +1784,9 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
         if year_gap >= 2:
             # 3–6% per year gap; apply to median before band construction so green_median reflects depreciation.
             penalty_per_year = 0.04  # 4% (middle of 3–6%)
-            total_penalty = min(year_gap * penalty_per_year, 0.40)  # cap total discount
+            # Fix B: allow stronger depreciation only for very old cars (15+ years); keep cap at 40% for 10–14y
+            penalty_cap = 0.55 if year_gap >= 15 else 0.40
+            total_penalty = min(year_gap * penalty_per_year, penalty_cap)
             factor = 1.0 - total_penalty
             q50 = float(q50 * factor)
             q20 = max(q20, q50 * LOW_RATIO)
@@ -2057,6 +2074,44 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
     if bandwidth_clamped:
         confidence = max(0.20, confidence - 0.10)
 
+    # ========== TEMP TEST (2026-02): Toyota Yaris only — sparse-data year guardrail ==========
+    # TO REMOVE: Delete from this line down to and including "# ========== END TEMP Toyota Yaris =========="
+    # and delete the two "if _yaris_scale_used" lines below that inject debug fields into out. No other code.
+    _yaris_scale_used = None
+    try:
+        if (brand or "").upper().strip() == "TOYOTA" and (model or "").upper().strip() == "YARIS":
+            ss = None
+            if sample_size is not None:
+                try:
+                    ss = int(sample_size)
+                except (TypeError, ValueError):
+                    pass
+            sparse = ss is not None and ss <= 3
+            if sparse and year is not None and year > 0:
+                anchor = 2018
+                if year < anchor:
+                    years_older = anchor - year
+                    # ~5% per year; floor 0.35 so 2006 clearly ≤ 2013 at same mileage
+                    scale = 1.0 - 0.05 * min(years_older, 12)
+                    scale = max(scale, 0.35)
+                else:
+                    scale = 1.0
+                if scale < 1.0:
+                    green_low *= scale
+                    green_median *= scale
+                    green_high *= scale
+                    yellow *= scale
+                    red_low *= scale
+                    red_median *= scale
+                    red_high *= scale
+                    (green_low, green_median, green_high, yellow, red_low, red_median, red_high) = _ensure_band_ordering(
+                        green_low, green_median, green_high, yellow, red_low, red_median, red_high
+                    )
+                    _yaris_scale_used = scale
+    except Exception:
+        _yaris_scale_used = None
+    # ========== END TEMP Toyota Yaris ==========
+
     out = {
         "green_low": _round_price(green_low),
         "green_median": _round_price(green_median),
@@ -2072,6 +2127,10 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
         "bandwidth_clamped": bool(bandwidth_clamped),
         "bandwidth_expanded_sparse": bool(bandwidth_expanded_sparse),
     }
+    # TEMP: remove these 3 lines when removing the Yaris guardrail block above
+    if _yaris_scale_used is not None:
+        out["_temp_yaris_year_guardrail"] = True
+        out["_temp_yaris_year_scale"] = _yaris_scale_used
 
     # --- UI metadata flags (no impact on pricing/confidence) ---
     try:

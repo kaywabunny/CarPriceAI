@@ -13,6 +13,7 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 import { getMakes, getModels, getTrims } from '@/lib/api';
 import { getYearOptions, isTrimValidForYear } from '@/lib/utils';
+import { getProductionYears, isYearInProduction, getProductionNoticeKey } from '@/lib/productionRules';
 import { track } from '@/lib/analytics';
 import { EVENT_TYPES } from '@/lib/types';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -41,6 +42,9 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
 
   const MAX_SUPPORTED_YEAR = 2025; // Pricing unavailable for future years beyond 2025
   const yearOptions = getYearOptions(1990);
+  const productionYears = getProductionYears(formData.make, formData.model, MAX_SUPPORTED_YEAR);
+  // Frontend-only: dropdown shows only production years when we have a rule, so users can't select out-of-production years. No backend/ML change.
+  const yearOptionsFiltered = productionYears && productionYears.length > 0 ? productionYears : yearOptions;
 
   // Load makes on mount
   useEffect(() => {
@@ -91,6 +95,13 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
     }
   }, [formData.make, formData.model]);
 
+  // Clear year if it falls outside the new make/model's production range
+  useEffect(() => {
+    if (!formData.make || !formData.model || formData.make === NONE_VALUE || formData.model === NONE_VALUE || !formData.year) return;
+    if (isYearInProduction(formData.make, formData.model, formData.year)) return;
+    setFormData(prev => ({ ...prev, year: '' }));
+  }, [formData.make, formData.model]);
+
   // Auto-clamp year if somehow > 2025 (e.g., cached state or URL param)
   useEffect(() => {
     if (formData.year) {
@@ -121,6 +132,8 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
       const yearNum = parseInt(formData.year, 10);
       if (yearNum > MAX_SUPPORTED_YEAR) {
         newErrors.year = getTranslation('form.error.yearFuture', language) || `Pricing not available for future model years. Maximum supported year is ${MAX_SUPPORTED_YEAR}.`;
+      } else if (!isYearInProduction(formData.make, formData.model, formData.year)) {
+        newErrors.year = getTranslation('form.error.yearNotInProduction', language);
       }
     }
     if (!formData.mileage) {
@@ -271,6 +284,17 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
               </SelectContent>
             </Select>
             {errors.model && <p className="text-xs text-destructive">{errors.model}</p>}
+            {formData.make && formData.model && formData.make !== NONE_VALUE && formData.model !== NONE_VALUE && (() => {
+              const noticeKey = getProductionNoticeKey(formData.make, formData.model);
+              if (!noticeKey) return null;
+              const msg = getTranslation(noticeKey, language);
+              const isWarning = noticeKey.includes('audi.a5') || noticeKey.includes('audi.rs4') || noticeKey.includes('bmw.116i') || noticeKey.includes('mercedes.clsClass') || noticeKey.includes('mercedes.mlClass') || noticeKey.includes('mercedes.slkClass');
+              return (
+                <p className={`text-xs mt-1.5 px-2.5 py-1.5 rounded-md border ${isWarning ? 'text-amber-700 dark:text-amber-400 border-amber-500/30 bg-amber-500/10' : 'text-muted-foreground border-border/50 bg-muted/30'}`} role="status">
+                  {msg}
+                </p>
+              );
+            })()}
           </div>
 
           {/* Trim */}
@@ -323,16 +347,21 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
               <Select
                 value={formData.year}
                 onValueChange={(value) => handleChange('year', value)}
+                disabled={!formData.make || !formData.model || formData.make === NONE_VALUE || formData.model === NONE_VALUE}
               >
                 <SelectTrigger 
                   id="year" 
                   data-testid="year-select"
                   className={errors.year ? 'border-destructive' : ''}
                 >
-                  <SelectValue placeholder={getTranslation('form.selectYear', language)} />
+                  <SelectValue placeholder={
+                    !formData.make || !formData.model || formData.make === NONE_VALUE || formData.model === NONE_VALUE
+                      ? (language === 'th' ? 'เลือกยี่ห้อและรุ่นก่อน' : 'Select make and model first')
+                      : getTranslation('form.selectYear', language)
+                  } />
                 </SelectTrigger>
                 <SelectContent>
-                  {yearOptions.map((year) => (
+                  {yearOptionsFiltered.map((year) => (
                     <SelectItem key={year} value={year.toString()}>
                       {year}
                     </SelectItem>

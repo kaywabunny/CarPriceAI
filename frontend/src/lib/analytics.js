@@ -7,16 +7,21 @@ const STORAGE_KEYS = {
 };
 
 /**
- * Get or create session ID
+ * Get or create session ID (safe when localStorage is unavailable)
  * @returns {string} Session ID
  */
 export const getSessionId = () => {
-  let sessionId = localStorage.getItem(STORAGE_KEYS.SESSION_ID);
-  if (!sessionId) {
-    sessionId = uuidv4();
-    localStorage.setItem(STORAGE_KEYS.SESSION_ID, sessionId);
+  try {
+    if (typeof localStorage === 'undefined') return uuidv4();
+    let sessionId = localStorage.getItem(STORAGE_KEYS.SESSION_ID);
+    if (!sessionId) {
+      sessionId = uuidv4();
+      localStorage.setItem(STORAGE_KEYS.SESSION_ID, sessionId);
+    }
+    return sessionId;
+  } catch (_) {
+    return uuidv4();
   }
-  return sessionId;
 };
 
 /**
