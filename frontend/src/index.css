@@ -220,6 +220,22 @@
   margin: 0;
   line-height: 1.2;
 }
+/* Page 1 header: relative so logo can sit top-right without moving content */
+.price-report .price-report-page1-header {
+  position: relative;
+}
+.price-report .reportHeaderLogo {
+  position: absolute !important;
+  top: -40px !important;
+  right: 0 !important;
+  height: 144px;
+  width: auto;
+  max-width: 420px;
+  object-fit: contain;
+  object-position: right top;
+  pointer-events: none;
+  margin: 0 !important;
+}
 /* Band card structure only on screen (no pastel/color overrides — dark UI) */
 .price-report .bandCard {
   border-radius: 12px;

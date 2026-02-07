@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/select';
 import { Card, CardContent } from '@/components/ui/card';
 import { getMakes, getModels, getTrims } from '@/lib/api';
-import { getYearOptions, isTrimValidForYear } from '@/lib/utils';
+import { getYearOptionsForMakeModel, isTrimValidForYear } from '@/lib/utils';
 import { track } from '@/lib/analytics';
 import { EVENT_TYPES } from '@/lib/types';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -40,7 +40,7 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
   const [errors, setErrors] = useState({});
 
   const MAX_SUPPORTED_YEAR = 2025; // Pricing unavailable for future years beyond 2025
-  const yearOptions = getYearOptions(1990);
+  const yearOptions = getYearOptionsForMakeModel(formData.make, formData.model, NONE_VALUE);
 
   // Load makes on mount
   useEffect(() => {
@@ -88,6 +88,17 @@ export const PredictionForm = ({ onSubmit, isLoading }) => {
         .finally(() => setLoadingTrims(false));
     } else {
       setTrims([]);
+    }
+  }, [formData.make, formData.model]);
+
+  // When make/model change, ensure selected year is within production range (or clear it)
+  useEffect(() => {
+    if (!formData.year) return;
+    const options = getYearOptionsForMakeModel(formData.make, formData.model, NONE_VALUE);
+    const yearNum = parseInt(formData.year, 10);
+    if (isNaN(yearNum) || !options.includes(yearNum)) {
+      const fallback = options.length ? options[0].toString() : '';
+      setFormData(prev => ({ ...prev, year: fallback }));
     }
   }, [formData.make, formData.model]);
 

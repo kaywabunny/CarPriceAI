@@ -187,10 +187,17 @@ def is_ready() -> bool:
     return all(m is not None for m in (_q20, _q50, _q80))
 
 
+def _normalize_benz_make(brand: str) -> str:
+    """Treat MERCEDES-BENZ and variants as BENZ so group_medians and rules match."""
+    if brand in ("MERCEDES-BENZ", "MERCEDES", "MERCEDES BENZ"):
+        return "BENZ"
+    return brand
+
+
 def _add_features(req: dict) -> pd.DataFrame:
     """Create a single-row dataframe with the exact feature set the model expects."""
     # base fields (tolerant to keys)
-    brand = _std_cat(req.get("make") or req.get("brand"))
+    brand = _normalize_benz_make(_std_cat(req.get("make") or req.get("brand")))
     model_raw = req.get("model")
     # Apply strict model normalization to prevent collisions
     model = _normalize_model_strict(brand, model_raw) if model_raw else "UNKNOWN"
@@ -404,8 +411,30 @@ def _lookup_civic_segment_median(year: int, type_r_only: bool) -> float | None:
     return float(prices.median())
 
 
+def _neighbor_year_to_request_year_factor(neighbor_year: int, request_year: int) -> float:
+    """
+    Multiplier to convert a price from neighbor_year to request_year (same pattern as year-distance depreciation).
+    - If neighbor_year > request_year (newer): depreciate → factor < 1.
+    - If neighbor_year < request_year (older): appreciate → factor > 1 (capped).
+    Used so nearest-neighbor (same car, nearby years) is applied with depreciation, not raw newer-year prices.
+    """
+    y_n, y_r = int(neighbor_year), int(request_year)
+    if y_n == y_r:
+        return 1.0
+    if y_n > y_r:
+        gap = y_n - y_r
+        penalty_per_year = 0.04
+        penalty_cap = 0.55 if gap >= 15 else 0.40
+        total_penalty = min(gap * penalty_per_year, penalty_cap)
+        return 1.0 - total_penalty
+    # y_n < y_r: older listing, scale up to request year (conservative cap)
+    gap = y_r - y_n
+    appreciation = min(gap * 0.04, 0.20)
+    return 1.0 + appreciation
+
+
 def _lookup_group_median(brand: str, model: str, year: int) -> float | None:
-    """Lookup a group median price for (brand, model, year)."""
+    """Lookup a group median price for (brand, model, year). Uses nearest-neighbor years when exact year has no/little data; when using neighbor years, applies depreciation so older cars get lower anchors."""
     global _LAST_YEAR_WINDOW_USED, _LAST_SAMPLE_SIZE
     _LAST_YEAR_WINDOW_USED = 0
     _LAST_SAMPLE_SIZE = 0
@@ -525,21 +554,36 @@ def _lookup_group_median(brand: str, model: str, year: int) -> float | None:
     if best_w == 0:
         gmed = float(prices_clean.median())
     else:
-        # Re-filter years to match cleaned prices (preserve index alignment)
-        # Create a mask for prices that survived cleaning
+        # Nearest-neighbor years: normalize each price to requested year via depreciation, then average.
+        # Otherwise we'd average raw newer-year medians and anchor old cars too high.
         price_series = pd.Series(prices.values, index=prices.index)
         year_series = pd.Series(years.values, index=years.index)
         clean_mask = price_series.index.isin(prices_clean.index)
         prices_aligned = price_series[clean_mask]
         years_aligned = year_series[clean_mask]
-        
+        request_year = int(year)
+
         if len(prices_aligned) != len(prices_clean) or len(prices_aligned) == 0:
-            # Fallback: use median if alignment fails
             gmed = float(prices_clean.median())
         else:
-            dy = (years_aligned.astype(int) - int(year)).abs()
-            wts = 1.0 / (1.0 + dy.astype(float))  # closer years weigh more heavily
-            gmed = float(np.average(prices_aligned.astype(float), weights=wts))
+            # Apply depreciation/appreciation so each neighbor-year price is expressed in request_year terms
+            adjusted = np.array([
+                float(p) * _neighbor_year_to_request_year_factor(int(y), request_year)
+                for p, y in zip(prices_aligned.astype(float), years_aligned.astype(int))
+            ])
+            dy = np.abs(years_aligned.astype(int).values - request_year)
+            wts = 1.0 / (1.0 + dy.astype(float))
+            gmed = float(np.average(adjusted, weights=wts))
+            # When we have no exact-year data, anchor is from neighbor years. If the effective
+            # neighbor year is newer than request_year, apply extra depreciation so older cars
+            # are not anchored too high (90%+ of the time older should be cheaper than newer).
+            effective_neighbor_year = float(np.average(years_aligned.astype(int).values, weights=wts))
+            if effective_neighbor_year > request_year:
+                gap = effective_neighbor_year - request_year
+                extra_depreciation_per_year = 0.025  # 2.5% per year gap
+                extra_cap = 0.12  # cap 12% total so we don't over-penalize
+                extra_factor = 1.0 - min(gap * extra_depreciation_per_year, extra_cap)
+                gmed = float(gmed * extra_factor)
 
     _LAST_YEAR_WINDOW_USED = int(best_w)
     _LAST_SAMPLE_SIZE = int(len(prices_clean))  # Use cleaned sample size
@@ -1389,9 +1433,12 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
     if not is_ready():
         raise RuntimeError("Price model not loaded")
 
-    brand = _std_cat(req.get("make") or req.get("brand"))
+    brand = _normalize_benz_make(_std_cat(req.get("make") or req.get("brand")))
     model = _std_cat(req.get("model"))
-    
+    # Ensure req carries normalized make so _add_features and any re-read of req see BENZ
+    if brand == "BENZ" and (req.get("make") or req.get("brand") or "").strip().upper() in ("MERCEDES-BENZ", "MERCEDES", "MERCEDES BENZ"):
+        req = {**req, "make": "BENZ"}
+
     # Extract year early for model-year specific exclusions
     try:
         year = int(req.get("year"))
@@ -1760,18 +1807,22 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
         q20 = max(q20, q50 * LOW_RATIO)
         q80 = min(q80, q50 * HIGH_RATIO)
 
-    # --- Year-distance depreciation (non-ML): avoid flat-year issue (e.g. 2016 == 2019). Applies to all models. ---
+    # --- Age-based depreciation (core): older cars lose value every year. No cap so consecutive years never collapse. ---
+    # Model can still output higher for older years (data noise); we enforce "age loses value" here.
+    # Exponential curve: each extra year multiplies by ~0.96 (~4% loss), so older is always strictly lower than newer.
     if year > 0:
         from datetime import datetime
         anchor_year = datetime.now().year
-        # Only depreciate older cars (year < anchor); same model, gap >= 2.
         year_gap = max(0, anchor_year - year)
-        if year_gap >= 2:
-            # 3–6% per year gap; apply to median before band construction so green_median reflects depreciation.
-            penalty_per_year = 0.04  # 4% (middle of 3–6%)
-            total_penalty = min(year_gap * penalty_per_year, 0.40)  # cap total discount
-            factor = 1.0 - total_penalty
+        if year_gap >= 1:
+            # Per-year multiplier 0.96 (≈4% loss per year, compounding). Floor so very old cars keep minimal value.
+            AGE_DEPRECIATION_BASE = 0.96
+            AGE_FACTOR_FLOOR = 0.12
+            factor = max(AGE_FACTOR_FLOOR, AGE_DEPRECIATION_BASE ** year_gap)
+            q20 = float(q20 * factor)
             q50 = float(q50 * factor)
+            q80 = float(q80 * factor)
+            # Re-apply band ratios around q50
             q20 = max(q20, q50 * LOW_RATIO)
             q80 = min(q80, q50 * HIGH_RATIO)
 
@@ -2034,12 +2085,54 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
         confidence = 0.20
 
     # Sanity check: predicted price should not exceed filtered comparable median by more than 30-40%
-    # unless confidence is low (moved after confidence calculation)
+    # When we have no/few comparables, cap yellow much tighter so we don't show extremely high values.
     if gmed is not None and np.isfinite(gmed) and gmed > 0:
-        max_deviation = 0.40 if confidence >= 0.60 else 0.50  # Allow more deviation if low confidence
+        if sample_size is not None and sample_size <= 1:
+            max_deviation = 0.15  # Yellow cap at 1.15 * gmed when no or one comparable
+        elif sample_size is not None and sample_size <= 2:
+            max_deviation = 0.25  # Yellow cap at 1.25 * gmed when very limited data
+        else:
+            max_deviation = 0.40 if confidence >= 0.60 else 0.50
         if yellow > gmed * (1.0 + max_deviation):
-            # Scale down proportionally to bring within reasonable range
             scale_factor = (gmed * (1.0 + max_deviation)) / yellow
+            green_low *= scale_factor
+            green_median *= scale_factor
+            green_high *= scale_factor
+            yellow *= scale_factor
+            red_low *= scale_factor
+            red_median *= scale_factor
+            red_high *= scale_factor
+
+    # Low-data yellow cap: when we have no or one comparable, never show yellow above 1.15 * gmed
+    # (handles cases where model or blend still pushes yellow high; gmed may be from neighbor years)
+    if (
+        sample_size is not None
+        and sample_size <= 1
+        and gmed is not None
+        and np.isfinite(gmed)
+        and gmed > 0
+        and yellow > gmed * 1.15
+    ):
+        scale_factor = (gmed * 1.15) / yellow
+        green_low *= scale_factor
+        green_median *= scale_factor
+        green_high *= scale_factor
+        yellow *= scale_factor
+        red_low *= scale_factor
+        red_median *= scale_factor
+        red_high *= scale_factor
+
+    # No comparables and no group median: cap by segment if available so we don't show unbounded model output
+    if (
+        sample_size is not None
+        and sample_size == 0
+        and (gmed is None or not np.isfinite(gmed) or gmed <= 0)
+        and segment_cap is not None
+        and segment_cap > 0
+    ):
+        max_price = max(green_low, green_median, green_high, yellow, red_low, red_median, red_high)
+        if max_price > segment_cap:
+            scale_factor = segment_cap / max_price
             green_low *= scale_factor
             green_median *= scale_factor
             green_high *= scale_factor
@@ -2234,6 +2327,53 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
             # Log error but don't fail
             print(f"Debug field computation failed: {e}")
 
+    # --- Global year-order: older cars must be priced lower than newer (same make/model). 90%+ of the time. ---
+    # Find nearest newer year with data (year+1, year+2, ...) and cap older price. Consecutive years (e.g. 2009 vs 2010)
+    # use a stricter cap (older <= newer * 0.98) so market_trends / sparse data don't invert the order.
+    if (
+        not _skip_year_order_check
+        and out.get("status") not in ("pricing_unavailable", "unsupported_model")
+        and out.get("yellow") is not None
+        and out.get("yellow") > 0
+        and year > 0
+    ):
+        try:
+            from datetime import datetime
+            current_year = datetime.now().year
+            max_year_ahead = min(15, current_year - year)
+            ref_yellow = None
+            ref_green = None
+            ref_delta = None
+            for delta in range(1, max_year_ahead + 1):
+                req_newer = {**req, "year": year + delta}
+                result_newer = predict_price(req_newer, _skip_year_order_check=True)
+                if result_newer and result_newer.get("status") not in ("pricing_unavailable", "unsupported_model"):
+                    y = result_newer.get("yellow")
+                    g = result_newer.get("green_median")
+                    if y is not None and float(y) > 0:
+                        ref_yellow = float(y)
+                        ref_green = float(g) if (g is not None and float(g) > 0) else None
+                        ref_delta = delta
+                        break
+            scale = 1.0
+            # Consecutive years (delta==1): require older <= newer * 0.98 (at least 2% lower)
+            if ref_yellow is not None and ref_yellow > 0:
+                yellow_older = float(out["yellow"])
+                threshold = ref_yellow * 0.98 if ref_delta == 1 else ref_yellow / 1.05
+                if yellow_older > threshold:
+                    scale = min(scale, threshold / yellow_older)
+            if ref_green is not None and ref_green > 0 and out.get("green_median") is not None:
+                older_green = float(out["green_median"])
+                threshold = ref_green * 0.98 if ref_delta == 1 else ref_green / 1.05
+                if older_green > threshold:
+                    scale = min(scale, threshold / older_green)
+            if scale < 1.0:
+                for key in ("green_low", "green_median", "green_high", "yellow", "red_low", "red_median", "red_high"):
+                    if out.get(key) is not None:
+                        out[key] = _round_price(float(out[key]) * scale)
+        except Exception:
+            pass
+
     # --- Fallback year-ordering: older year <= newer year / 1.05 (yellow; when vehicle_age >= 10 also green_median) ---
     # Only when estimate_basis == fallback_no_comparables. One lookup (year+1); generic, no model hardcoding.
     if (
@@ -2273,6 +2413,7 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
 
     # --- Rule A: Minimum year separation for economy cars (market_trends, sparse data) ---
     # Prevents older and newer economy cars collapsing into the same price tier when data is sparse.
+    # Enforces both yellow and green_median: older <= newer * 0.98 (consecutive years).
     _economy_makes = {"MAZDA", "TOYOTA", "HONDA", "NISSAN"}
     _sample = out.get("sample_size")
     _ok_sample = _sample is not None and int(_sample) <= 3
@@ -2288,16 +2429,24 @@ def predict_price(req: dict, _skip_year_order_check: bool = False, _skip_note_ep
         try:
             req_newer = {**req, "year": year + 1}
             result_newer = predict_price(req_newer, _skip_year_order_check=True)
+            yellow_newer = None
             green_newer = None
             if result_newer and result_newer.get("status") not in ("pricing_unavailable", "unsupported_model"):
+                yellow_newer = result_newer.get("yellow")
                 green_newer = result_newer.get("green_median")
+            scale = 1.0
+            if yellow_newer is not None and float(yellow_newer) > 0 and out.get("yellow") is not None:
+                older_yellow = float(out["yellow"])
+                if older_yellow > yellow_newer * 0.98:
+                    scale = min(scale, (yellow_newer * 0.98) / older_yellow)
             if green_newer is not None and float(green_newer) > 0:
                 older_green = float(out["green_median"])
-                if older_green > green_newer / 1.05:
-                    scale = (green_newer / 1.05) / older_green
-                    for key in ("green_low", "green_median", "green_high", "yellow", "red_low", "red_median", "red_high"):
-                        if out.get(key) is not None:
-                            out[key] = _round_price(float(out[key]) * scale)
+                if older_green > green_newer * 0.98:
+                    scale = min(scale, (green_newer * 0.98) / older_green)
+            if scale < 1.0:
+                for key in ("green_low", "green_median", "green_high", "yellow", "red_low", "red_median", "red_high"):
+                    if out.get(key) is not None:
+                        out[key] = _round_price(float(out[key]) * scale)
         except Exception:
             pass
 

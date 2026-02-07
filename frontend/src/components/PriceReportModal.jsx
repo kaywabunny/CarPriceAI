@@ -29,6 +29,7 @@ import { formatTHB, formatPercent } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { getTranslation } from '@/lib/translations';
 import { getDepreciation, getPriceGraph } from '@/lib/api';
+import reportLogoDarkThai from '@/assets/images/CarPriceAI - Dark logo thai.png';
 
 function isBandOrderValid(result) {
   if (!result) return true;
@@ -315,8 +316,14 @@ export const PriceReportModal = ({
             <div className="px-6 py-4 space-y-6">
               {/* ========== PAGE 1: How to use + price bands + band explanations ========== */}
               <section className="reportPage reportPage--1">
-                {/* Header (duplicated for print page 1) */}
-                <div className="price-report-page1-header print:block hidden print:!block">
+                {/* Header (duplicated for print page 1) — logo top-right via absolute positioning */}
+                <div className="price-report-page1-header print:block hidden print:!block relative">
+                  <img
+                    src={reportLogoDarkThai}
+                    alt=""
+                    className="reportHeaderLogo absolute top-0 right-0 h-36 w-auto object-contain object-right mt-0 mr-1"
+                    aria-hidden
+                  />
                   <div className="reportHeaderTitleRow">
                     <FileText className="reportHeaderIcon" />
                     <h1 className="reportHeaderTitle text-lg font-semibold text-foreground">{getTranslation('report.title', language)}</h1>

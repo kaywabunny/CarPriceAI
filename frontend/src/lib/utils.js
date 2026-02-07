@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { getProductionRange } from "@/lib/productionYears";
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -70,6 +71,28 @@ export const getYearOptions = (startYear = 1990, endYear = MAX_SUPPORTED_YEAR) =
     years.push(year);
   }
   return years;
+};
+
+/**
+ * Get year options filtered by make/model production range (Thailand).
+ * When make+model have a production rule, only years in that range are returned.
+ * Otherwise returns full range (1990–MAX_SUPPORTED_YEAR).
+ * @param {string} make - Make (e.g. BENZ, AUDI)
+ * @param {string} model - Model (e.g. A-CLASS, A4)
+ * @param {string} noneValue - Value that means "no selection" (e.g. __NONE__)
+ * @returns {number[]} Array of years for dropdown
+ */
+export const getYearOptionsForMakeModel = (make, model, noneValue = '__NONE__') => {
+  const hasMake = make && make !== noneValue;
+  const hasModel = model && model !== noneValue;
+  if (!hasMake || !hasModel) {
+    return getYearOptions(1990);
+  }
+  const range = getProductionRange(make, model);
+  if (range && typeof range.start === 'number' && typeof range.end === 'number') {
+    return getYearOptions(range.start, range.end);
+  }
+  return getYearOptions(1990);
 };
 
 /**

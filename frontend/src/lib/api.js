@@ -84,9 +84,10 @@ const jsonFetch = async (url, options = {}) => {
  * Map UI form data to backend PriceRequest payload.
  * UI shape: { make, model, year, mileage_km_num, trim? }
  * Backend expects: { make, model, year, mileage_km_num, submodel?, gear?, color? }
+ * Normalizes make so BENZ/MERCEDES-BENZ are sent as BENZ.
  */
 const toPriceRequest = (request) => ({
-  make: request.make,
+  make: canonicalMake(request.make),
   model: request.model,
   year: request.year,
   mileage_km_num: request.mileage_km_num,
@@ -139,7 +140,7 @@ export const getPriceGraph = async (request) => {
  */
 export const getDepreciation = async (request) => {
   const payload = {
-    make: request.make,
+    make: canonicalMake(request.make),
     model: request.model,
     year: request.year,
     mileage_km_num: request.mileage_km_num,
@@ -233,35 +234,52 @@ export const reloadModel = async () => {
 // Metadata helpers (make/model/trim) – local catalogue only
 // ============================================================
 
+/** Normalize make for API: BENZ and MERCEDES-BENZ are the same (backend uses BENZ). */
+const canonicalMake = (make) => {
+  const m = (make || '').toString().trim().toUpperCase();
+  if (m === 'MERCEDES-BENZ' || m === 'MERCEDES' || m === 'MERCEDES BENZ') return 'BENZ';
+  return make;
+};
+
+/** True if this brand is Mercedes (BENZ or MERCEDES-BENZ). */
+const isBenzMake = (make) => {
+  const m = (make || '').toString().trim().toUpperCase();
+  return m === 'BENZ' || m === 'MERCEDES-BENZ' || m === 'MERCEDES' || m === 'MERCEDES BENZ';
+};
+
 /**
  * Get list of available makes from local catalogue.
- * This does NOT call the backend and contains no pricing logic.
+ * BENZ and MERCEDES-BENZ are merged into one make "BENZ" for the dropdown.
  */
 export const getMakes = async () => {
-  const makes = [...new Set(CAR_DATA.map((item) => item.brand))].sort();
+  const makes = [...new Set(CAR_DATA.map((item) => canonicalMake(item.brand)))].sort();
   return makes;
 };
 
 /**
  * Get models for a specific make from local catalogue.
+ * When make is BENZ, includes models from both BENZ and MERCEDES-BENZ rows.
  */
 export const getModels = async (make) => {
-  const models = [
-    ...new Set(
-      CAR_DATA.filter((item) => item.brand === make).map((item) => item.model)
-    ),
-  ].sort();
+  const match = isBenzMake(make)
+    ? (item) => (item.brand === 'BENZ' || item.brand === 'MERCEDES-BENZ')
+    : (item) => item.brand === make;
+  const models = [...new Set(CAR_DATA.filter(match).map((item) => item.model))].sort();
   return models;
 };
 
 /**
  * Get trims for a specific make and model from local catalogue.
+ * When make is BENZ, includes trims from both BENZ and MERCEDES-BENZ rows.
  */
 export const getTrims = async (make, model) => {
+  const match = isBenzMake(make)
+    ? (item) => (item.brand === 'BENZ' || item.brand === 'MERCEDES-BENZ') && item.model === model
+    : (item) => item.brand === make && item.model === model;
   const trims = [
     ...new Set(
       CAR_DATA
-        .filter((item) => item.brand === make && item.model === model)
+        .filter(match)
         .map((item) => item.series)
         .filter((s) => s && s !== 'UNKNOWN')
     ),
